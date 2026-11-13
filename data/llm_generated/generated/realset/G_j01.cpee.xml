@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Select Resources</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="2" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a5" endpoint="" a:alt_id="3">
+        <parameters>
+          <label>Collect Resource A</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e3">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Collect Resource B</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <call id="a13" endpoint="" a:alt_id="6">
+    <parameters>
+      <label>Initialize Farming</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <loop mode="post_test" condition="true" eid="e4">
+    <call id="a17" endpoint="" a:alt_id="8">
+      <parameters>
+        <label>Check for Disasters</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <choose label="{x}" mode="exclusive" a:alt_id="9" eid="e5">
+      <alternative condition="Disaster Occurred" eid="e6" language="text/x-ruby">
+        <call id="a21" endpoint="" a:alt_id="10">
+          <parameters>
+            <label>Handle Setback</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="No Disaster" eid="e7" language="text/x-ruby">
+        <call id="a23" endpoint="" a:alt_id="11">
+          <parameters>
+            <label>Continue Farming</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+    </choose>
+    <call id="a29" endpoint="" a:alt_id="13">
+      <parameters>
+        <label>Check Milestones</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <choose label="{x}" mode="exclusive" a:alt_id="14" eid="e8">
+      <alternative condition="Update Needed" eid="e9" language="text/x-ruby">
+        <call id="a33" endpoint="" a:alt_id="15">
+          <parameters>
+            <label>Update Resource List</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="No Update" eid="e10" language="text/x-ruby">
+        <call id="a35" endpoint="" a:alt_id="16">
+          <parameters>
+            <label>Check Completion</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+    </choose>
+  </loop>
+  <parallel wait="-1" cancel="last" a:alt_id="18" eid="e11">
+    <parallel_branch eid="e12">
+      <call id="a45" endpoint="" a:alt_id="19">
+        <parameters>
+          <label>Brag to Friends</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e13">
+      <call id="a47" endpoint="" a:alt_id="20">
+        <parameters>
+          <label>Send Materials</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+</description>

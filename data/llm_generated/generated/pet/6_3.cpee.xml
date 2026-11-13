@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Determine parts quantities and delivery date</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Enter data into PPS</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Manually transfer data to ERP</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e1">
+    <alternative condition="Parts missing" eid="e2" language="text/x-ruby">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Procure parts</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="No parts missing" eid="e3" language="text/x-ruby"/>
+  </choose>
+  <call id="a15" endpoint="" a:alt_id="7">
+    <parameters>
+      <label>Receive production notice</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a17" endpoint="" a:alt_id="8">
+    <parameters>
+      <label>Implement production</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a19" endpoint="" a:alt_id="9">
+    <parameters>
+      <label>Check order quality</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

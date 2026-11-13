@@ -1,0 +1,256 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "The MPON reports the meter operation to the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "The GO examines the application",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "The GO rejects the application",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "The GO confirmes the application",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "The GO informs the MPOO about the registration confirmation",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "The GO informs the MSPO about the registration confirmation",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "The MPON and the MPOO perform the equipment acquisition and / or equipment changes",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "The MPON informs the GO about the failure",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "The GO informs the MPON about the failure",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "The GO confirms the failure of the assignment",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "The MPON informs the GO about the successful completion",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "The GO assigns the MPON",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "The GO confirms the assignment",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "The GO informs the MPOO about the assignment status of the MPON",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "The GO informs the MSPO about the assignment status of the MPON",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "The GO informs the SP about the assignment status of the MPON",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a23",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a10",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g3",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a13",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a14",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a11",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a15",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a16",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mg2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a19",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a20",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a21",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

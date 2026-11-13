@@ -1,0 +1,239 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Select starting block",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Initialize training loop",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Run 5km and measure time",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Train more",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Achieved goal",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Get starting number",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Determine travel route",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Go from home",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Leave from work",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Run and drink",
+            "type": "Task"
+        },
+        {
+            "id": "a39",
+            "name": "Receive final time",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a11",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "p3",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a21",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g4",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a25",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a27",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p3",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg4",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a33",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mp3",
+            "targetRef": "a39"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a39",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a13",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "esc1",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

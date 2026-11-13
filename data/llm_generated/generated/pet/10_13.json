@@ -1,0 +1,90 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Transmit transaction data request",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check request",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Transmit data",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Reject request",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

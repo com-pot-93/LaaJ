@@ -1,0 +1,446 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "customer makes notice at the secretarial office",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "secretarial worker inquires the patient data",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "secretarial worker  put through the doctor to the nursing officer",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "nursing officer makes a full inquiry into the patient's state",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "nursing officer  records information on registration form",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "nursing officer hands form in at the secretarial office",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "secretarial office stores information in the information system",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "secretarial office prints the form's information",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "secretarial office creates a patient file",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "secretarial office stores registration form and the print in the patient file",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "secretarial office produces two registration cards",
+            "type": "Task"
+        },
+        {
+            "id": "a39",
+            "name": "secretarial office adds  new patient on the list of new notices",
+            "type": "Task"
+        },
+        {
+            "id": "a38",
+            "name": "team members have staff meeting",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "secretarial office assigns new patients to team  members",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "secretarial office records assignments on an assignment list",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "team members determine whether the medical file of the patient is required",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "team members add information to assignment list",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "secretarial office stores the assignments in the information system",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "secretarial office passes the produced registration cards",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "secretarial office prepares a letter to the family doctor",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "secretarial office sends a letter to the family doctor",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "secretarial  receives a copy of a medical file",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "secretarial office  informs the  intaker",
+            "type": "Task"
+        },
+        {
+            "id": "a24",
+            "name": "secretarial office adds the copy to the patient file",
+            "type": "Task"
+        },
+        {
+            "id": "a26",
+            "name": "first intaker plans a meeting with the patient",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "first intaker  examines the patient",
+            "type": "Task"
+        },
+        {
+            "id": "a28",
+            "name": "first intaker  registers additional observations in notes",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "first intaker puts a copy of notes in the patient's file",
+            "type": "Task"
+        },
+        {
+            "id": "a30",
+            "name": "first intaker adds standard checklist to the patient's file",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "second intaker plans the first meeting",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "secretarial office types out the tapes",
+            "type": "Task"
+        },
+        {
+            "id": "a34",
+            "name": "secretarial office adds the info to the patient file",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "secretarial office puts the patient on the list of patients",
+            "type": "Task"
+        },
+        {
+            "id": "a36",
+            "name": "secretarial office  provides the team-leader with a list of these patients",
+            "type": "Task"
+        },
+        {
+            "id": "a37",
+            "name": "team members  formulate a treatment plan for patients",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a8",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g1",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a11",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a12",
+            "targetRef": "a39"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a39",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg1",
+            "targetRef": "a38"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a38",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a13",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a14",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a15",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a16",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a17",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a18",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g2",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a20",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a21",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a22",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a23",
+            "targetRef": "a24"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a24",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "mg2",
+            "targetRef": "a26"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a26",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "a27",
+            "targetRef": "a28"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "a28",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a29",
+            "targetRef": "a30"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "a30",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "g3",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "a41",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "a33",
+            "targetRef": "a34"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "a34",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "mg3",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "a35",
+            "targetRef": "a36"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a36",
+            "targetRef": "a37"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a37",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,374 @@
+{
+    "tasks": [
+        {
+            "id": "a7",
+            "name": "enter manufacturer",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "enter model",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "enter broken part",
+            "type": "Task"
+        },
+        {
+            "id": "a0",
+            "name": "compute parts list",
+            "type": "Task"
+        },
+        {
+            "id": "a1",
+            "name": "compute necessary Tools",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "check list with own inventory (tool/screw)",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "contact friend",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "getting everything else needed",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Generating instructions to fix",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "follow instructions",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "send phone to expert",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Leave Review",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Upload video",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Saving video to DB",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g9",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg9",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg8",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a8",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg2",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mg2",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "p3",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "p3",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a0",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a1",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mp3",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a10",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g5",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a13",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mg5",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a14",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mg4",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a2",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mg6",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a15",
+            "targetRef": "g7"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g7",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg7",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "mg7",
+            "targetRef": "g8"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "g8",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "g8",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "a22",
+            "targetRef": "g9"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "g9",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a21",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "a3",
+            "targetRef": "mg9"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "g9",
+            "targetRef": "mg9"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "a19",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "mg9",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "mg8",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "mg6",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

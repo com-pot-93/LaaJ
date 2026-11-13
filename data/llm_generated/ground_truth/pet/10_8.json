@@ -1,0 +1,130 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "MSPO deregisters at the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "GO verifies the deregistration",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "GO rejects the deregistration",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "GO preliminarily confirms the deregistration",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "GO assigns himself as MSP",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "GO informs the MSPO about the state of the assignment of the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "GO informs the MPO about the assignment of the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "GO informs the SP about the assignment of the GO",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a9",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

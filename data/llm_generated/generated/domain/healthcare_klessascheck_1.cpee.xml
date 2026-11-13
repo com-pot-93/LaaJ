@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Diagnose Non Specific Low Back Pain</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="2" eid="e1">
+    <alternative condition="Branch 1" eid="e2" language="text/x-ruby">
+      <call id="a5" endpoint="" a:alt_id="3">
+        <parameters>
+          <label>Apply Superficial Heat or other Nonpharmocol. Treatments</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e3">
+        <alternative condition="Prescribe" eid="e4" language="text/x-ruby">
+          <call id="a9" endpoint="" a:alt_id="5">
+            <parameters>
+              <label>Prescribe NSAID or SMR</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No Prescription" eid="e5" language="text/x-ruby"/>
+      </choose>
+    </alternative>
+    <alternative condition="Branch 2" eid="e6" language="text/x-ruby">
+      <call id="a15" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Apply Exercise or other Nonpharmacol. Treatments</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="8" eid="e7">
+        <alternative condition="No NSAID" eid="e12" language="text/x-ruby"/>
+        <otherwise eid="e8">
+          <call id="a19" endpoint="" a:alt_id="9">
+            <parameters>
+              <label>Prescribe NSAID</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e9">
+            <alternative condition="Prescribe Opioid" eid="e10" language="text/x-ruby">
+              <call id="a23" endpoint="" a:alt_id="11">
+                <parameters>
+                  <label>Prescribe Opioid</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="No Opioid" eid="e11" language="text/x-ruby"/>
+          </choose>
+        </otherwise>
+      </choose>
+    </alternative>
+  </choose>
+</description>

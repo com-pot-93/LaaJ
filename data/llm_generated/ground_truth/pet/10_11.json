@@ -1,0 +1,163 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "GO requests the measurements to the MSP",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "MSP checks the received request",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "MSP denies the request of the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "MSP performs the measurement",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "MSP informs the GO about the failure",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "MSP transmits the measured values to the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "GO processes the measured values",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "GO sends the changed values to the MSP",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "GO transmits the readings to the SP",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a9",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a7",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

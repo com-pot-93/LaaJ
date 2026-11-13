@@ -1,0 +1,133 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "check the files",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "physically track the files",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "initiate the search of missing files",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "hand files to the Associate",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "distribute Judgeis Lawlist  to the relevant people",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "conduct the directions hearings",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a3",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "p2",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a6",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a7",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mp2",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a10",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

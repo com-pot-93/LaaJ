@@ -1,0 +1,168 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Enter smartphone model and damage",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Get materials and tools list",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Check existing inventory",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Contact friends for items",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Purchase remaining items",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Receive repair instructions",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Perform repair",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Send review or video",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Send to expert",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a9",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a11",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mp1",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a19",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a21",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g2",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g2",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a25",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a27",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,5 @@
+metrics,n,spearman,p_one_sided,p_two_sided,H0,null_mean,null_low,null_high,excess,p_perm_one_sided,p_perm_two_sided,H0_perm
+all,80,-0.5553,4.48e-08,8.97e-08,rejected,-0.5291,-0.6121,-0.4503,-0.0263,0.258,0.516,accepted
+llm*task,80,-0.6585,1.59e-11,3.17e-11,rejected,-0.4602,-0.536,-0.3765,-0.1983,0.0001,0.0002,rejected
+llm*element,80,-0.3424,0.000938,0.00188,rejected,-0.2051,-0.2956,-0.1118,-0.1374,0.0014,0.0028,rejected
+llm*trace,80,-0.6838,1.38e-12,2.75e-12,rejected,-0.4247,-0.4952,-0.3497,-0.2591,0.0001,0.0002,rejected

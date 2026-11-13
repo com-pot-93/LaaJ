@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Query web shops for parts</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Analyze price and delivery time</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Create order lists per shop</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="4" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Place orders</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e3">
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Initialize stock levels</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <call id="a17" endpoint="" a:alt_id="8">
+    <parameters>
+      <label>Receive batch of parts</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a19" endpoint="" a:alt_id="9">
+    <parameters>
+      <label>Update stock levels</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e4">
+    <alternative condition="Stock is 0" eid="e5" language="text/x-ruby">
+      <call id="a23" endpoint="" a:alt_id="11">
+        <parameters>
+          <label>Write complaint mail to friends</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Stock &lt; 3" eid="e6" language="text/x-ruby">
+      <call id="a25" endpoint="" a:alt_id="12">
+        <parameters>
+          <label>Reorder fastest</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Stock &lt; 5" eid="e7" language="text/x-ruby">
+      <call id="a27" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Reorder cheapest</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Stock sufficient" eid="e8" language="text/x-ruby"/>
+  </choose>
+  <loop mode="pre_test" condition="More parts expected" a:alt_id="15" eid="e9" language="text/x-ruby">
+    <call id="a18" endpoint="" a:alt_id="8">
+      <parameters>
+        <label>Receive batch of parts</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <call id="a20" endpoint="" a:alt_id="9">
+      <parameters>
+        <label>Update stock levels</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e10">
+      <alternative condition="Stock is 0" eid="e11" language="text/x-ruby">
+        <call id="a24" endpoint="" a:alt_id="11">
+          <parameters>
+            <label>Write complaint mail to friends</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="Stock &lt; 3" eid="e12" language="text/x-ruby">
+        <call id="a26" endpoint="" a:alt_id="12">
+          <parameters>
+            <label>Reorder fastest</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="Stock &lt; 5" eid="e13" language="text/x-ruby">
+        <call id="a28" endpoint="" a:alt_id="13">
+          <parameters>
+            <label>Reorder cheapest</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="Stock sufficient" eid="e14" language="text/x-ruby"/>
+    </choose>
+  </loop>
+</description>

@@ -1,0 +1,282 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Read order from system",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Initialize product selection",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Check if product in stock",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Withdraw from warehouse",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Reorder from wholesaler",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Demand delivery penalty",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Wait for arrival",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Register product in stock",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Check if order ready",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Select next product",
+            "type": "Task"
+        },
+        {
+            "id": "a39",
+            "name": "Request courier",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "Pack products",
+            "type": "Task"
+        },
+        {
+            "id": "a47",
+            "name": "Ship order",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p5",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp5",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a13",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a17",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg3",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a19",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a11",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a23",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg2",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a29",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g4",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g4",
+            "targetRef": "p5"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "p5",
+            "targetRef": "a39"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "p5",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a39",
+            "targetRef": "mp5"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a41",
+            "targetRef": "mp5"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mp5",
+            "targetRef": "a47"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a47",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a35",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "esc1",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg4",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

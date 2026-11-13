@@ -1,0 +1,302 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive Invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Create Invoice Instance",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Check Items and Create Docket",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Send to Cost Center Manager",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Review Invoice Items",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Reject and Return to Accounting",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Clarify with Vendor",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Send to Cost Center Manager",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Forward to Commercial Manager",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Perform Commercial Audit",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Resolve Complaint with Vendor",
+            "type": "Task"
+        },
+        {
+            "id": "a30",
+            "name": "Perform Commercial Audit",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "Board Review",
+            "type": "Task"
+        },
+        {
+            "id": "a47",
+            "name": "Give Payment Instructions",
+            "type": "Task"
+        },
+        {
+            "id": "a49",
+            "name": "Close Instance",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "mg1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a11",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a15",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a27",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a29",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g4",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a33",
+            "targetRef": "a30"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g5",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a41",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg5",
+            "targetRef": "a47"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a47",
+            "targetRef": "a49"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a30",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a49",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a10",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mg3",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a19",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "esc1",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "mg2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

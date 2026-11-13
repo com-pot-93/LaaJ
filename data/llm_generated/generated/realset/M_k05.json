@@ -1,0 +1,203 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Collect Requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Send Requirements to Architect",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Receive Draft",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Refine Requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Send Requirements to Architect",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Receive Draft",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Create Material List",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Order Materials from Online Stores",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Invite Friends to Build",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Build House",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Send Party Invitations",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Create Attendee List",
+            "type": "Task"
+        },
+        {
+            "id": "a31",
+            "name": "Buy Snacks",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "mg1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a6",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg1",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a13",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "p2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "p2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a17",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a19",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mp2",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a25",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a27",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a29",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a31",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,120 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "employee submits a vacation request",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "register the requirement",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "immediate supervisor receives the request",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "immediate supervisor  approves request",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "system returns application to employee",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "generate notification for HR representative",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "HR representative completes the procedure",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a6",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

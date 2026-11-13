@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Take down order</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Submit food order to kitchen</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="3" eid="e1">
+    <parallel_branch eid="e2">
+      <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e3">
+        <alternative condition="Alcoholic beverage" eid="e4" language="text/x-ruby">
+          <call id="a9" endpoint="" a:alt_id="5">
+            <parameters>
+              <label>Fetch wine and prepare drinks</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No alcohol" eid="e5" language="text/x-ruby">
+          <call id="a11" endpoint="" a:alt_id="6">
+            <parameters>
+              <label>Skip alcohol preparation</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e6">
+      <call id="a17" endpoint="" a:alt_id="8">
+        <parameters>
+          <label>Ready cart and nonalcoholic drinks</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <call id="a23" endpoint="" a:alt_id="10">
+    <parameters>
+      <label>Deliver to guest room</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a25" endpoint="" a:alt_id="11">
+    <parameters>
+      <label>Return to station</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="12" eid="e7">
+    <alternative condition="Has another order" eid="e8" language="text/x-ruby">
+      <call id="a29" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Wait to bill</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="No other order" eid="e9" language="text/x-ruby"/>
+  </choose>
+  <call id="a31" endpoint="" a:alt_id="14">
+    <parameters>
+      <label>Debit guest account</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

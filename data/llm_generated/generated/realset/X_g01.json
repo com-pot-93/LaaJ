@@ -1,0 +1,229 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Select Course",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check Slot Availability",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Select Course and Date",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Check Account Existence",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Check University Eligibility",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Register Account",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Request Activation and Wait",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Log into Account",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Tweet to Friends",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Complete Registration and Payment",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "Receive Course Ticket",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a13",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a17",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g3",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a23",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a25",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a19",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p4",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "p4",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a33",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a35",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mp4",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a41",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

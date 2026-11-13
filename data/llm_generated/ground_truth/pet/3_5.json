@@ -1,0 +1,243 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Mail Processing Unit collects mail from the party",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Mail Clerk sorts the unopened mail",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Mail Clerk  distributes the mail",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Registry opens mail",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Registry sorts mail",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Registry register mail in a Mail Register",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Assistant Registry Manager  (ARM) performs a quality check",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "ARM compiles a list of requisition",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "ARM sends  a list of requisition  back to the party",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "ARM captures the matter details",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "ARM provides the matter details to the Cashier",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Cashier takes the applicable fees",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "ARM puts the receipt",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "ARM copied documents into an envelope",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "ARM posts documents to the party",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Cashier captures the Party Details",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Cashier  prints the Physical Court File",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g1",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a12",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a13",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "p2",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a14",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a15",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "p2",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a18",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a16",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a19",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a11",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mp2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

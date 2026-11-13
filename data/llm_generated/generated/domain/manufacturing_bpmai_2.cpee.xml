@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Receive customer order</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Processing customer demand</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Determine demanded components according to planning</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e1">
+    <alternative condition="Missing parts" eid="e2" language="text/x-ruby">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Purchase missing parts and put on stock</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Parts available" eid="e3" language="text/x-ruby"/>
+  </choose>
+  <call id="a15" endpoint="" a:alt_id="7">
+    <parameters>
+      <label>Perform production</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a17" endpoint="" a:alt_id="8">
+    <parameters>
+      <label>Perform quality checks</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="9" eid="e4">
+    <alternative condition="Quality failed" eid="e5" language="text/x-ruby">
+      <call id="a21" endpoint="" a:alt_id="10">
+        <parameters>
+          <label>Perform follow-up production</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Quality passed" eid="e6" language="text/x-ruby"/>
+  </choose>
+  <call id="a27" endpoint="" a:alt_id="12">
+    <parameters>
+      <label>Fill product into a packaging</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a29" endpoint="" a:alt_id="13">
+    <parameters>
+      <label>Pack and label product</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a31" endpoint="" a:alt_id="14">
+    <parameters>
+      <label>Transport product to the warehouse</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a33" endpoint="" a:alt_id="15">
+    <parameters>
+      <label>Send product to customer</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

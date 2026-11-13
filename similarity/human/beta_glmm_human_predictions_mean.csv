@@ -1,0 +1,4 @@
+llm,bpmn_examples,bpmn_no_examples,mermaid_js_examples,mermaid_js_no_examples,simple_json_examples,simple_json_no_examples
+anthropic,0.5369,0.5078,0.5183,0.4842,0.56,0.5179
+gemini,0.4819,0.3381,0.3993,0.3173,0.4157,0.2797
+gpt,0.6601,0.6101,0.624,0.5601,0.6222,0.5549

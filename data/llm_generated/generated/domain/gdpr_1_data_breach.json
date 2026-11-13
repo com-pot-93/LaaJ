@@ -1,0 +1,239 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Retrieve breached data",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Retrieve breached subjects",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Data loss limitation",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Notify national authority",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Evaluate stolen data",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Send notification",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Evaluate security standard",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Send notification",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Request if breached data has to be communicated to the data subject",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Receive notification for the request",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Send notification",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Send notification",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mp1",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a19",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a25",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a29",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g4",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g4",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a21",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a33",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a22",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a23",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

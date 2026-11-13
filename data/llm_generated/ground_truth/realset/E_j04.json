@@ -1,0 +1,317 @@
+{
+    "tasks": [
+        {
+            "id": "a19",
+            "name": "Load front page",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Topic",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Payment",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Expierience",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Hobbies",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Send Request",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Wait until offer arrives",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Offer recieved",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "All other Offers become Invalid",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Send Status Update every week",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Recieve status update from company",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Internishp is finished",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Tweet to your Friends about the Company",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "mg1",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a19",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p2",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "p2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p2",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a11",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a12",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a13",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a14",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mp2",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a5",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a17",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg3",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a19",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "p4",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "p4",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "p4",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "p4",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a11",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a12",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a13",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a14",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mp4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "a6",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a10",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "a18",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "g5",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "a9",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "mg5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

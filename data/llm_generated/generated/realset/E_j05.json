@@ -1,0 +1,262 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Gather Visa Requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Prepare Visa Application",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Submit Visa Application to BMEIA",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Organize Accommodation and Bank Account",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Receive Rot-Weiss-Rot Card",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Handle Refusal",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Gather Visa Requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Prepare Visa Application",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Submit Visa Application to BMEIA",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Organize Accommodation and Bank Account",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Receive Rot-Weiss-Rot Card",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "Handle Refusal",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mp1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a17",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a19",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg3",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a2",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a6",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "p4",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a10",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a8",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mp4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g5",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g5",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a18",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a20",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg5",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mg3",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

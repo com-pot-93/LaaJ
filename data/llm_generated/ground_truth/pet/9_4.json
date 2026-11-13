@@ -1,0 +1,126 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Coordination Unit finalizes the dates",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Support Officer updates all group calendars",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Support Officer creates meeting folders",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Support Officer ensures all appropriate documents are uploaded to system",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Support Officer advises Committee Members to read all  documents",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Committee Members hold  meeting",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Support Office produces minutes",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Coordination Unit conducts a QA check on the minutes",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Coordination Unit sends QA check to all Committee Members",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Support Officer updates  departmental records",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a9",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a10",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

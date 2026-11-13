@@ -1,0 +1,11 @@
+flowchart LR
+se:startevent:((startevent))-->a1:task:(Create production plan and process order)
+a1:task:(Create production plan and process order)-->a2:task:(Execute MRP)
+a2:task:(Execute MRP)-->a3:task:(Evaluate Capacity)
+a3:task:(Evaluate Capacity)-->a4:task:(Schedule and release proposal)
+a4:task:(Schedule and release proposal)-->a5:task:(Confirm process order)
+a5:task:(Confirm process order)-->a6:task:(Create transfer order or good issue)
+a6:task:(Create transfer order or good issue)-->a7:task:(Confirm good issue)
+a7:task:(Confirm good issue)-->a8:task:(Good Receipt)
+a8:task:(Good Receipt)-->a9:task:(Order Settlement)
+a9:task:(Order Settlement)-->ee:endevent:((endevent))

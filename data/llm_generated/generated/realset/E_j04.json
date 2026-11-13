@@ -1,0 +1,201 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Enter Internship Preferences",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Receive Offers",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Receive Offers",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Invalidate Other Offers",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Write 3 Status Updates",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Receive 3 Company Updates",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Finish Internship",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Tweet Recommendation 1",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Tweet Recommendation 2",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Tweet Recommendation 3",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a4",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "p2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "p2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a13",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a15",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mp2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a21",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "p3",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "p3",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p3",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a25",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a27",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a29",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mp3",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

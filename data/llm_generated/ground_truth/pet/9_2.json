@@ -1,0 +1,171 @@
+{
+    "tasks": [
+        {
+            "id": "a0",
+            "name": "Customer Service Representative (CSR) sends a Mortgage offer",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "CSR waits for a customer reply",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "CSR updates the case details",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "CSR archives the work",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "CSR performs cancellation",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "CSR moves case to administration",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "CSR  generates request for outstanding documents",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a0",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a6",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a11",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a11",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

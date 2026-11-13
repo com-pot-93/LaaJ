@@ -1,0 +1,282 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Collect requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a0",
+            "name": "Send requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "draft received",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Check feasibility",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Refine requirements",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Report for builing permit",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Create order list",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Place order",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Calculate effort",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Get order",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Call friends",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Hire building company",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Build house",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "mg1",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a0",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a22",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a18",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a6",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a21",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p4",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "p4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g5",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g5",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a14",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a8",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a9",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg5",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mp4",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a11",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "esc1",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

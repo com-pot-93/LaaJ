@@ -1,0 +1,100 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Register Claim",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Examine Claim",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Write Settlement Recommendation",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Check Recommendation",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Proceed Claim Handling",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg1",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

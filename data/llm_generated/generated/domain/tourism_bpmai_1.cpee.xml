@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Receive customer request</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Check customer request</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e1">
+    <alternative condition="Loop" eid="e2" language="text/x-ruby">
+      <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e3">
+        <alternative condition="Branch 1" eid="e4" language="text/x-ruby">
+          <call id="a9" endpoint="" a:alt_id="5">
+            <parameters>
+              <label>Manual registration</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Branch 2" eid="e5" language="text/x-ruby">
+          <call id="a11" endpoint="" a:alt_id="6">
+            <parameters>
+              <label>Automatic registration</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+      <loop mode="pre_test" condition="Loop" eid="e6">
+        <call id="a19" endpoint="" a:alt_id="9">
+          <parameters>
+            <label>Search for attraction provider</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e7">
+          <alternative condition="Loop" eid="e8" language="text/x-ruby">
+            <call id="a23" endpoint="" a:alt_id="11">
+              <parameters>
+                <label>Book attraction</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <choose label="{x}" mode="exclusive" a:alt_id="12" eid="e9">
+              <alternative condition="Branch 1" eid="e10" language="text/x-ruby">
+                <call id="a27" endpoint="" a:alt_id="13">
+                  <parameters>
+                    <label>Receive rejection</label>
+                    <method/>
+                    <arguments/>
+                  </parameters>
+                </call>
+              </alternative>
+              <alternative condition="Branch 2" eid="e11" language="text/x-ruby">
+                <call id="a29" endpoint="" a:alt_id="14">
+                  <parameters>
+                    <label>Receive booking confirmation</label>
+                    <method/>
+                    <arguments/>
+                  </parameters>
+                </call>
+              </alternative>
+            </choose>
+            <call id="a31" endpoint="" a:alt_id="15">
+              <parameters>
+                <label>Send confirmation to the customer</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <choose label="{x}" mode="exclusive" a:alt_id="16" eid="e12">
+              <alternative condition="Loop" eid="e13" language="text/x-ruby"/>
+              <alternative condition="Exit" eid="e14" language="text/x-ruby">
+                <escape a:alt_id="-1"/>
+              </alternative>
+            </choose>
+          </alternative>
+          <alternative condition="Branch 2" eid="e15" language="text/x-ruby">
+            <escape a:alt_id="-1"/>
+          </alternative>
+        </choose>
+      </loop>
+    </alternative>
+    <alternative condition="Branch 2" eid="e16" language="text/x-ruby">
+      <call id="a45" endpoint="" a:alt_id="19">
+        <parameters>
+          <label>Send notification to the customer</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+</description>

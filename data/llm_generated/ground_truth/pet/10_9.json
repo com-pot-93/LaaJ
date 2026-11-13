@@ -1,0 +1,176 @@
+{
+    "tasks": [
+        {
+            "id": "a2",
+            "name": "SP / PU / GO request changes to the MPO",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "MPO causes a change",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "MPO reviews the change request",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "MPO rejects the change",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "MPO confirmes the change",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "MPO performs the change",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "MPO reports the implementation to the SP / PU / GO",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "MPO notifies the SP / PU / GO about the failure",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "g1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a3",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "mg1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a7",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mg2",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a10",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g3",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a12",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a13",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg3",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

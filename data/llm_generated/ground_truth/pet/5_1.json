@@ -1,0 +1,115 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "System receives a customer request for a loan amount",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Risk Assessment (RA) Web service assesses the request",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "RA Web service  approves the loan",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "RA Web service  denies the loan",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "RA Web service  send the request to the approver web service",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Customer receives feedback",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a6",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg1",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

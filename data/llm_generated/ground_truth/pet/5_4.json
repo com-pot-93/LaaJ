@@ -1,0 +1,221 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Employee purchases a product",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Employee submits an expense report with a list of items",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Supervisor reviews the expense report",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Supervisor approves the report",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Supervisor moves report to the treasurer",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Treasurer checks receipts",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Treasurer matches the items on the list",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Treasurer  sends report back to the employee",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Employee edits the report",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Treasurer accepts the expenses for processing",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Treasurer confirms the payment",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a3",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a16",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a10",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a13",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a5",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "esc1",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g2",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a5",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

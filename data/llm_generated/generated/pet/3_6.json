@@ -1,0 +1,183 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive Claim",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check Insurance Status",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Inform Rejection",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Evaluate Severity",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Send Relevant Forms",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Receive Returned Forms",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Check Completeness",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Inform Claimant to Update",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Receive Updated Forms",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "Check Completeness",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Register in Claims Management System",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a13",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a15",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a19",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg2",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a23",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a25",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a20",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a7",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a29",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

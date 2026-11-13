@@ -1,0 +1,179 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Diagnose Non Specific Low Back Pain",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Apply Superficial Heat or other Nonpharmocol. Treatments",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Prescribe NSAID or SMR",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Apply Exercise or other Nonpharmacol. Treatments",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Prescribe NSAID",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Prescribe Opioid",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g2",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g1",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a19",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g4",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a23",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg3",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

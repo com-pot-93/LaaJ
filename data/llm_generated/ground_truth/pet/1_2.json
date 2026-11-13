@@ -1,0 +1,186 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "customer brings a defective computer",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "CRS checks the defect",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "CRS hands out a repair cost calculation",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "customer takes computer home",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "CRS checks  the hardware",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "CRS repairs the hardware",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "CRS checks the software",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "CRS configures the software",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "CRS tests  system functionality",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p3",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "p3",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a14",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a15",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mp3",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a9",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg2",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

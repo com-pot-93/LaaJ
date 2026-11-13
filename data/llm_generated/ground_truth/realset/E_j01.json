@@ -1,0 +1,156 @@
+{
+    "tasks": [
+        {
+            "id": "a13",
+            "name": "Receive job application",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Confirm job application",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Rate job application",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Negotiate interview",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Rate job seeker",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Hire prospective customers",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a13",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a2",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mp1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a6",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

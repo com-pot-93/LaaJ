@@ -1,0 +1,586 @@
+{
+    "tasks": [
+        {
+            "id": "a3",
+            "name": "Add \"profiling about logic involved, significance and envisaged consequences of processing\"",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Check if it is possible to determine the period for which personal data will be stored",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Retrieve the criteria used to determine the period",
+            "type": "Task"
+        },
+        {
+            "id": "a37",
+            "name": "Retrieve the period",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Add \"existence of the right to rectify of personal data\"",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Add \"existence of the right to access personal data\"",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Add \"existence of the right to erase personal data\"",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Add \"existence of the right to data portability\"",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Add \"existence of the right to withdraw\"",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Add \"existence of the right to lodge a complaint to a supervisory authority\"",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Check if data has been obtained from Data Subject",
+            "type": "Task"
+        },
+        {
+            "id": "a45",
+            "name": "Retrieve the source from which personal data are originated",
+            "type": "Task"
+        },
+        {
+            "id": "a47",
+            "name": "Initialize empty source",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Check if personal data can be transferred internationally",
+            "type": "Task"
+        },
+        {
+            "id": "a55",
+            "name": "Add \"personal data will be transferred internationally\"",
+            "type": "Task"
+        },
+        {
+            "id": "a57",
+            "name": "Initialize empty transfer info",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Check if recipients are present",
+            "type": "Task"
+        },
+        {
+            "id": "a65",
+            "name": "Retrieve recipients",
+            "type": "Task"
+        },
+        {
+            "id": "a67",
+            "name": "Initialize empty recipients",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Check if legitimate interests are presents",
+            "type": "Task"
+        },
+        {
+            "id": "a75",
+            "name": "Retrieve legitimate interests",
+            "type": "Task"
+        },
+        {
+            "id": "a77",
+            "name": "Initialize empty interests",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Retrieve processing legal basis",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Retrieve processing purposses",
+            "type": "Task"
+        },
+        {
+            "id": "a83",
+            "name": "Retrieve identity and contact details",
+            "type": "Task"
+        },
+        {
+            "id": "a85",
+            "name": "Ask DPO details",
+            "type": "Task"
+        },
+        {
+            "id": "a87",
+            "name": "Receive details From DPO",
+            "type": "Task"
+        },
+        {
+            "id": "a123",
+            "name": "Collect consent information",
+            "type": "Task"
+        },
+        {
+            "id": "a125",
+            "name": "Ask consent",
+            "type": "Task"
+        },
+        {
+            "id": "a129",
+            "name": "Receive negation",
+            "type": "Task"
+        },
+        {
+            "id": "a131",
+            "name": "Receive consent",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg8",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "p1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g2",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g2",
+            "targetRef": "a37"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a35",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a37",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "p1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "p1",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "p1",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "p1",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "p1",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "p1",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a19",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "a45"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g3",
+            "targetRef": "a47"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a45",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a47",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "p1",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a21",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g4",
+            "targetRef": "a55"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g4",
+            "targetRef": "a57"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a55",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a57",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "p1",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a23",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "g5",
+            "targetRef": "a65"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "g5",
+            "targetRef": "a67"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "a65",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a67",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "p1",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "a25",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "g6",
+            "targetRef": "a75"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "g6",
+            "targetRef": "a77"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "a75",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "a77",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "p1",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "p1",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "p1",
+            "targetRef": "p7"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "p7",
+            "targetRef": "a83"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "p7",
+            "targetRef": "a85"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a85",
+            "targetRef": "a87"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a83",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f46",
+            "sourceRef": "a87",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f47",
+            "sourceRef": "a3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f48",
+            "sourceRef": "mg2",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f49",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f50",
+            "sourceRef": "a9",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f51",
+            "sourceRef": "a11",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f52",
+            "sourceRef": "a13",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f53",
+            "sourceRef": "a15",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f54",
+            "sourceRef": "a17",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f55",
+            "sourceRef": "mg3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f56",
+            "sourceRef": "mg4",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f57",
+            "sourceRef": "mg5",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f58",
+            "sourceRef": "mg6",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f59",
+            "sourceRef": "a27",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f60",
+            "sourceRef": "a29",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f61",
+            "sourceRef": "mp7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f62",
+            "sourceRef": "mp1",
+            "targetRef": "a123"
+        },
+        {
+            "id": "f63",
+            "sourceRef": "a123",
+            "targetRef": "a125"
+        },
+        {
+            "id": "f64",
+            "sourceRef": "a125",
+            "targetRef": "g8"
+        },
+        {
+            "id": "f65",
+            "sourceRef": "g8",
+            "targetRef": "a129"
+        },
+        {
+            "id": "f66",
+            "sourceRef": "g8",
+            "targetRef": "a131"
+        },
+        {
+            "id": "f67",
+            "sourceRef": "a129",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f68",
+            "sourceRef": "a131",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f69",
+            "sourceRef": "mg8",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

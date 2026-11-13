@@ -1,0 +1,206 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Collect Machine Data",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Calculate OEE",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Stop Machine",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Send Email to Engineer",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Wait for Restart",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Collect Machine Data",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Calculate OEE",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Stop Machine",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Send Email to Engineer",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Wait for Restart",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Terminate Process",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a11",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mg1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg2",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a2",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a4",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a8",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a10",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a12",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg3",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mg2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a21",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

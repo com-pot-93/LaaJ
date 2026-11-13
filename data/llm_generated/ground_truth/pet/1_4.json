@@ -1,0 +1,160 @@
+{
+    "tasks": [
+        {
+            "id": "a12",
+            "name": "Company decides to go public",
+            "type": "Task"
+        },
+        {
+            "id": "a1",
+            "name": "Company selects the underwriters",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Underwriters prepare a registration statement for the approval of SEC",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Underwriters  check the issue's compliance",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Underwriters begin to firm up the issue price",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Underwriters arrange a road show",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Underwriters awaite approval of registration statement",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Underwriters receive clearance from the SEC",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Underwriters fix the issue price",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Underwriters enter into a firm commitment to buy the stock",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Underwriters offer stock to the public",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a12",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a3",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p1",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a5",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a13",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mp1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a9",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a10",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

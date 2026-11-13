@@ -1,0 +1,1232 @@
+{
+    "m2m": {
+        "all": {
+            "evaluations": 4800,
+            "categories": {
+                "LABEL_DIFFERENCES": 3915,
+                "CONNECTION_DIFFERENCES": 3431,
+                "ACTIVITY_DIFFERENCES": 3431,
+                "GATEWAY_DIFFERENCES": 2988,
+                "EVENT_DIFFERENCES": 693,
+                "OTHER_DIFFERENCES": 39
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 396
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 598,
+                    "CONNECTION_DIFFERENCES": 53,
+                    "GATEWAY_DIFFERENCES": 22,
+                    "ACTIVITY_DIFFERENCES": 11,
+                    "EVENT_DIFFERENCES": 1,
+                    "OTHER_DIFFERENCES": 0
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 213,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 99,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 70,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 68,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 66,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 47,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES": 27,
+                    "EVENT_DIFFERENCES + LABEL_DIFFERENCES": 12,
+                    "CONNECTION_DIFFERENCES + OTHER_DIFFERENCES": 7,
+                    "GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 2,
+                    "EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 1,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "EVENT_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 301,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 194,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 63,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 35,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 29,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES": 11,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 4,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 2,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 2,
+                    "EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 2,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 0,
+                    "EVENT_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 1880,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 32,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 22,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 2,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 1,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 1,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 506,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 13,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 0
+                },
+                "6": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 7
+                }
+            }
+        },
+        "bpmn_anthropic": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 360,
+                "CONNECTION_DIFFERENCES": 283,
+                "ACTIVITY_DIFFERENCES": 280,
+                "GATEWAY_DIFFERENCES": 245
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 20
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 60
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 35,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 15,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 10
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 25,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 15,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 10,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 2
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 208
+                }
+            }
+        },
+        "bpmn_gemini": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 369,
+                "CONNECTION_DIFFERENCES": 306,
+                "ACTIVITY_DIFFERENCES": 277,
+                "GATEWAY_DIFFERENCES": 257,
+                "EVENT_DIFFERENCES": 4
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 20
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 62
+                },
+                "2": {
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 21,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 12,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 2
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 26,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 15,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 4
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 229
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 4
+                }
+            }
+        },
+        "bpmn_gpt": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 380,
+                "CONNECTION_DIFFERENCES": 296,
+                "GATEWAY_DIFFERENCES": 288,
+                "ACTIVITY_DIFFERENCES": 280
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 20
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 60
+                },
+                "2": {
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 13,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 10
+                },
+                "3": {
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 27,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 22,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 1
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 247
+                }
+            }
+        },
+        "cpee_anthropic": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 320,
+                "GATEWAY_DIFFERENCES": 255,
+                "ACTIVITY_DIFFERENCES": 250,
+                "CONNECTION_DIFFERENCES": 233,
+                "EVENT_DIFFERENCES": 32
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 25
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 60,
+                    "GATEWAY_DIFFERENCES": 10,
+                    "CONNECTION_DIFFERENCES": 10
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 30,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 20,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES": 15,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 5,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 5
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 20,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 15,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 15
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 138,
+                    "ACTIVITY_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 2
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 30
+                }
+            }
+        },
+        "cpee_gemini": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 278,
+                "CONNECTION_DIFFERENCES": 273,
+                "ACTIVITY_DIFFERENCES": 254,
+                "GATEWAY_DIFFERENCES": 253,
+                "EVENT_DIFFERENCES": 33,
+                "OTHER_DIFFERENCES": 12
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 71
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 28,
+                    "GATEWAY_DIFFERENCES": 5,
+                    "CONNECTION_DIFFERENCES": 1
+                },
+                "2": {
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 21,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 16,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "CONNECTION_DIFFERENCES + OTHER_DIFFERENCES": 3
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 22,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 14,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 8,
+                    "EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 2
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 164,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 1,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 1,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 1
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 26,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 3
+                },
+                "6": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 3
+                }
+            }
+        },
+        "cpee_gpt": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 328,
+                "GATEWAY_DIFFERENCES": 285,
+                "CONNECTION_DIFFERENCES": 273,
+                "ACTIVITY_DIFFERENCES": 256,
+                "EVENT_DIFFERENCES": 36,
+                "OTHER_DIFFERENCES": 27
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 23
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 36,
+                    "GATEWAY_DIFFERENCES": 7,
+                    "CONNECTION_DIFFERENCES": 4,
+                    "ACTIVITY_DIFFERENCES": 4
+                },
+                "2": {
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 29,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 17,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 6,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 4,
+                    "CONNECTION_DIFFERENCES + OTHER_DIFFERENCES": 4,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 2,
+                    "GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 2
+                },
+                "3": {
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 23,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 18,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + OTHER_DIFFERENCES": 4,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 4,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 2,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 1,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 1
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 154,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 2,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 1
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 28,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 10
+                },
+                "6": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + OTHER_DIFFERENCES": 4
+                }
+            }
+        },
+        "mermaid_js_anthropic": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 351,
+                "CONNECTION_DIFFERENCES": 265,
+                "GATEWAY_DIFFERENCES": 245,
+                "ACTIVITY_DIFFERENCES": 245,
+                "EVENT_DIFFERENCES": 114
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 18
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 72
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 30,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 9,
+                    "EVENT_DIFFERENCES + LABEL_DIFFERENCES": 9,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 6,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 1,
+                    "EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 1
+                },
+                "3": {
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 20,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 14,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 10,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 5
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 106,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 5
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 84
+                }
+            }
+        },
+        "mermaid_js_gemini": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 307,
+                "CONNECTION_DIFFERENCES": 296,
+                "ACTIVITY_DIFFERENCES": 253,
+                "GATEWAY_DIFFERENCES": 236,
+                "EVENT_DIFFERENCES": 110
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 48
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 47,
+                    "CONNECTION_DIFFERENCES": 5
+                },
+                "2": {
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 16,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 10,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 7,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES": 1,
+                    "EVENT_DIFFERENCES + LABEL_DIFFERENCES": 1
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 30,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 14,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 12,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 8
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 116,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 1
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 84
+                }
+            }
+        },
+        "mermaid_js_gpt": {
+            "evaluations": 400,
+            "categories": {
+                "LABEL_DIFFERENCES": 351,
+                "CONNECTION_DIFFERENCES": 274,
+                "ACTIVITY_DIFFERENCES": 256,
+                "GATEWAY_DIFFERENCES": 246,
+                "EVENT_DIFFERENCES": 109
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 25
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 73,
+                    "ACTIVITY_DIFFERENCES": 2,
+                    "CONNECTION_DIFFERENCES": 2,
+                    "EVENT_DIFFERENCES": 1
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 19,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 4,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 2,
+                    "EVENT_DIFFERENCES + LABEL_DIFFERENCES": 2,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES": 1,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 1
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 17,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 14,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES": 10,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 7,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 3
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 121,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 7
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 84
+                }
+            }
+        },
+        "simple_json_anthropic": {
+            "evaluations": 400,
+            "categories": {
+                "CONNECTION_DIFFERENCES": 304,
+                "LABEL_DIFFERENCES": 276,
+                "ACTIVITY_DIFFERENCES": 270,
+                "GATEWAY_DIFFERENCES": 213,
+                "EVENT_DIFFERENCES": 85
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 36
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 35,
+                    "CONNECTION_DIFFERENCES": 14,
+                    "ACTIVITY_DIFFERENCES": 5
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 24,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 20,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 20,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 10,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 5
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 27,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 10,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 1,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 1
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 128,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 13
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 51
+                }
+            }
+        },
+        "simple_json_gemini": {
+            "evaluations": 400,
+            "categories": {
+                "CONNECTION_DIFFERENCES": 316,
+                "LABEL_DIFFERENCES": 290,
+                "ACTIVITY_DIFFERENCES": 270,
+                "GATEWAY_DIFFERENCES": 213,
+                "EVENT_DIFFERENCES": 85
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 45
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 25,
+                    "CONNECTION_DIFFERENCES": 15
+                },
+                "2": {
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 20,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 15,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 14,
+                    "CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 5,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 5
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 48,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 15
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 128,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 10
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 55
+                }
+            }
+        },
+        "simple_json_gpt": {
+            "evaluations": 400,
+            "categories": {
+                "CONNECTION_DIFFERENCES": 312,
+                "LABEL_DIFFERENCES": 305,
+                "ACTIVITY_DIFFERENCES": 270,
+                "GATEWAY_DIFFERENCES": 252,
+                "EVENT_DIFFERENCES": 85
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 45
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 40,
+                    "CONNECTION_DIFFERENCES": 2
+                },
+                "2": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES": 15,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 9,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES": 5,
+                    "ACTIVITY_DIFFERENCES + LABEL_DIFFERENCES": 3
+                },
+                "3": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + LABEL_DIFFERENCES": 37,
+                    "CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 14,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES": 9,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 5,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + LABEL_DIFFERENCES": 1
+                },
+                "4": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 141,
+                    "CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 9,
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES": 5
+                },
+                "5": {
+                    "ACTIVITY_DIFFERENCES + CONNECTION_DIFFERENCES + EVENT_DIFFERENCES + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 60
+                }
+            }
+        }
+    },
+    "m2t": {
+        "all": {
+            "evaluations": 4920,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 3088,
+                "ADDED_INFORMATION": 2727,
+                "GATEWAY_DIFFERENCES": 2453,
+                "MISSING_INFORMATION": 2366,
+                "LABEL_DIFFERENCES": 1764
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 424
+                },
+                "1": {
+                    "ADDED_INFORMATION": 297,
+                    "MISSING_INFORMATION": 201,
+                    "LABEL_DIFFERENCES": 174,
+                    "STRUCTURE_DIFFERENCES": 105,
+                    "GATEWAY_DIFFERENCES": 20
+                },
+                "2": {
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 255,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 158,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 154,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 153,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 149,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 147,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 68,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 59,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 37,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 27
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 383,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 305,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 119,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 118,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 75,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 62,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 43,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 41,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 28,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 24
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 453,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 167,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 125,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 82,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 50
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 417
+                }
+            }
+        },
+        "bpmn_anthropic": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 308,
+                "GATEWAY_DIFFERENCES": 215,
+                "ADDED_INFORMATION": 191,
+                "LABEL_DIFFERENCES": 152,
+                "MISSING_INFORMATION": 121
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 28
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 26,
+                    "STRUCTURE_DIFFERENCES": 10,
+                    "MISSING_INFORMATION": 9,
+                    "GATEWAY_DIFFERENCES": 1
+                },
+                "2": {
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 71,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 19,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 16,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 12,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 12,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 11,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 6,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 1
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 56,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 26,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 20,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 8
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 23,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 22,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 13
+                }
+            }
+        },
+        "bpmn_gemini": {
+            "evaluations": 410,
+            "categories": {
+                "ADDED_INFORMATION": 313,
+                "STRUCTURE_DIFFERENCES": 294,
+                "GATEWAY_DIFFERENCES": 219,
+                "LABEL_DIFFERENCES": 189,
+                "MISSING_INFORMATION": 187
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 18
+                },
+                "1": {
+                    "ADDED_INFORMATION": 30,
+                    "MISSING_INFORMATION": 14,
+                    "STRUCTURE_DIFFERENCES": 8,
+                    "LABEL_DIFFERENCES": 8
+                },
+                "2": {
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 24,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 14,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 13,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 12,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 9,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 8,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 1
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 46,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 9,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 9,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 8,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 7,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 5,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 4,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 4
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 38,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 29,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 16,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 4,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 4
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 68
+                }
+            }
+        },
+        "bpmn_gpt": {
+            "evaluations": 410,
+            "categories": {
+                "ADDED_INFORMATION": 290,
+                "MISSING_INFORMATION": 231,
+                "GATEWAY_DIFFERENCES": 193,
+                "STRUCTURE_DIFFERENCES": 189,
+                "LABEL_DIFFERENCES": 133
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 19
+                },
+                "1": {
+                    "ADDED_INFORMATION": 66,
+                    "MISSING_INFORMATION": 20,
+                    "LABEL_DIFFERENCES": 8,
+                    "GATEWAY_DIFFERENCES": 3,
+                    "STRUCTURE_DIFFERENCES": 2
+                },
+                "2": {
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 28,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 23,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 10,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 8,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 7,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 3,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 3,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 1
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 31,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 23,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 17,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 3,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 3,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 3,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 1,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 51,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 7,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 2
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 37
+                }
+            }
+        },
+        "cpee_anthropic": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 260,
+                "GATEWAY_DIFFERENCES": 191,
+                "MISSING_INFORMATION": 151,
+                "LABEL_DIFFERENCES": 119,
+                "ADDED_INFORMATION": 97
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 51
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 27,
+                    "STRUCTURE_DIFFERENCES": 13,
+                    "GATEWAY_DIFFERENCES": 5,
+                    "MISSING_INFORMATION": 5
+                },
+                "2": {
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 73,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 36,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 23,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 15,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 11,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 10,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 10,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 10,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 4,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 4
+                },
+                "3": {
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 36,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 20,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 5,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 5
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 4,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 3
+                }
+            }
+        },
+        "cpee_gemini": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 295,
+                "ADDED_INFORMATION": 243,
+                "MISSING_INFORMATION": 222,
+                "GATEWAY_DIFFERENCES": 174,
+                "LABEL_DIFFERENCES": 118
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 32
+                },
+                "1": {
+                    "ADDED_INFORMATION": 25,
+                    "MISSING_INFORMATION": 21,
+                    "STRUCTURE_DIFFERENCES": 16,
+                    "GATEWAY_DIFFERENCES": 6,
+                    "LABEL_DIFFERENCES": 5
+                },
+                "2": {
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 38,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 23,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 14,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 8,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 5,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 4,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 3
+                },
+                "3": {
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 25,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 17,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 7,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 6,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 5,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 3,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 2,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 47,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 23,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 18,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 11
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 30
+                }
+            }
+        },
+        "cpee_gpt": {
+            "evaluations": 410,
+            "categories": {
+                "MISSING_INFORMATION": 255,
+                "GATEWAY_DIFFERENCES": 194,
+                "ADDED_INFORMATION": 186,
+                "STRUCTURE_DIFFERENCES": 181,
+                "LABEL_DIFFERENCES": 78
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 64
+                },
+                "1": {
+                    "MISSING_INFORMATION": 38,
+                    "ADDED_INFORMATION": 27,
+                    "STRUCTURE_DIFFERENCES": 8,
+                    "GATEWAY_DIFFERENCES": 3,
+                    "LABEL_DIFFERENCES": 1
+                },
+                "2": {
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 25,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 13,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 11,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 9,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 6,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 6,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 6,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 3,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 3,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 2
+                },
+                "3": {
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 49,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 17,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 14,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 9,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 7,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 4,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 2,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 2,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 38,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 14,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 6,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 1
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 14
+                }
+            }
+        },
+        "mermaid_js_anthropic": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 265,
+                "LABEL_DIFFERENCES": 182,
+                "GATEWAY_DIFFERENCES": 171,
+                "ADDED_INFORMATION": 152,
+                "MISSING_INFORMATION": 127
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 60
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 17,
+                    "STRUCTURE_DIFFERENCES": 10,
+                    "MISSING_INFORMATION": 5
+                },
+                "2": {
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 40,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 32,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 22,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 20,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 14,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 12,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 6,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 1
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 31,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 28,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 22,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 19,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 13,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 5,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 4
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 1
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15
+                }
+            }
+        },
+        "mermaid_js_gemini": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 304,
+                "ADDED_INFORMATION": 263,
+                "GATEWAY_DIFFERENCES": 255,
+                "MISSING_INFORMATION": 217,
+                "LABEL_DIFFERENCES": 199
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 32
+                },
+                "1": {
+                    "ADDED_INFORMATION": 18,
+                    "LABEL_DIFFERENCES": 11,
+                    "STRUCTURE_DIFFERENCES": 10,
+                    "MISSING_INFORMATION": 7
+                },
+                "2": {
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 14,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 14,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 6,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 5,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 4,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 3,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 1
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 21,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 21,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 11,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 9,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 8,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 8,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 7,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 5,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 3,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 43,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 40,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 12,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 7
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 72
+                }
+            }
+        },
+        "mermaid_js_gpt": {
+            "evaluations": 410,
+            "categories": {
+                "ADDED_INFORMATION": 279,
+                "MISSING_INFORMATION": 224,
+                "GATEWAY_DIFFERENCES": 213,
+                "STRUCTURE_DIFFERENCES": 173,
+                "LABEL_DIFFERENCES": 118
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 29
+                },
+                "1": {
+                    "ADDED_INFORMATION": 75,
+                    "MISSING_INFORMATION": 27,
+                    "LABEL_DIFFERENCES": 3,
+                    "STRUCTURE_DIFFERENCES": 2,
+                    "GATEWAY_DIFFERENCES": 1
+                },
+                "2": {
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 18,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 14,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 8,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 6,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 5,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 5,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 3,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 1
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 29,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 25,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 12,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 7,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 4,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 2,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 1,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 1,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 41,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 20,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 9,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 4
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 40
+                }
+            }
+        },
+        "simple_json_anthropic": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 274,
+                "GATEWAY_DIFFERENCES": 189,
+                "LABEL_DIFFERENCES": 175,
+                "ADDED_INFORMATION": 172,
+                "MISSING_INFORMATION": 132
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 39
+                },
+                "1": {
+                    "LABEL_DIFFERENCES": 51,
+                    "STRUCTURE_DIFFERENCES": 16,
+                    "ADDED_INFORMATION": 3
+                },
+                "2": {
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 35,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 19,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 14,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 6,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 5,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 5,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 3
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 65,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 34,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 19,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 12,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 11,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 5,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 5,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 39,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 10
+                }
+            }
+        },
+        "simple_json_gemini": {
+            "evaluations": 410,
+            "categories": {
+                "STRUCTURE_DIFFERENCES": 336,
+                "ADDED_INFORMATION": 295,
+                "MISSING_INFORMATION": 239,
+                "GATEWAY_DIFFERENCES": 235,
+                "LABEL_DIFFERENCES": 212
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 20
+                },
+                "1": {
+                    "MISSING_INFORMATION": 17,
+                    "ADDED_INFORMATION": 10,
+                    "STRUCTURE_DIFFERENCES": 7,
+                    "LABEL_DIFFERENCES": 5
+                },
+                "2": {
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 16,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 16,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 12,
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 8,
+                    "LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 6,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 5
+                },
+                "3": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 36,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 22,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 18,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 15,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 7,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 2,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 2
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 34,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 34,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 16
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 102
+                }
+            }
+        },
+        "simple_json_gpt": {
+            "evaluations": 410,
+            "categories": {
+                "MISSING_INFORMATION": 260,
+                "ADDED_INFORMATION": 246,
+                "STRUCTURE_DIFFERENCES": 209,
+                "GATEWAY_DIFFERENCES": 204,
+                "LABEL_DIFFERENCES": 89
+            },
+            "combinations": {
+                "0": {
+                    "NONE": 32
+                },
+                "1": {
+                    "ADDED_INFORMATION": 43,
+                    "MISSING_INFORMATION": 38,
+                    "LABEL_DIFFERENCES": 12,
+                    "STRUCTURE_DIFFERENCES": 3,
+                    "GATEWAY_DIFFERENCES": 1
+                },
+                "2": {
+                    "ADDED_INFORMATION + MISSING_INFORMATION": 31,
+                    "GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 13,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES": 12,
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION": 8,
+                    "MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 7,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + STRUCTURE_DIFFERENCES": 2,
+                    "LABEL_DIFFERENCES + MISSING_INFORMATION": 2,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 1
+                },
+                "3": {
+                    "GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 38,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + STRUCTURE_DIFFERENCES": 17,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION": 12,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 5,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION": 4,
+                    "ADDED_INFORMATION + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 3,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES": 1,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 1
+                },
+                "4": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 78,
+                    "GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 8,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + STRUCTURE_DIFFERENCES": 4,
+                    "ADDED_INFORMATION + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 4,
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION": 1
+                },
+                "5": {
+                    "ADDED_INFORMATION + GATEWAY_DIFFERENCES + LABEL_DIFFERENCES + MISSING_INFORMATION + STRUCTURE_DIFFERENCES": 26
+                }
+            }
+        }
+    }
+}

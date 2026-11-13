@@ -1,0 +1,5002 @@
+{
+    "domain": {
+        "gdpr_1_data_breach": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.930301578715444
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.596586296334863
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.904313357546926
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.78,
+                        "truthfulness": 0.62,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.22299598902464
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 25.539246072992682
+                }
+            }
+        },
+        "gdpr_2_consent_to_use_the_data": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.87,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 29.75974490493536
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.87,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 26.339935837313533
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.87,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.919329999014735
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.87,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 23.78257428482175
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.97,
+                        "truthfulness": 0.87,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 21.667966501787305
+                }
+            }
+        },
+        "gdpr_4_right_of_portability": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.177584057673812
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.96,
+                        "truthfulness": 0.93,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.281311798840761
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.789646252989769
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.448180278763175
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.91,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.121622882783413
+                }
+            }
+        },
+        "gdpr_5_right_to_withdraw": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 16.204191252589226
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.882534997537732
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 12.793386336416006
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.37776829302311
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 11.117945283651352
+                }
+            }
+        },
+        "gdpr_7_right_to_be_forgotten": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.751836312934756
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.386044701561332
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.51979785040021
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.89225909858942
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.930267468094826
+                }
+            }
+        },
+        "healthcare_bpmai_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 35.94655407965183
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 25.21433256007731
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.78,
+                        "truthfulness": 0.62,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.37469395250082
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.72,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 28.398586452007294
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 24.58477109670639
+                }
+            }
+        },
+        "healthcare_bpmai_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.49484539590776
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.81572112813592
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 20.60981504805386
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.4,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.400665601715446
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 23.2666223552078
+                }
+            }
+        },
+        "healthcare_klessascheck_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.656896518543363
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.903994277119637
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 12.754008332267404
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.543573327362537
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.881898803636432
+                }
+            }
+        },
+        "healthcare_pufahl_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.9706345833838
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.99,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.25265829078853
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.30254292488098
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.174519080668688
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.35,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.578538117930293
+                }
+            }
+        },
+        "healthcare_redeker_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.886670026928186
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.59866400808096
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.408622140064836
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.058314748108387
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.74531251937151
+                }
+            }
+        },
+        "logistics_bpmai_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.97,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.70980765298009
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 19.50028556212783
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.04174282029271
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 21.844956394284964
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 20.680656395852566
+                }
+            }
+        },
+        "logistics_cimino_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 12.280601406469941
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.213720988482237
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 12.104623453691602
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.886547705158591
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 15.644163180142641
+                }
+            }
+        },
+        "logistics_ferreira_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 25.487564019858837
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.2,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 26.5119759272784
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 23.32608149200678
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.79,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.822180822491646
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.79,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 23.756793584674597
+                }
+            }
+        },
+        "logistics_klessascheck_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.2292918600142
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.36,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 19.447530770674348
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.327123807743192
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.760233592242002
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 18.191171064972878
+                }
+            }
+        },
+        "logistics_signavio_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.94,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.107718586921692
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.35,
+                        "truthfulness": 0.33,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 23.360042463988066
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 18.049218866974115
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.96,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 14.715250225737691
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.309072645381093
+                }
+            }
+        },
+        "manufacturing_aris_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 25.737063452601433
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 24.429462675005198
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 24.44777667708695
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.5,
+                        "truthfulness": 0.3,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.268325040116906
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.25,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.7643505576998
+                }
+            }
+        },
+        "manufacturing_bpmai_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.014453265815973
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 6.17630978859961
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.705945827066898
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.47899105027318
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.91,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.546201135963202
+                }
+            }
+        },
+        "manufacturing_bpmai_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.10948845371604
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.62943702749908
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 14.482686320319772
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.82186353392899
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.16274644061923
+                }
+            }
+        },
+        "manufacturing_lodhi_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.84,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.8858971465379
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.83959891460836
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.88,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.601785467937589
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.648271936923265
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.581276901066303
+                }
+            }
+        },
+        "manufacturing_tomaskova_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 17.55484899505973
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.68,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.134054027497768
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.959142407402396
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.893477158620954
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.36929033882916
+                }
+            }
+        },
+        "tourism_bpmai_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.4431907646358
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.88259918615222
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.03827802464366
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.62,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.88271214440465
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.90782361291349
+                }
+            }
+        },
+        "tourism_corradini_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 23.074647534638643
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.54567792825401
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 19.879228627309203
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.78,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 20.518923519179225
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 18.05830980837345
+                }
+            }
+        },
+        "tourism_fouad_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.99,
+                        "truthfulness": 0.99,
+                        "source_of_difference": []
+                    },
+                    "time": 23.938029682263732
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 22.81309491582215
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.464982694014907
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.98461262881756
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.78,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.31661557778716
+                }
+            }
+        },
+        "tourism_milanovic_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.089165907353163
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.572085183113813
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.86731587164104
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.993266297504306
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.942633686587214
+                }
+            }
+        },
+        "tourism_web_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.545587727800012
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.264151329174638
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.902377607300878
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.085810862481594
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.56504631228745
+                }
+            }
+        }
+    },
+    "pet": {
+        "10_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.931906931102276
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 3.680012436583638
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 4.824694283306599
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 3.316895393654704
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 7.200960977002978
+                }
+            }
+        },
+        "10_10": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.863041035830975
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.07966722920537
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.24054810963571
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.539709446951747
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 11.513621440157294
+                }
+            }
+        },
+        "10_11": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.744864143431187
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.88,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.042687131091952
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.88,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 10.378953818231821
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.375476516783237
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.760335421189666
+                }
+            }
+        },
+        "10_12": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 6.767223853617907
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 5.815296975895762
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 5.432339068502188
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 5.33354533277452
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 5.955850388854742
+                }
+            }
+        },
+        "10_13": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 6.120710581541061
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.175686553120613
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 5.399221176281571
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 6.55606459453702
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.043964643031359
+                }
+            }
+        },
+        "10_14": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.990436354652047
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.55,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.273091059178114
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.022364752367139
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.598868161439896
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.825157860293984
+                }
+            }
+        },
+        "10_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 5.062365029007196
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 4.699389021843672
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 5.2557187136262655
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 7.306983092799783
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 6.363346299156547
+                }
+            }
+        },
+        "10_6": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 3.8926320169121027
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 3.9175750613212585
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 5.026757203042507
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 5.035590197890997
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 5.612080339342356
+                }
+            }
+        },
+        "10_7": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 12.205982279032469
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 7.849170824512839
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 6.514446638524532
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 7.00869826413691
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.378882460296154
+                }
+            }
+        },
+        "10_8": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.069366065785289
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 6.257444487884641
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.97,
+                        "truthfulness": 0.99,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.584447737783194
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.222318895161152
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.951694454997778
+                }
+            }
+        },
+        "1_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.78,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.393856264650822
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.040213426575065
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.87,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 14.372019750997424
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.81365016102791
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.93,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 14.600518610328436
+                }
+            }
+        },
+        "1_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.433088919147849
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.047844860702753
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.4,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.77530456148088
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.751993721351027
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.45,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.186960864812136
+                }
+            }
+        },
+        "1_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.35183939523995
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.95984966866672
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.54995460063219
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 14.07850275374949
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.262275328859687
+                }
+            }
+        },
+        "1_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.86,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.757161159068346
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.007446605712175
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.242683827877045
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.669488536193967
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.86,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.67833454348147
+                }
+            }
+        },
+        "2_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.678215900436044
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.86,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 20.404617423191667
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.86,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.615456625819206
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.86,
+                        "truthfulness": 0.93,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 19.854039350524545
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.189994467422366
+                }
+            }
+        },
+        "2_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.82,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.996833119541407
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.72,
+                        "truthfulness": 0.88,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 22.21816168539226
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.72,
+                        "truthfulness": 0.84,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 19.992065642029047
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.720768123865128
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.62,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 21.332486160099506
+                }
+            }
+        },
+        "3_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 8.012995790690184
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 6.951162051409483
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 6.156793659552932
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.565762154757977
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.880456995218992
+                }
+            }
+        },
+        "3_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.94,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.34274765662849
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 8.86870719306171
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.749769974499941
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.236151058226824
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.41226445697248
+                }
+            }
+        },
+        "3_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.697815541177988
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.918332163244486
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.75223451666534
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 14.43015569448471
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.395345760509372
+                }
+            }
+        },
+        "3_6": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.253129355609417
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.898188782855868
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 11.396721249446273
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 12.636898992583156
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.77873087488115
+                }
+            }
+        },
+        "3_7": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.71,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.686307465657592
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.83,
+                        "truthfulness": 0.71,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.061906581744552
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.86,
+                        "truthfulness": 0.71,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.478041747584939
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.450857179239392
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.86,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.126777052879333
+                }
+            }
+        },
+        "3_8": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.020828986540437
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.82,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.835551928728819
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.804128393530846
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.82,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.216625129804015
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.442346820607781
+                }
+            }
+        },
+        "5_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 8.332060487940907
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.78,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.844078853726387
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 9.38396256044507
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.845521168783307
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 9.25743748061359
+                }
+            }
+        },
+        "5_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.45,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.62450509890914
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.059126982465386
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.946262745186687
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.24836926907301
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.113068012520671
+                }
+            }
+        },
+        "6_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.568554315716028
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.62,
+                        "truthfulness": 0.48,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.653661362826824
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.053558314219117
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.21183181554079
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.58,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.53385149501264
+                }
+            }
+        },
+        "6_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.102353246882558
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.323437251150608
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.186623580753803
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.938379330560565
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.83,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 12.824052711948752
+                }
+            }
+        },
+        "6_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.96,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 9.09686416015029
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 9.20064721442759
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 11.586272940039635
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.966492936015129
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 11.755137307569385
+                }
+            }
+        },
+        "6_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.145007763057947
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 13.788604805245996
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.86,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 19.44266007654369
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.93,
+                        "truthfulness": 0.56,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 15.734151950106025
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.68,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.042847217991948
+                }
+            }
+        },
+        "7_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.326611211523414
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.486720623448491
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.580199863761663
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.007299723103642
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.536844266578555
+                }
+            }
+        },
+        "8_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 14.407356137409806
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.186985282227397
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 8.867308869957924
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.98,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.198029074817896
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.548643350601196
+                }
+            }
+        },
+        "9_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.828910291194916
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.58,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.41680166311562
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.62,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.104768600314856
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.45,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.003311416134238
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.88,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.544898599386215
+                }
+            }
+        },
+        "9_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.235492004081607
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.4139991998672485
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.539712481200695
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.644733915105462
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.93,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.376238463446498
+                }
+            }
+        },
+        "9_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.033406680449843
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.94211251102388
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.996846906840801
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.673020692542195
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.41162415407598
+                }
+            }
+        }
+    },
+    "realset": {
+        "E_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.35,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.740477068349719
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.4,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.867902714759111
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.55,
+                        "truthfulness": 0.4,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.83172651566565
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.4,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.567583745345473
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.45,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.59877840615809
+                }
+            }
+        },
+        "E_j02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.121784280985594
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.78,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 12.27830315567553
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.67,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.142576741054654
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 7.9018943049013615
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 9.976977476850152
+                }
+            }
+        },
+        "E_j03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.25,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.779513169080019
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.2,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.02601733803749
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.25,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.425101293250918
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.32,
+                        "truthfulness": 0.86,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 7.280352391302586
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.3,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.709417700767517
+                }
+            }
+        },
+        "E_j04": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.5,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.89137639850378
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.5,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.268393034115434
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.55,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.467241590842605
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.035939613357186
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.303048171103
+                }
+            }
+        },
+        "E_j05": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.35,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.779533952474594
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.45,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.904846802353859
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.4,
+                        "truthfulness": 0.45,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.02807492017746
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.4,
+                        "truthfulness": 0.3,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 6.5939833503216505
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.3,
+                        "truthfulness": 0.4,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.08068055473268
+                }
+            }
+        },
+        "G_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.664707301184535
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.218064526095986
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.629751104861498
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.95997997932136
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.196615727618337
+                }
+            }
+        },
+        "G_g03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 12.706805868074298
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.840949159115553
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.96,
+                        "truthfulness": 0.94,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.931303223595023
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "truthfulness": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.747483428567648
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 15.916957031935453
+                }
+            }
+        },
+        "G_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.774613551795483
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.050593454390764
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.357989609241486
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 18.787692490965128
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.095512460917234
+                }
+            }
+        },
+        "M_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.82,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.708812169730663
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.98748104274273
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.716830709949136
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.737140592187643
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.93,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.446167770773172
+                }
+            }
+        },
+        "M_g02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.175765676423907
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.975006712600589
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.78,
+                        "truthfulness": 0.68,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.072523854672909
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.68,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.932596491649747
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.58,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.059550514444709
+                }
+            }
+        },
+        "M_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.287039838731289
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.523699585348368
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.257893931120634
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.895052766427398
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.68,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.904105205088854
+                }
+            }
+        },
+        "M_j02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.72,
+                        "truthfulness": 0.88,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.01605330966413
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.65,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.217642867937684
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.152851147577167
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.488637126982212
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.19833604246378
+                }
+            }
+        },
+        "M_j03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.249693499878049
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.934460584074259
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.435841741040349
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.55,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.609751237556338
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.386613266542554
+                }
+            }
+        },
+        "M_k05": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 11.954714527353644
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 11.493697844445705
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 10.97560577839613
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.203816883265972
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 1.0,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 12.804327309131622
+                }
+            }
+        },
+        "R_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.355924885720015
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.286857709288597
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.48203307390213
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.179272944107652
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.778539439663291
+                }
+            }
+        },
+        "R_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.451627807691693
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.068999912589788
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.78,
+                        "truthfulness": 0.58,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.217299608513713
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.152081711217761
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.673843579366803
+                }
+            }
+        },
+        "R_j02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 6.238123830407858
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.98,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 7.097138388082385
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.970414379611611
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.75516096688807
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.97,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 8.760078303515911
+                }
+            }
+        },
+        "R_j03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.82,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION"
+                        ]
+                    },
+                    "time": 11.37893796339631
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.442808942869306
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.204245680943131
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.85,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.272354856133461
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.198025699704885
+                }
+            }
+        },
+        "R_j04": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.65,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.891557704657316
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 20.280805326998234
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.836445549502969
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.78,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.100039580836892
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 19.306744154542685
+                }
+            }
+        },
+        "V_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.166658941656351
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.909742455929518
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.9,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.028630008921027
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.92,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.51098750345409
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.95,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.891052953898907
+                }
+            }
+        },
+        "V_k08": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.94,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.132895288988948
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.86,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.000352077186108
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.88,
+                        "truthfulness": 0.82,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.947254134342074
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.92,
+                        "truthfulness": 0.82,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.384647658094764
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.30332463979721
+                }
+            }
+        },
+        "V_k09": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.348723880946636
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.75,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.683783784508705
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "truthfulness": 0.7,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 17.040224842727184
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.72,
+                        "truthfulness": 0.58,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.623011076822877
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.95182841643691
+                }
+            }
+        },
+        "X_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.86,
+                        "truthfulness": 0.74,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.68571374565363
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.78,
+                        "source_of_difference": [
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "MISSING_INFORMATION"
+                        ]
+                    },
+                    "time": 12.827022425830364
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.78,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.407530352473259
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 16.741381818428636
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.8,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 13.997300051152706
+                }
+            }
+        },
+        "X_g03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "relevance": 0.85,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 14.311007553711534
+                },
+                "1": {
+                    "evaluation": {
+                        "relevance": 0.8,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.126614509150386
+                },
+                "2": {
+                    "evaluation": {
+                        "relevance": 0.75,
+                        "truthfulness": 0.6,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.360845264047384
+                },
+                "3": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.5,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.756628934293985
+                },
+                "4": {
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "truthfulness": 0.55,
+                        "source_of_difference": [
+                            "MISSING_INFORMATION",
+                            "ADDED_INFORMATION",
+                            "STRUCTURE_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 15.727113945409656
+                }
+            }
+        }
+    }
+}

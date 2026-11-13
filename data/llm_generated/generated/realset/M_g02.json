@@ -1,0 +1,196 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Develop basic design",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Order Lego brick sets",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Sort parts into containers",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Build subcomponent",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Reorder individual parts",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Build subcomponent",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Test subcomponent",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Redesign and rebuild",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Test subcomponent",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Assemble subcomponents",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a13",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a10",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a17",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mg3",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a21",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a18",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "p1",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mp1",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a29",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <parallel wait="-1" cancel="last" a:alt_id="1" eid="e1">
+    <parallel_branch eid="e2">
+      <choose label="{x}" mode="exclusive" a:alt_id="2" eid="e3">
+        <alternative condition="MPOO sends bill" eid="e4" language="text/x-ruby">
+          <call id="a11" endpoint="" a:alt_id="6">
+            <parameters>
+              <label>GO examines bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No bill" eid="e5" language="text/x-ruby">
+          <call id="a13" endpoint="" a:alt_id="7">
+            <parameters>
+              <label>Skip MPOO bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e6">
+      <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e7">
+        <alternative condition="MSPO sends bill" eid="e8" language="text/x-ruby">
+          <call id="a15" endpoint="" a:alt_id="8">
+            <parameters>
+              <label>GO examines bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No bill" eid="e9" language="text/x-ruby">
+          <call id="a17" endpoint="" a:alt_id="9">
+            <parameters>
+              <label>Skip MSPO bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e10">
+      <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e11">
+        <alternative condition="MSPO sends readings" eid="e12" language="text/x-ruby">
+          <call id="a19" endpoint="" a:alt_id="10">
+            <parameters>
+              <label>GO examines bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No readings" eid="e13" language="text/x-ruby">
+          <call id="a21" endpoint="" a:alt_id="11">
+            <parameters>
+              <label>Skip readings bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e14">
+      <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e15">
+        <alternative condition="MPOO sends equipment bill" eid="e16" language="text/x-ruby">
+          <call id="a23" endpoint="" a:alt_id="12">
+            <parameters>
+              <label>MPON or GO examines bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No equipment bill" eid="e17" language="text/x-ruby">
+          <call id="a25" endpoint="" a:alt_id="13">
+            <parameters>
+              <label>Skip equipment bill</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+  </parallel>
+  <choose label="{x}" mode="exclusive" a:alt_id="19" eid="e18">
+    <alternative condition="Confirm" eid="e19" language="text/x-ruby">
+      <call id="a53" endpoint="" a:alt_id="20">
+        <parameters>
+          <label>Confirm invoice with payment advice</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Reject" eid="e20" language="text/x-ruby">
+      <call id="a55" endpoint="" a:alt_id="21">
+        <parameters>
+          <label>Reject invoice</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+</description>

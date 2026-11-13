@@ -1,0 +1,5 @@
+metrics,n,n_max_zero,spearman,p_one_sided,p_two_sided,H0,spearman_norm,p_one_sided_norm,p_two_sided_norm,H0_norm
+all,80,3,-0.5553,4.48e-08,8.97e-08,rejected,0.1101,0.834,0.331,accepted
+llm*task,80,3,-0.6585,1.59e-11,3.17e-11,rejected,0.0495,0.668,0.663,accepted
+llm*element,80,3,-0.3424,0.000938,0.00188,rejected,0.3881,1,0.000375,accepted
+llm*trace,80,3,-0.6838,1.38e-12,2.75e-12,rejected,-0.0811,0.237,0.474,accepted

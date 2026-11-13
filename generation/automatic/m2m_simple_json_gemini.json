@@ -1,0 +1,4657 @@
+{
+    "domain": {
+        "gdpr_1_data_breach": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.054825089871883
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.441982600837946
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.534916969016194
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.7,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.45089029148221
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.137655479833484
+                }
+            }
+        },
+        "gdpr_2_consent_to_use_the_data": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.22563261166215
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.028739124536514
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.534941088408232
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.526960087940097
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.919816080480814
+                }
+            }
+        },
+        "gdpr_4_right_of_portability": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.064003778621554
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.481781782582402
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 11.023112816736102
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 11.170656247064471
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.575385633856058
+                }
+            }
+        },
+        "gdpr_5_right_to_withdraw": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.08058749511838
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.147238481789827
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.440262639895082
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.78,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.463599015027285
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.732334582135081
+                }
+            }
+        },
+        "gdpr_7_right_to_be_forgotten": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.274114413186908
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.972206613048911
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.031782820820808
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.65900732204318
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 7.847957540303469
+                }
+            }
+        },
+        "healthcare_bpmai_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.472972778603435
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.577130576595664
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.12522648833692
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.751582941040397
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.567709008231759
+                }
+            }
+        },
+        "healthcare_bpmai_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.108440971001983
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.237133082002401
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.050838651135564
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.652235087007284
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.700697312131524
+                }
+            }
+        },
+        "healthcare_klessascheck_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.218815706670284
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.083804115653038
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.311046075075865
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.9508160892874
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.161922737956047
+                }
+            }
+        },
+        "healthcare_pufahl_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.378634633496404
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.529804740101099
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.82304446771741
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.5756623018533
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.065179660916328
+                }
+            }
+        },
+        "healthcare_redeker_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.611189657822251
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.298037244006991
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.794307328760624
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.388830114156008
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.535021616145968
+                }
+            }
+        },
+        "logistics_bpmai_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.859203042462468
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.242741649970412
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.405949791893363
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.786451328545809
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.414616795256734
+                }
+            }
+        },
+        "logistics_cimino_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.349440395832062
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.904434761032462
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.428583404049277
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.739598240703344
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.480127224698663
+                }
+            }
+        },
+        "logistics_ferreira_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.78,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.58479730784893
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.72,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.194922802969813
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.71,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.640002027153969
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.71,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.883981741964817
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.71,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.466397179290652
+                }
+            }
+        },
+        "logistics_klessascheck_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.482624368742108
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.745590761303902
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.581089960411191
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.593492362648249
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.476797357201576
+                }
+            }
+        },
+        "logistics_signavio_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.22720162384212
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.706544499844313
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.71941434033215
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.453107228502631
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.723970826715231
+                }
+            }
+        },
+        "manufacturing_aris_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.536699119955301
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.294230658560991
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.82478254288435
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.696410227566957
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.84316792525351
+                }
+            }
+        },
+        "manufacturing_bpmai_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.501884177327156
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.671761509031057
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.919752636924386
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.030082186684012
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.824887748807669
+                }
+            }
+        },
+        "manufacturing_bpmai_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.541344812139869
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.614876622334123
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.838214507326484
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.071744404733181
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.121958367526531
+                }
+            }
+        },
+        "manufacturing_lodhi_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.835718408226967
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.389346482232213
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.687985811382532
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.459430767223239
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.82,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.468941705301404
+                }
+            }
+        },
+        "manufacturing_tomaskova_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.238234359771013
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.18323840200901
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.976707769557834
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.796201270073652
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.637795390561223
+                }
+            }
+        },
+        "tourism_bpmai_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.098151072859764
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.074144331738353
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.893109073862433
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.310899190604687
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.190259827300906
+                }
+            }
+        },
+        "tourism_corradini_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.92,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.550303053110838
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.31340236403048
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.91,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.171744301915169
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.91,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.741311987861991
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.92,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.538431577384472
+                }
+            }
+        },
+        "tourism_fouad_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.62559062987566
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.143031449988484
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.041678261011839
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.929231548681855
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.72,
+                        "source_of_difference": [
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.931943710893393
+                }
+            }
+        },
+        "tourism_milanovic_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.684116611257195
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 8.905577836558223
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.20784005150199
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.835518641397357
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 10.14480185881257
+                }
+            }
+        },
+        "tourism_web_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.772038169205189
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.52374055609107
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.47924325056374
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.533003229647875
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 1.0,
+                        "source_of_difference": []
+                    },
+                    "time": 9.605808118358254
+                }
+            }
+        }
+    },
+    "pet": {
+        "10_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.64228568598628
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.868941858410835
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.34887352026999
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.997534725815058
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.90406709909439
+                }
+            }
+        },
+        "10_10": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.99202754534781
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.945300340652466
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.11122284270823
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.82012391090393
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.981875140219927
+                }
+            }
+        },
+        "10_11": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.353351645171642
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.291297622025013
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.702383099123836
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.487894143909216
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.194744965061545
+                }
+            }
+        },
+        "10_12": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.898401662707329
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.138391397893429
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.163974218070507
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.403462141752243
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.270698793232441
+                }
+            }
+        },
+        "10_13": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.046395510435104
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.199055200442672
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.976522151380777
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.520836824551225
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.0437654517591
+                }
+            }
+        },
+        "10_14": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.414298975840211
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.888577990233898
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.822680516168475
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.172791672870517
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.060838313773274
+                }
+            }
+        },
+        "10_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.198952173814178
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.036083465442061
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.8,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.105929743498564
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.8,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.642334355041385
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.8,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.010569965466857
+                }
+            }
+        },
+        "10_6": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.729901015758514
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.565578589215875
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.035987712442875
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.84296759776771
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.98,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.792489349842072
+                }
+            }
+        },
+        "10_7": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.586016979068518
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.40886185131967
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.7,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.41641546972096
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.991466986015439
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.082094460725784
+                }
+            }
+        },
+        "10_8": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.144060883671045
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.44822838716209
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.797861471772194
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.61051700077951
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.316788164898753
+                }
+            }
+        },
+        "1_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.165951404720545
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.049702938646078
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.64628946594894
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.970658155158162
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.249092383310199
+                }
+            }
+        },
+        "1_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.524081511422992
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.789284087717533
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.817615600302815
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.379894021898508
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.607551844790578
+                }
+            }
+        },
+        "1_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.816970752552152
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.753133974969387
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.727904591709375
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.288398046046495
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.096491895616055
+                }
+            }
+        },
+        "1_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.004244178533554
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.77402194403112
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.754630841314793
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.753079595044255
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.475517448037863
+                }
+            }
+        },
+        "2_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.493406023830175
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.814747855067253
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.72,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.331053040921688
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.62,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.298102619126439
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.72,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.004341069608927
+                }
+            }
+        },
+        "2_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.220364939421415
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.512723358348012
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.349633011966944
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.466990822926164
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.565348837524652
+                }
+            }
+        },
+        "3_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.058346178382635
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.977649549022317
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.461449490860105
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.968621512874961
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.129967141896486
+                }
+            }
+        },
+        "3_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.00312857888639
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.95,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.779593685641885
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.026486305519938
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.046090884134173
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.24407548084855
+                }
+            }
+        },
+        "3_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.484536778181791
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.89563406072557
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.229807524010539
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.73387249186635
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.733993729576468
+                }
+            }
+        },
+        "3_6": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.456504698842764
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.125834232196212
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.822753548622131
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.148284893482924
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.973600121214986
+                }
+            }
+        },
+        "3_7": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.494629768654704
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.623916329815984
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.816242652013898
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.640875600278378
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.88,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.840981187298894
+                }
+            }
+        },
+        "3_8": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.61534071341157
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.675144912675023
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.314844576641917
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.590045742690563
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.51858359016478
+                }
+            }
+        },
+        "5_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.042314063757658
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.924063796177506
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.689021514728665
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.89610980451107
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.670884849503636
+                }
+            }
+        },
+        "5_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.502614388242364
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.514720112085342
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.13487983494997
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.96787117794156
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.152533860877156
+                }
+            }
+        },
+        "6_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.77867328748107
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.992378264665604
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.361071091145277
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.703730909153819
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.103439051657915
+                }
+            }
+        },
+        "6_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.670867091044784
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.563917623832822
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.118299767374992
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.9,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.705211862921715
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.85,
+                        "source_of_difference": [
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.294419636949897
+                }
+            }
+        },
+        "6_3": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.78,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.03383382037282
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.594463689252734
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.794773546978831
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.78,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.465880651026964
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.78,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.2805483546108
+                }
+            }
+        },
+        "6_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.572309166193008
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.860294563695788
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.302931861951947
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.185812948271632
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.715892877429724
+                }
+            }
+        },
+        "7_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.264764608815312
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.419100558385253
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.272078659385443
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.72,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.243788382038474
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.554984655231237
+                }
+            }
+        },
+        "8_2": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.577975247055292
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.046031253412366
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.278006315231323
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.381596161052585
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.206113455817103
+                }
+            }
+        },
+        "9_1": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.576004946604371
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.407110188156366
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.212140137329698
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.015864435583353
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.13936541043222
+                }
+            }
+        },
+        "9_4": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.268341444432735
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.6744602005928755
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.799848884344101
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.532521879300475
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 7.483317002654076
+                }
+            }
+        },
+        "9_5": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.226817199960351
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.153085142374039
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.161736039444804
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.178511092439294
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.092191640287638
+                }
+            }
+        }
+    },
+    "realset": {
+        "E_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.534114960581064
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.07943431288004
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.2280612308532
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.519061047583818
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.144666012376547
+                }
+            }
+        },
+        "E_j02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.84342896565795
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.254098841920495
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.103224908933043
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.710153384134173
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.273583492264152
+                }
+            }
+        },
+        "E_j03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.461666563525796
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.448614295572042
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.270274193957448
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.385167488828301
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.210431037470698
+                }
+            }
+        },
+        "E_j04": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.096048664301634
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.865059070289135
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.270093811675906
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.730898642912507
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.81046194396913
+                }
+            }
+        },
+        "G_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.15339345112443
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.197853054851294
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.946361122652888
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.852822970598936
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.78810428082943
+                }
+            }
+        },
+        "G_g03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.521001029759645
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.332503851503134
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.645743299275637
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.211339747533202
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.723848907276988
+                }
+            }
+        },
+        "G_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.863097751513124
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.547357430681586
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.691469078883529
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.842019295319915
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.021029189229012
+                }
+            }
+        },
+        "M_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.818065559491515
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.586301896721125
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.188783688470721
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 8.894276795908809
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.25,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.776487663388252
+                }
+            }
+        },
+        "M_g02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.400846891105175
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.85787757858634
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.211951782926917
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.47504516132176
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.399674750864506
+                }
+            }
+        },
+        "M_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.15,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.016306664794683
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.15,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.480841210111976
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.15,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.647179700434208
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.15,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.330751338973641
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.15,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.227870300412178
+                }
+            }
+        },
+        "M_j02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.791460962966084
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.925568846985698
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.4,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.727839259430766
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.4,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.020891696214676
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.36516098678112
+                }
+            }
+        },
+        "M_j03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.35,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.391243567690253
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.780680662021041
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.120096907019615
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.961249154061079
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.493938053026795
+                }
+            }
+        },
+        "M_k05": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.907493583858013
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.0503855291754
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.146653780713677
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.41751871444285
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.980863215401769
+                }
+            }
+        },
+        "R_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.394236652180552
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.873161906376481
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.724382871761918
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.35306903719902
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.055466961115599
+                }
+            }
+        },
+        "R_j01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.527975868433714
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.371425449848175
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.882573261857033
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.493153551593423
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.610298670828342
+                }
+            }
+        },
+        "R_j02": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.55,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 9.373231999576092
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.947517087683082
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.470055807381868
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.721730219200253
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.5,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.901965169236064
+                }
+            }
+        },
+        "R_j03": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.557368379086256
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.01072534546256
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.316869780421257
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.36126591451466
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.45,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.88219702988863
+                }
+            }
+        },
+        "R_j04": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.460426649078727
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.449113119393587
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.42998663149774
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.981621596962214
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.224808268249035
+                }
+            }
+        },
+        "V_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.956473968923092
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.943914575502276
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.903858100995421
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.83797917328775
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.6,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.28909894451499
+                }
+            }
+        },
+        "V_k08": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.553311796858907
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.446466572582722
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.702611515298486
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 12.107481192797422
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.290325317531824
+                }
+            }
+        },
+        "V_k09": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.822497831657529
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.194548953324556
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.942905535921454
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.939750028774142
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "GATEWAY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES",
+                            "EVENT_DIFFERENCES"
+                        ]
+                    },
+                    "time": 11.493330828845501
+                }
+            }
+        },
+        "X_g01": {
+            "iterations": {
+                "0": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.822621608152986
+                },
+                "1": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.317874612286687
+                },
+                "2": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.50659435428679
+                },
+                "3": {
+                    "evaluation": {
+                        "element_based_similarity": 0.75,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.785715438425541
+                },
+                "4": {
+                    "evaluation": {
+                        "element_based_similarity": 0.65,
+                        "source_of_difference": [
+                            "ACTIVITY_DIFFERENCES",
+                            "CONNECTION_DIFFERENCES",
+                            "LABEL_DIFFERENCES"
+                        ]
+                    },
+                    "time": 10.472680624574423
+                }
+            }
+        }
+    }
+}

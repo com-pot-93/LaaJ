@@ -1,0 +1,148 @@
+{
+    "tasks": [
+        {
+            "id": "a11",
+            "name": "Receive data subject request",
+            "type": "Task"
+        },
+        {
+            "id": "a1",
+            "name": "Check if withdrawn data are relevant",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Stop using withdrawn data",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Communicate the withdraw",
+            "type": "Task"
+        },
+        {
+            "id": "a0",
+            "name": "Inform the user that the withdraw will stop all running BPs",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Receive the notification about continuation",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Stop running BPs using withdrawn data",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a11",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a9",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a0",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a5",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

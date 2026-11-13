@@ -1,0 +1,401 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "start  assesment tool",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "tool starts",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "enter incident type",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Accident",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "almost accident",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "severe safety risk / helth risk",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "defective protective equipment",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "further specify incident",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "enter own data",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "enter victim's data",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "add task; contact accident insurance",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "add task: contact  Labour Inspectorate",
+            "type": "Task"
+        },
+        {
+            "id": "a26",
+            "name": "add task: contact superiors",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "add task:\ncontact accident insurance",
+            "type": "Task"
+        },
+        {
+            "id": "a28",
+            "name": "add task:\ncontact principal",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "add task:\ncontact priavte insurance",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "propose tasks to user",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "execute proposed task",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p5",
+            "type": "Parallel"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp5",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg8",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a12",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g1",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g1",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a14",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a15",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a16",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a17",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a3",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g3",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a8",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mg3",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g4",
+            "targetRef": "p5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "p5",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "p5",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g6",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a20",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a22",
+            "targetRef": "mp5"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mg6",
+            "targetRef": "mp5"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "g4",
+            "targetRef": "a26"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "mp5",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "a26",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "g2",
+            "targetRef": "p7"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "p7",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "p7",
+            "targetRef": "a28"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a29",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "a28",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "mg4",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "mp7",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "mg2",
+            "targetRef": "g8"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "g8",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "g8",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "a35",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "mg8",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a10",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a5",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

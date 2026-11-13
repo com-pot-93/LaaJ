@@ -1,0 +1,265 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Check defect and calculate repair cost",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Check and repair hardware",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Test system functionality",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Execute arbitrary repair activity",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Test system functionality",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Check and configure software",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Test system functionality",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "Execute arbitrary repair activity",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Test system functionality",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Finalize repair",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p2",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a9",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g3",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a13",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mg4",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a19",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a14",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "p2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a11",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g5",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a15",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg6",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a20",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a16",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mg6",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg3",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg5",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mp2",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a25",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

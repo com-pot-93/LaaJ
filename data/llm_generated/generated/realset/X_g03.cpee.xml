@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Select starting block</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Initialize training loop</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <loop mode="pre_test" condition="true" eid="e1">
+    <call id="a7" endpoint="" a:alt_id="4">
+      <parameters>
+        <label>Run 5km and measure time</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e2">
+      <alternative condition="Time &gt;= 25min" eid="e3" language="text/x-ruby">
+        <call id="a13" endpoint="" a:alt_id="7">
+          <parameters>
+            <label>Train more</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="Time &lt; 25min" eid="e4" language="text/x-ruby">
+        <call id="a11" endpoint="" a:alt_id="6">
+          <parameters>
+            <label>Achieved goal</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a17" endpoint="" a:alt_id="8">
+          <parameters>
+            <label>Get starting number</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <parallel wait="-1" cancel="last" a:alt_id="9" eid="e5">
+          <parallel_branch eid="e6">
+            <call id="a21" endpoint="" a:alt_id="10">
+              <parameters>
+                <label>Determine travel route</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <choose label="{x}" mode="exclusive" a:alt_id="11" eid="e7">
+              <alternative condition="Gap &gt; 1 hour" eid="e8" language="text/x-ruby">
+                <call id="a25" endpoint="" a:alt_id="12">
+                  <parameters>
+                    <label>Go from home</label>
+                    <method/>
+                    <arguments/>
+                  </parameters>
+                </call>
+              </alternative>
+              <alternative condition="Gap &lt;= 1 hour" eid="e9" language="text/x-ruby">
+                <call id="a27" endpoint="" a:alt_id="13">
+                  <parameters>
+                    <label>Leave from work</label>
+                    <method/>
+                    <arguments/>
+                  </parameters>
+                </call>
+              </alternative>
+            </choose>
+          </parallel_branch>
+          <parallel_branch eid="e10">
+            <call id="a33" endpoint="" a:alt_id="15">
+              <parameters>
+                <label>Run and drink</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+          </parallel_branch>
+        </parallel>
+        <call id="a39" endpoint="" a:alt_id="17">
+          <parameters>
+            <label>Receive final time</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <escape a:alt_id="-1"/>
+      </alternative>
+    </choose>
+  </loop>
+</description>

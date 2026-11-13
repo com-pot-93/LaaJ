@@ -1,0 +1,274 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Open Battle.net",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Enter account information",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Click on the link in the received confirmation E-Mail",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Log into\nBattle.net",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Load account information",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Select payment",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Enter credit card information",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Enter IBAN and BIC",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Log into the game",
+            "type": "Task"
+        },
+        {
+            "id": "a24",
+            "name": "Load ingame data and position",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Select realm",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Select race",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Select class",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Name the character",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Receive confirmation and selfies",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a6",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a5",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a9",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a11",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a12",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a15",
+            "targetRef": "a24"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a24",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "p4",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "p4",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "p4",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a17",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a18",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a19",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mp4",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a21",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a22",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,173 @@
+{
+    "tasks": [
+        {
+            "id": "a3",
+            "name": "Production planning",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Assign workers",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Production design",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Product delivery",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Production logout",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Quality control",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Register to the semi-finished stock",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Load to the semi-finished stock",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Register to the finished stock",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Stock to the finished goods",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "mg1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a5",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a13",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g2",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a25",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a19",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a27",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a21",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

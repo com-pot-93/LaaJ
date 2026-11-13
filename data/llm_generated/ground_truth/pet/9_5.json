@@ -1,0 +1,277 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "company receives expense report",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "company creates new employee  account",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "company reviews report for automatic approval",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "supervisor approves the report",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "company sends reimbursement to employee's bank account",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "employee  receives a rejection notice",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "company automatically approves the report",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "company stops the process",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "employee receives an email cancellation notice",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "employee re-submits the expense report",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "employee  receives an approval in progress  email",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc2",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "mg1",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg2",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a5",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g4",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a11",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a12",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g3",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a7",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg3",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g5",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a16",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a17",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g5",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a15",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "g5",
+            "targetRef": "esc2"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a18",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "esc1",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "esc2",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

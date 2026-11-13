@@ -1,0 +1,262 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive Expense Report",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check Account Existence",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Create Account",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Review Report",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Check Approval Amount",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Approve Automatically",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Request Supervisor Approval",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Process Reimbursement",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Send Rejection Email",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Monitor Deadline",
+            "type": "Task"
+        },
+        {
+            "id": "a43",
+            "name": "Send Progress Email",
+            "type": "Task"
+        },
+        {
+            "id": "a45",
+            "name": "Send Cancellation Notice",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a13",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "p2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a23",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a25",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg3",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g4",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g4",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a33",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a35",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "p2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a19",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g5",
+            "targetRef": "a43"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g5",
+            "targetRef": "a45"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a43",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a45",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mg4",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg5",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mp2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

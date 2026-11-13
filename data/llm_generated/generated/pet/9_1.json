@@ -1,0 +1,361 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Backup Database",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check Account Defaulter Table",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Check CRM for Returns",
+            "type": "Task"
+        },
+        {
+            "id": "a40",
+            "name": "Reconcile with Defaulter Table",
+            "type": "Task"
+        },
+        {
+            "id": "a44",
+            "name": "Check 4:00pm Deadline",
+            "type": "Task"
+        },
+        {
+            "id": "a48",
+            "name": "Message Supervisor",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Check CRM for Returns",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Register Defaulting Accounts",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Produce and Send Table",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Check 2:30pm Deadline",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Alert Supervisor",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Check CRM for Returns",
+            "type": "Task"
+        },
+        {
+            "id": "a39",
+            "name": "Reconcile with Defaulter Table",
+            "type": "Task"
+        },
+        {
+            "id": "a43",
+            "name": "Check 4:00pm Deadline",
+            "type": "Task"
+        },
+        {
+            "id": "a47",
+            "name": "Message Supervisor",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a10",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g2",
+            "targetRef": "a40"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a40",
+            "targetRef": "a44"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a44",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g3",
+            "targetRef": "a48"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a48",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a7",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g4",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a13",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g5",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a19",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mg5",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a25",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g6",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a29",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mg6",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a9",
+            "targetRef": "g7"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g7",
+            "targetRef": "a39"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a39",
+            "targetRef": "a43"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a43",
+            "targetRef": "g8"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "g8",
+            "targetRef": "a47"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a47",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "g8",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "g7",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "mg8",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "mg7",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "mg4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

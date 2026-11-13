@@ -1,0 +1,150 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "The MPON notifies the MPOO about equipment change intentions",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "The MPOO announces self dismounting to the MPON",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "The MPOO  notifies the MPON about no self-dismounting of the MPOO",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "The MPON or MPOO performs the final reading",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "The MPON or the MPOO dismount the old equipment",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "The MPON mounts the new device",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "The MPON reads the meter count from the installed meter",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "The MPON sents the values of the final reading to the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "The MPON tells the GO required data",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "The GO  notifies the MSP about the required data",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a3",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a4",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a9",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a12",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

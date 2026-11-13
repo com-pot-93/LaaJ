@@ -1,0 +1,8 @@
+evaluation,pair,n,n_0-0.8,mae_0-0.8,n_0.8-1,mae_0.8-1
+m2m,llm*task,80,53,0.3672,27,0.0675
+m2m,llm*element,80,60,0.2681,20,0.0956
+m2m,llm*trace,80,58,0.4006,22,0.0402
+m2t,llm*relevance,80,51,0.3431,29,0.089
+m2t,llm*truthfulness,80,24,0.2188,56,0.1192
+human_examples,llm*human,219,183,1.7913,36,1.5272
+human_no_examples,llm*human,218,210,2.0634,8,1.8625

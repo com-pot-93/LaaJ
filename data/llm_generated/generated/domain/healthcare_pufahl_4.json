@@ -1,0 +1,163 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Assess patient conditions",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Perform physical examination",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Draw blood samples",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Send analysis to the lab",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Receive analysis from the lab",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Make diagnosis",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Surgical intervention",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Plan surgery",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Discharge patient",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a11",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mp1",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a21",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a23",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a29",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

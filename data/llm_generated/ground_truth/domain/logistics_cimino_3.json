@@ -1,0 +1,206 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive shipment request",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Package goods",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Select kind of shipment",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Request quotes from carriers",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Assign a carrier",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Prepare paperwork",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Fill in a post label",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Check insuarance",
+            "type": "Task"
+        },
+        {
+            "id": "a0",
+            "name": "Take out extra insuarance",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Add paperwork",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Move package to pickup area",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a11",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a0",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a8",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a14",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mp1",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a16",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a17",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

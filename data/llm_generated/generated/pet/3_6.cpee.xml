@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Receive Claim</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Check Insurance Status</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e1">
+    <alternative condition="Not Insured" eid="e2" language="text/x-ruby">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Inform Rejection</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <otherwise eid="e3">
+      <call id="a11" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Evaluate Severity</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a13" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Send Relevant Forms</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a15" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Receive Returned Forms</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a19" endpoint="" a:alt_id="9">
+        <parameters>
+          <label>Check Completeness</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <loop mode="pre_test" condition="Incomplete" a:alt_id="10" eid="e4" language="text/x-ruby">
+        <call id="a23" endpoint="" a:alt_id="11">
+          <parameters>
+            <label>Inform Claimant to Update</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a25" endpoint="" a:alt_id="12">
+          <parameters>
+            <label>Receive Updated Forms</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a20" endpoint="" a:alt_id="9">
+          <parameters>
+            <label>Check Completeness</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </loop>
+      <call id="a29" endpoint="" a:alt_id="14">
+        <parameters>
+          <label>Register in Claims Management System</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </otherwise>
+  </choose>
+</description>

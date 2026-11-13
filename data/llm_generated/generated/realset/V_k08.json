@@ -1,0 +1,279 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Login to E-Shop",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check Credentials",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Select Product",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Add to Cart",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Save Product",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Check if more products",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Select Product",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Add to Cart",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Save Product",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Check if more products",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Finish Order",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Enter Payment Data",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Wait for Bank Confirmation",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Enter Shipping Address",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Enter Billing Address",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "Finalize Order",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a13",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a15",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a12",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a14",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a16",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a21",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p3",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a25",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "p3",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a27",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g4",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a33",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a29",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg4",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mp3",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a41",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

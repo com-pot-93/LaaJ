@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Backup Database</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Check Account Defaulter Table</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e1">
+    <alternative condition="" eid="e18">
+      <call id="a10" endpoint="" a:alt_id="12">
+        <parameters>
+          <label>Check CRM for Returns</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="16" eid="e19">
+        <alternative condition="No Returns" eid="e24" language="text/x-ruby"/>
+        <otherwise eid="e20">
+          <call id="a40" endpoint="" a:alt_id="17">
+            <parameters>
+              <label>Reconcile with Defaulter Table</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a44" endpoint="" a:alt_id="18">
+            <parameters>
+              <label>Check 4:00pm Deadline</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="19" eid="e21">
+            <alternative condition="Missed Deadline" eid="e22" language="text/x-ruby">
+              <call id="a48" endpoint="" a:alt_id="20">
+                <parameters>
+                  <label>Message Supervisor</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="Met Deadline" eid="e23" language="text/x-ruby"/>
+          </choose>
+        </otherwise>
+      </choose>
+    </alternative>
+    <otherwise eid="e2">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Check CRM for Returns</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e3">
+        <alternative condition="No Returns" eid="e17" language="text/x-ruby"/>
+        <otherwise eid="e4">
+          <call id="a13" endpoint="" a:alt_id="6">
+            <parameters>
+              <label>Register Defaulting Accounts</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="7" eid="e5">
+            <alternative condition="Not Previously Advised" eid="e6" language="text/x-ruby">
+              <call id="a19" endpoint="" a:alt_id="8">
+                <parameters>
+                  <label>Produce and Send Table</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="Already Advised" eid="e7" language="text/x-ruby"/>
+          </choose>
+          <call id="a25" endpoint="" a:alt_id="10">
+            <parameters>
+              <label>Check 2:30pm Deadline</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="11" eid="e8">
+            <alternative condition="Missed Deadline" eid="e9" language="text/x-ruby">
+              <call id="a29" endpoint="" a:alt_id="13">
+                <parameters>
+                  <label>Alert Supervisor</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="Met Deadline" eid="e10" language="text/x-ruby"/>
+          </choose>
+          <call id="a9" endpoint="" a:alt_id="12">
+            <parameters>
+              <label>Check CRM for Returns</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="16" eid="e11">
+            <alternative condition="No Returns" eid="e16" language="text/x-ruby"/>
+            <otherwise eid="e12">
+              <call id="a39" endpoint="" a:alt_id="17">
+                <parameters>
+                  <label>Reconcile with Defaulter Table</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a43" endpoint="" a:alt_id="18">
+                <parameters>
+                  <label>Check 4:00pm Deadline</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <choose label="{x}" mode="exclusive" a:alt_id="19" eid="e13">
+                <alternative condition="Missed Deadline" eid="e14" language="text/x-ruby">
+                  <call id="a47" endpoint="" a:alt_id="20">
+                    <parameters>
+                      <label>Message Supervisor</label>
+                      <method/>
+                      <arguments/>
+                    </parameters>
+                  </call>
+                </alternative>
+                <alternative condition="Met Deadline" eid="e15" language="text/x-ruby"/>
+              </choose>
+            </otherwise>
+          </choose>
+        </otherwise>
+      </choose>
+    </otherwise>
+  </choose>
+</description>

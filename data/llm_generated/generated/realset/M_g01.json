@@ -1,0 +1,229 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Send sketches to artist",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Review and request changes",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Review and request changes",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Choose plastic color",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Order plastic",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Check remaining weight",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Add to shopping list",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Confirm plastic availability",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Turn on printer and heat bed",
+            "type": "Task"
+        },
+        {
+            "id": "a31",
+            "name": "Generate Gcode from STL",
+            "type": "Task"
+        },
+        {
+            "id": "a37",
+            "name": "Print the model",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a4",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a9",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a13",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a19",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a15",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a21",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "p4",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "p4",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a29",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a31",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mp4",
+            "targetRef": "a37"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a37",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

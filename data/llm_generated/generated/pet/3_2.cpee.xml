@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Check files</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="2" eid="e1">
+    <alternative condition="Files missing" eid="e2" language="text/x-ruby">
+      <call id="a5" endpoint="" a:alt_id="3">
+        <parameters>
+          <label>Initiate search</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Files ready" eid="e3" language="text/x-ruby">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Track files to location</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <parallel wait="-1" cancel="last" a:alt_id="6" eid="e4">
+    <parallel_branch eid="e5">
+      <call id="a15" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Hand files to Associate</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e6">
+      <call id="a17" endpoint="" a:alt_id="8">
+        <parameters>
+          <label>Distribute Lawlist</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <call id="a23" endpoint="" a:alt_id="10">
+    <parameters>
+      <label>Conduct directions hearings</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

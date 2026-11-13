@@ -1,0 +1,183 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "guest calls room service",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "room service  manager takes down the order",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "room service  manager  submits an order ticket to a kitchen",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "room service  manager  gives an order to the sommelier",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "room service  manager  assigns the order to the waiter",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "kitchen and sommelier do  tasks",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "waiter readies a cart",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "waiter delivers a cart",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "waiter returns to the room-service station",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "waiter waits to do the billing",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "waiter debits guest \u2019 s account",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p1",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mp1",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g2",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g2",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a12",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a14",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

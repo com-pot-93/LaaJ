@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>GO requests measurements to MSP</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>MSP checks received request</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e1">
+    <alternative condition="Deny" eid="e2" language="text/x-ruby">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>MSP denies request</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>MSP informs GO about failure</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Perform" eid="e3" language="text/x-ruby">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>MSP performs measurement</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a13" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>MSP transmits measured values to GO</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a17" endpoint="" a:alt_id="9">
+        <parameters>
+          <label>GO processes measured values</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a19" endpoint="" a:alt_id="10">
+        <parameters>
+          <label>GO sends changed values to MSP</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <call id="a23" endpoint="" a:alt_id="11">
+    <parameters>
+      <label>GO transmits readings to SP</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

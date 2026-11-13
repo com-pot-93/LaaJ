@@ -1,0 +1,120 @@
+{
+    "tasks": [
+        {
+            "id": "a6",
+            "name": "Receive data subject request",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Send request to the third party",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Receive third party request",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Retrieve elaborations",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Retrieve available data of the data subject",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Communicate data and elaborations to the third party",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Communicate data and elaborations to the data subject",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a8",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a4",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mp1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a2",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a9",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,153 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive vacancy report",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Create job description",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Ask department for clarification",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Create job description",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Submit description for approval",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Correct description",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Submit description for approval",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Post job",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a4",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg1",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a11",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a15",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a12",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mg2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a19",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

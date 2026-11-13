@@ -1,0 +1,249 @@
+{
+    "tasks": [
+        {
+            "id": "a2",
+            "name": "Select course",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Show dates",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Select one date",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Check if account  at sports institute available",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Check if registered at an eligible university",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Register with account",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Send request for activation",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Wait for response",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Log into account",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Provide payment information",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Complete registration for course",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Tweet friends",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Receive ticket",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "g1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "mg1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "mg1",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a18",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a4",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a5",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a6",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a8",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a11",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a12",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a22",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "p4",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "p4",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a14",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a21",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mp4",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

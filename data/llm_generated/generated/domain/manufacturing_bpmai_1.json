@@ -1,0 +1,116 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Create production plan and process order",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Execute MRP",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Evaluate Capacity",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Schedule and release proposal",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Confirm process order",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Create transfer order or good issue",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Confirm good issue",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Good Receipt",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Order Settlement",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a13",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

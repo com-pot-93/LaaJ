@@ -1,0 +1,3 @@
+metric,n,n_max_zero,spearman,p_one_sided,p_two_sided,H0,spearman_norm,p_one_sided_norm,p_two_sided_norm,H0_norm
+relevance,80,2,-0.7846,3.68e-18,7.35e-18,rejected,0.0585,0.697,0.606,accepted
+truthfulness,80,0,-0.3401,0.00101,0.00203,rejected,0.5215,1,7.05e-07,accepted

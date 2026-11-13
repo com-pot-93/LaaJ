@@ -1,0 +1,503 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "customer transmits data to the customer service department",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "customer  service receives the customer data",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "customer  service enters customer data object  into the CRM system",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "customer  service  compares entered data  with the internal customer data",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "customer  service checks customer data for completeness and plausibility",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "customer  service corrects customer data",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "customer  service creates new customer object",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "customer  service prepares the contract documents for the power supplier switch",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "CIS checks the contract documents",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "customer  service analyzes the causing issues",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "customer  service resolves the causing issues",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "customer  service generates contract documents",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "CIS sends out a confirmation document to the customer",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "CIS sends out grid operator request",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "grid operator checks request for supplier concurrence",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "grid operator transmits a response comment",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "grid operator informs all  suppliers",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "grid operator demands the resolution of the conflict",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "grid operator communicates with the old supplier",
+            "type": "Task"
+        },
+        {
+            "id": "a26",
+            "name": "grid operator terminates  the sales agreement",
+            "type": "Task"
+        },
+        {
+            "id": "a28",
+            "name": "customer service creates a CIS contract",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "customer checks the contract details",
+            "type": "Task"
+        },
+        {
+            "id": "a31",
+            "name": "customer confirms the switch contract",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "grid operator transmits the power meter data",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "grid operator computes the final billing",
+            "type": "Task"
+        },
+        {
+            "id": "a36",
+            "name": "grid operator sends billing to the old supplier",
+            "type": "Task"
+        },
+        {
+            "id": "a37",
+            "name": "old supplier creates final billing",
+            "type": "Task"
+        },
+        {
+            "id": "a44",
+            "name": "old supplier sends the  billing to the customer",
+            "type": "Task"
+        },
+        {
+            "id": "a38",
+            "name": "customer services receive the meter data",
+            "type": "Task"
+        },
+        {
+            "id": "a39",
+            "name": "customer service imports the meter data to systems",
+            "type": "Task"
+        },
+        {
+            "id": "a32",
+            "name": "customer withdraws from the switch contract",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a8",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g1",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a6",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g2",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a12",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a14",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a15",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a16",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg3",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a17",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a18",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a19",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a20",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "g4",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a22",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a23",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "mg4",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a25",
+            "targetRef": "a26"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "a26",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "g5",
+            "targetRef": "a28"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a28",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "a29",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "g6",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "a31",
+            "targetRef": "p7"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "p7",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "p7",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "a35",
+            "targetRef": "a36"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "p7",
+            "targetRef": "a37"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "a37",
+            "targetRef": "a44"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a33",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a36",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f46",
+            "sourceRef": "a44",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f47",
+            "sourceRef": "mp7",
+            "targetRef": "a38"
+        },
+        {
+            "id": "f48",
+            "sourceRef": "a38",
+            "targetRef": "a39"
+        },
+        {
+            "id": "f49",
+            "sourceRef": "g6",
+            "targetRef": "a32"
+        },
+        {
+            "id": "f50",
+            "sourceRef": "a39",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f51",
+            "sourceRef": "a32",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f52",
+            "sourceRef": "mg6",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f53",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f54",
+            "sourceRef": "mg5",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

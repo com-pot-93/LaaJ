@@ -1,0 +1,140 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive trip request",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Send price request to the airlines",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Collect responses from the airlines",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Select airline",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Send price request to the hotels",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Collect responses from the hotels",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Select hotel",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Prepare the tour plan",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Send the tour plan to the customer",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a4",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mp1",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

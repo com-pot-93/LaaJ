@@ -1,0 +1,229 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Search for a customer",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Make customer an offer",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Receive additional request",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Provide details",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Receive booking request",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Send the bill",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Receive payment",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Contact customer",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Book travel",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Send booking confirmation",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a6",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a8",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a11",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg3",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a13",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g4",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a10",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a14",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a17",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "esc1",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg4",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Report Service Degradation</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Enter Problem Report into System T</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Compare Report to SLA</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a7" endpoint="" a:alt_id="4">
+    <parameters>
+      <label>Determine Counter Measures and Priorities</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a9" endpoint="" a:alt_id="5">
+    <parameters>
+      <label>Determine Customer Significance</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="6" eid="e1">
+    <alternative condition="Premium" eid="e2" language="text/x-ruby">
+      <call id="a13" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Link to Extra Problem Fix Process</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Not Premium" eid="e3" language="text/x-ruby"/>
+  </choose>
+  <loop mode="pre_test" condition="Significance Affects Measures" a:alt_id="9" eid="e4" language="text/x-ruby">
+    <call id="a8" endpoint="" a:alt_id="4">
+      <parameters>
+        <label>Determine Counter Measures and Priorities</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <call id="a10" endpoint="" a:alt_id="5">
+      <parameters>
+        <label>Determine Customer Significance</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <choose label="{x}" mode="exclusive" a:alt_id="6" eid="e5">
+      <alternative condition="Premium" eid="e6" language="text/x-ruby">
+        <call id="a14" endpoint="" a:alt_id="7">
+          <parameters>
+            <label>Link to Extra Problem Fix Process</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="Not Premium" eid="e7" language="text/x-ruby"/>
+    </choose>
+  </loop>
+  <call id="a23" endpoint="" a:alt_id="10">
+    <parameters>
+      <label>Create Detailed Problem Report</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a25" endpoint="" a:alt_id="11">
+    <parameters>
+      <label>Send to Service Management</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="12" eid="e8">
+    <alternative condition="Analyzable by SM" eid="e9" language="text/x-ruby">
+      <call id="a29" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Perform Analysis</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a33" endpoint="" a:alt_id="15">
+        <parameters>
+          <label>Create Trouble Report</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Not Analyzable" eid="e10" language="text/x-ruby">
+      <call id="a31" endpoint="" a:alt_id="14">
+        <parameters>
+          <label>Send to Resource Provisioning</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a35" endpoint="" a:alt_id="16">
+        <parameters>
+          <label>Check for Problems</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="17" eid="e11">
+        <alternative condition="No Problem" eid="e12" language="text/x-ruby">
+          <call id="a39" endpoint="" a:alt_id="18">
+            <parameters>
+              <label>Create Normal Execution Notification</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Problem Detected" eid="e13" language="text/x-ruby">
+          <call id="a41" endpoint="" a:alt_id="19">
+            <parameters>
+              <label>Analyze and Create Trouble Report</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+      <call id="a47" endpoint="" a:alt_id="21">
+        <parameters>
+          <label>Send Status Report to SM</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <call id="a53" endpoint="" a:alt_id="23">
+    <parameters>
+      <label>Prepare Final Status Report</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="24" eid="e14">
+    <alternative condition="No Problem" eid="e15" language="text/x-ruby">
+      <call id="a57" endpoint="" a:alt_id="25">
+        <parameters>
+          <label>Send Performance to Customer Service</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Minor Actions" eid="e16" language="text/x-ruby">
+      <call id="a59" endpoint="" a:alt_id="26">
+        <parameters>
+          <label>Perform Corrective Actions</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a63" endpoint="" a:alt_id="28">
+        <parameters>
+          <label>Create Problem Resolution Report</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Automatic Restoration" eid="e17" language="text/x-ruby">
+      <call id="a61" endpoint="" a:alt_id="27">
+        <parameters>
+          <label>Create Restoration Request</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a65" endpoint="" a:alt_id="29">
+        <parameters>
+          <label>Send Request to Resource Provisioning</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a67" endpoint="" a:alt_id="30">
+        <parameters>
+          <label>Track Errors and Undertake Actions</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a69" endpoint="" a:alt_id="31">
+        <parameters>
+          <label>Create Trouble-shooting Report</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a71" endpoint="" a:alt_id="32">
+        <parameters>
+          <label>Send Report to SM</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a64" endpoint="" a:alt_id="28">
+        <parameters>
+          <label>Create Problem Resolution Report</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <parallel wait="-1" cancel="last" a:alt_id="34" eid="e18">
+    <parallel_branch eid="e19">
+      <call id="a81" endpoint="" a:alt_id="35">
+        <parameters>
+          <label>Create Customer Report</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a85" endpoint="" a:alt_id="37">
+        <parameters>
+          <label>Send Report to Customer</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e20">
+      <call id="a83" endpoint="" a:alt_id="36">
+        <parameters>
+          <label>Report SLA Rebate to Billing</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+</description>

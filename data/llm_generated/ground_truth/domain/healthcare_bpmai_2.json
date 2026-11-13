@@ -1,0 +1,443 @@
+{
+    "tasks": [
+        {
+            "id": "a19",
+            "name": "Come to the hospital",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Stay the front",
+            "type": "Task"
+        },
+        {
+            "id": "a24",
+            "name": "Visit the nurse",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Check insurance",
+            "type": "Task"
+        },
+        {
+            "id": "a1",
+            "name": "Check patients state",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Send patient home",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "Examine the patient",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Hospitalize",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Book patient for doctor",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Send patient to pharmacy",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Visit pharmacy",
+            "type": "Task"
+        },
+        {
+            "id": "a26",
+            "name": "Order medicine",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Pay medicine",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Receive medicine",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Send patient home",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Check if patient is registered in hospital",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Register patient",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Pay fee",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc2",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc3",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc4",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a19",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a22",
+            "targetRef": "a24"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a24",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg3",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a18",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a15",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g4",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a12",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a23",
+            "targetRef": "a26"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a26",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a27",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a25",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g4",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a13",
+            "targetRef": "esc2"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a10",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "esc1",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "esc2",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mg4",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "g5",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "mg5",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a21",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "mg6",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "a10",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "a18",
+            "targetRef": "g7"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "g7",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "g7",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "a25",
+            "targetRef": "esc3"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "g7",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a13",
+            "targetRef": "esc4"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a15",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f46",
+            "sourceRef": "esc3",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f47",
+            "sourceRef": "esc4",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f48",
+            "sourceRef": "mg7",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f49",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f50",
+            "sourceRef": "mg6",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f51",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

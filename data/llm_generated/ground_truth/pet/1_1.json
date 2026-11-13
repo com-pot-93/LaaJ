@@ -1,0 +1,239 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "sales department receives an order",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "sales department  accepts the bike order",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "sales department informs the storehouse",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "sales department  informs the engineering department",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "engineering department prepares for the bike assembling",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "storehouse  processes the part list",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "storehouse checks the  quantity of  parts",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "storehouse  reserves the part",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "storehouse back-orders the part",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "engineering department assembles the bicycle",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "sales department ships the bicycle",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "sales department rejects the bike order",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a6",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "p2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g3",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g4",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a10",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a11",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg3",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a13",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg3",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mp2",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a14",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a15",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a3",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

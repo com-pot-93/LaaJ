@@ -1,0 +1,86 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Enter type of machine and serial number",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Answer questions",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Hit next",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Check values",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Confirm values",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Finish inspection",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

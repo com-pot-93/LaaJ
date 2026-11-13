@@ -1,0 +1,350 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Create list of necessary parts",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Query Webshops for \n necessary \nparts",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Choose the shop wiht cheapest parts",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Make an order to the Webshop",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "The webshop receives an order",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "The webshop sends an invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "The webshop delivers an order",
+            "type": "Task"
+        },
+        {
+            "id": "a24",
+            "name": "The webshop updates Inventory",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "The Manufacturer receives an order and starts buiding",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "order the cheapest part",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "finish the project",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "order the part with faster delivery",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "write an compliament email",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc2",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc3",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc4",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a5",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "p2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "p2",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "p2",
+            "targetRef": "a24"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a21",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a23",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a24",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mp2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a6",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g5",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g6",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g6",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a18",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a10",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "esc1",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "g5",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a12",
+            "targetRef": "esc2"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg6",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "esc2",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "g4",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a16",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "a18",
+            "targetRef": "esc3"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "mg5",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "esc3",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "g3",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a18",
+            "targetRef": "esc4"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "esc4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "mg3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,173 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Receive shipment request",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check product availability",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "Prepare products for shipment to particular service station",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Check shipment address",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Assemble inbound shipment",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Send inbound shipment",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Receive inbound shipment",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Check inbound shipment",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Prepare products for shipment to particular service station",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Prepare products for regional shipment",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a13",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a15",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a17",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a19",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a21",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a20",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

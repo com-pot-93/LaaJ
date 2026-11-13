@@ -1,0 +1,186 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Check open leads",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Select top five leads",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Assign leads to Sales Assistant",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Call contact person",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Check for next customer",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Send note to Manager",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Process lead",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc2",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "mg1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "esc1",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a13",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a17",
+            "targetRef": "esc2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "esc2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

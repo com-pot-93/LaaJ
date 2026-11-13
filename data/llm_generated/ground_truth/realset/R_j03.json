@@ -1,0 +1,76 @@
+{
+    "tasks": [
+        {
+            "id": "a0",
+            "name": "Send symptoms and type to fridge service center",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Make appointment",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Check fridge",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Confirm fridge OK",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Rate facility",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a0",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

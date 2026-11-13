@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>EC notifies INQ of master data change</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>INQ notifies IP of change</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>IP checks feasibility of change</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="4" eid="e1">
+    <alternative condition="Change possible" eid="e2" language="text/x-ruby">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>IP confirms changes</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Change not possible" eid="e3" language="text/x-ruby">
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>IP rejects changes</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+</description>

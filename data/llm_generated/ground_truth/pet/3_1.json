@@ -1,0 +1,126 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Party sends a warrant possession request",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Client Service Back Office receives the request",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Client Service Back Office retrieves the SCT file",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Client Service Back Office forwards the SCT Warrant Possession to Queensland Police",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Back Office stores the SCT physical file",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Back Office awaits a Police report",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Back Office receives the report",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Back Office  retrieves the respective SCT file",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Back Office attaches the new SCT document",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Back Office stores the expanded SCT physical file",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a9",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a10",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Receive shipment request</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Check product availability</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e1">
+    <alternative condition="Direct" eid="e6" language="text/x-ruby">
+      <call id="a20" endpoint="" a:alt_id="10">
+        <parameters>
+          <label>Prepare products for shipment to particular service station</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <otherwise eid="e2">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Check shipment address</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e3">
+        <alternative condition="Assemble" eid="e4" language="text/x-ruby">
+          <call id="a11" endpoint="" a:alt_id="6">
+            <parameters>
+              <label>Assemble inbound shipment</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a13" endpoint="" a:alt_id="7">
+            <parameters>
+              <label>Send inbound shipment</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a15" endpoint="" a:alt_id="8">
+            <parameters>
+              <label>Receive inbound shipment</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a17" endpoint="" a:alt_id="9">
+            <parameters>
+              <label>Check inbound shipment</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a19" endpoint="" a:alt_id="10">
+            <parameters>
+              <label>Prepare products for shipment to particular service station</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Regional" eid="e5" language="text/x-ruby">
+          <call id="a21" endpoint="" a:alt_id="11">
+            <parameters>
+              <label>Prepare products for regional shipment</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </otherwise>
+  </choose>
+</description>

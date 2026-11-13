@@ -1,0 +1,163 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Fetch maternity leave models",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Parent selects model",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Collect relevant information",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Notify Social Security",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Notify Company",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Gather information from companies",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Wait for period end",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Process extension request",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Finalize leave",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a11",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mp1",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a19",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g2",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a23",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a25",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

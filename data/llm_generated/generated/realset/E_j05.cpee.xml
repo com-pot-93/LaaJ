@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Gather Visa Requirements</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="2" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a5" endpoint="" a:alt_id="3">
+        <parameters>
+          <label>Prepare Visa Application</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Submit Visa Application to BMEIA</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e3">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Organize Accommodation and Bank Account</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <choose label="{x}" mode="exclusive" a:alt_id="7" eid="e4">
+    <alternative condition="Visa Approved" eid="e5" language="text/x-ruby">
+      <call id="a17" endpoint="" a:alt_id="8">
+        <parameters>
+          <label>Receive Rot-Weiss-Rot Card</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Visa Denied" eid="e6" language="text/x-ruby">
+      <call id="a19" endpoint="" a:alt_id="9">
+        <parameters>
+          <label>Handle Refusal</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <loop mode="pre_test" condition="Need Renewal" a:alt_id="11" eid="e7" language="text/x-ruby">
+    <call id="a2" endpoint="" a:alt_id="1">
+      <parameters>
+        <label>Gather Visa Requirements</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <parallel wait="-1" cancel="last" a:alt_id="2" eid="e8">
+      <parallel_branch eid="e9">
+        <call id="a6" endpoint="" a:alt_id="3">
+          <parameters>
+            <label>Prepare Visa Application</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a10" endpoint="" a:alt_id="5">
+          <parameters>
+            <label>Submit Visa Application to BMEIA</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </parallel_branch>
+      <parallel_branch eid="e10">
+        <call id="a8" endpoint="" a:alt_id="4">
+          <parameters>
+            <label>Organize Accommodation and Bank Account</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </parallel_branch>
+    </parallel>
+    <choose label="{x}" mode="exclusive" a:alt_id="7" eid="e11">
+      <alternative condition="Visa Approved" eid="e12" language="text/x-ruby">
+        <call id="a18" endpoint="" a:alt_id="8">
+          <parameters>
+            <label>Receive Rot-Weiss-Rot Card</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+      <alternative condition="Visa Denied" eid="e13" language="text/x-ruby">
+        <call id="a20" endpoint="" a:alt_id="9">
+          <parameters>
+            <label>Handle Refusal</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </alternative>
+    </choose>
+  </loop>
+</description>

@@ -1,0 +1,140 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "get a new order from the sales department",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "master determines the necessary parts,  quantities and delivery date",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "enter info into production planning system ( PPS )",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "PPS creates a list of procured parts",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "transfer data from PPS to Enterprise Resource Planning system ( ERP )",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "procure missing parts",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "receive a notice from the system",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "employee takes care of the implementation",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "check the order for its quality",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg1",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

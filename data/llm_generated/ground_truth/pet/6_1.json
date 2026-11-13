@@ -1,0 +1,559 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "ACME AG receives invoices",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Secretariat performs invoice's visual inspection",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Secretariat forwards the invoice to an accounting employee",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Accounting employee identifies the charging suppliers",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Accounting employee creates a new invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Accounting employee checks the invoice items",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Accounting employee notes the  cost center and the cost center managers (docket)",
+            "type": "Task"
+        },
+        {
+            "id": "a34",
+            "name": "Docket and the invoice's copy go to the internal mail",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Accounting employee  sends the docket and the invoice copy to the  cost center manager",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Cost center manager receives the copy of the invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Cost center manager reviews the content for accuracy",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Cost center manager notes his code one on  the docket (AP)",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Cost center manager returns the copy of the invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Pass the copy of the invoice to the next cost center manager",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Cost center manager  sends invoice back to accounting",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Accounting employee proceedes with the clarification with the vendor",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Accounting employee consults the cost center managers",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "Accounting employee sends the copy of the invoice to the cost center managers",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Accounting employee forwards the copy of the invoice to the commercial manager",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Commercial manager  makes the commercial audit",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Commercial manager  issues the approval for payment",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Board checks invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Commercial manager moves invoice's copy  and the docket to the accounting employee",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Accounting employee resolves complaint",
+            "type": "Task"
+        },
+        {
+            "id": "a31",
+            "name": "Accounting employee gives payment instructions",
+            "type": "Task"
+        },
+        {
+            "id": "a32",
+            "name": "Accounting employee closes the invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a37",
+            "name": "Cost center manager rejects the AP",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        },
+        {
+            "id": "esc2",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg8",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g9",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg9",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a34"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a34",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mg1",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a35",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a9",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a11",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a12",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g3",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g3",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a14",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a16",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g4",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a19",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg4",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a20",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a21",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a22",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a23",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "g5",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "a25",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "mg5",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "a27",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "g6",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "a29",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "mg6",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "a31",
+            "targetRef": "a32"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "a32",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "a13",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "esc1",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "g2",
+            "targetRef": "a37"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a37",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a16",
+            "targetRef": "g7"
+        },
+        {
+            "id": "f46",
+            "sourceRef": "g7",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f47",
+            "sourceRef": "g7",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f48",
+            "sourceRef": "a19",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f49",
+            "sourceRef": "mg7",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f50",
+            "sourceRef": "a23",
+            "targetRef": "g8"
+        },
+        {
+            "id": "f51",
+            "sourceRef": "g8",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f52",
+            "sourceRef": "a25",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f53",
+            "sourceRef": "g8",
+            "targetRef": "mg8"
+        },
+        {
+            "id": "f54",
+            "sourceRef": "mg8",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f55",
+            "sourceRef": "a27",
+            "targetRef": "g9"
+        },
+        {
+            "id": "f56",
+            "sourceRef": "g9",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f57",
+            "sourceRef": "g9",
+            "targetRef": "mg9"
+        },
+        {
+            "id": "f58",
+            "sourceRef": "a29",
+            "targetRef": "mg9"
+        },
+        {
+            "id": "f59",
+            "sourceRef": "mg9",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f60",
+            "sourceRef": "a32",
+            "targetRef": "esc2"
+        },
+        {
+            "id": "f61",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f62",
+            "sourceRef": "esc2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f63",
+            "sourceRef": "mg2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f64",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

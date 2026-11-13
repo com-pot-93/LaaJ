@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Send invitations to 10 friends</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Collect game preferences</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="3" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Appoint date</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Check if 8 people agree</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <loop mode="pre_test" condition="Less than 8" a:alt_id="7" eid="e3" language="text/x-ruby">
+        <call id="a10" endpoint="" a:alt_id="5">
+          <parameters>
+            <label>Appoint date</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a12" endpoint="" a:alt_id="6">
+          <parameters>
+            <label>Check if 8 people agree</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </loop>
+    </parallel_branch>
+    <parallel_branch eid="e4">
+      <call id="a19" endpoint="" a:alt_id="9">
+        <parameters>
+          <label>Check game library</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e5">
+        <alternative condition="Games missing" eid="e6" language="text/x-ruby">
+          <call id="a23" endpoint="" a:alt_id="11">
+            <parameters>
+              <label>Download missing games</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="All games present" eid="e7" language="text/x-ruby"/>
+      </choose>
+      <call id="a29" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Check beer requirements</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="14" eid="e8">
+        <alternative condition="Not enough" eid="e9" language="text/x-ruby">
+          <call id="a33" endpoint="" a:alt_id="15">
+            <parameters>
+              <label>Buy missing beer</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Enough" eid="e10" language="text/x-ruby"/>
+      </choose>
+    </parallel_branch>
+  </parallel>
+  <call id="a43" endpoint="" a:alt_id="18">
+    <parameters>
+      <label>Enjoy LAN party</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

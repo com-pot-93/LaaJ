@@ -1,0 +1,133 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Manager checks the open leads",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Manager selects the top five leads",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Manager tells Sales Assistant to  contact the leads",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Sales Assistant calls  customer",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Sales Assistant  sends a note to the Manager",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Manager  processes the lead",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a4",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mg1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

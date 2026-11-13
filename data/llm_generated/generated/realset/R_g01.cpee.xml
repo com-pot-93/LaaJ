@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Enter smartphone model and damage</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Get materials and tools list</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="3" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Check existing inventory</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e3">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Contact friends for items</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e4">
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Purchase remaining items</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <call id="a19" endpoint="" a:alt_id="8">
+    <parameters>
+      <label>Receive repair instructions</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a21" endpoint="" a:alt_id="9">
+    <parameters>
+      <label>Perform repair</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e5">
+    <alternative condition="Success" eid="e6" language="text/x-ruby">
+      <call id="a25" endpoint="" a:alt_id="11">
+        <parameters>
+          <label>Send review or video</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Failure" eid="e7" language="text/x-ruby">
+      <call id="a27" endpoint="" a:alt_id="12">
+        <parameters>
+          <label>Send to expert</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+</description>

@@ -1,0 +1,272 @@
+{
+    "tasks": [
+        {
+            "id": "a3",
+            "name": "Brainstorm Character Names",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Check Battle.net Account",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Enter Account Info",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Click Confirmation Link",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Check WoW Subscription",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Enter Credit Card Info",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Enter IBAN and BIC",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Log into Game",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Select Realm Race and Class",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "Enter Character Name",
+            "type": "Task"
+        },
+        {
+            "id": "a47",
+            "name": "Receive Confirmation and Selfies",
+            "type": "Task"
+        },
+        {
+            "id": "a49",
+            "name": "Wait for Expansion Release",
+            "type": "Task"
+        },
+        {
+            "id": "a51",
+            "name": "Receive Expansion Message",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "p1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a13",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mg2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a15",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g4",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a23",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a25",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg4",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg3",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a33",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a35",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mp1",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g5",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a41",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg5",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mg5",
+            "targetRef": "a47"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a47",
+            "targetRef": "a49"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a49",
+            "targetRef": "a51"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a51",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

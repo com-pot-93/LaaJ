@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Report Job Applications</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <loop mode="pre_test" condition="No Offer" eid="e1">
+    <call id="a5" endpoint="" a:alt_id="3">
+      <parameters>
+        <label>Receive Job Offers</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <call id="a7" endpoint="" a:alt_id="4">
+      <parameters>
+        <label>Company Confirms and Rates Application</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e2">
+      <alternative condition="No Offer" eid="e3" language="text/x-ruby">
+        <call id="a11" endpoint="" a:alt_id="6">
+          <parameters>
+            <label>Negotiate Job Interview</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <choose label="{x}" mode="exclusive" a:alt_id="7" eid="e4">
+          <alternative condition="No Offer" eid="e5" language="text/x-ruby"/>
+          <otherwise eid="e6">
+            <call id="a17" endpoint="" a:alt_id="8">
+              <parameters>
+                <label>Enter Probation Phase</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <call id="a21" endpoint="" a:alt_id="9">
+              <parameters>
+                <label>Perform Mutual Rating</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <call id="a23" endpoint="" a:alt_id="10">
+              <parameters>
+                <label>Wait 1 Year for Review Visibility</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <choose label="{x}" mode="exclusive" a:alt_id="11" eid="e7">
+              <alternative condition="Permanent Job and Rating &gt; C" eid="e8" language="text/x-ruby"/>
+              <alternative condition="Permanent Job and Rating &gt; C" eid="e9" language="text/x-ruby">
+                <call id="a29" endpoint="" a:alt_id="13">
+                  <parameters>
+                    <label>Receive Job Offers</label>
+                    <method/>
+                    <arguments/>
+                  </parameters>
+                </call>
+                <choose label="{x}" mode="exclusive" a:alt_id="14" eid="e10">
+                  <alternative condition="Permanent Job and Rating &gt; C" eid="e11" language="text/x-ruby">
+                    <call id="a33" endpoint="" a:alt_id="15">
+                      <parameters>
+                        <label>Negotiate Job Interview</label>
+                        <method/>
+                        <arguments/>
+                      </parameters>
+                    </call>
+                    <choose label="{x}" mode="exclusive" a:alt_id="16" eid="e12">
+                      <alternative condition="Permanent Job and Rating &gt; C" eid="e13" language="text/x-ruby">
+                        <call id="a39" endpoint="" a:alt_id="17">
+                          <parameters>
+                            <label>Enter Probation Phase</label>
+                            <method/>
+                            <arguments/>
+                          </parameters>
+                        </call>
+                        <call id="a43" endpoint="" a:alt_id="18">
+                          <parameters>
+                            <label>Perform Mutual Rating</label>
+                            <method/>
+                            <arguments/>
+                          </parameters>
+                        </call>
+                        <choose label="{x}" mode="exclusive" a:alt_id="19" eid="e14">
+                          <alternative condition="Permanent Job and Rating &gt; C" eid="e15" language="text/x-ruby"/>
+                          <alternative condition="Permanent Job and Rating &lt;= C" eid="e16" language="text/x-ruby">
+                            <call id="a30" endpoint="" a:alt_id="13">
+                              <parameters>
+                                <label>Receive Job Offers</label>
+                                <method/>
+                                <arguments/>
+                              </parameters>
+                            </call>
+                            <escape a:alt_id="-1"/>
+                          </alternative>
+                        </choose>
+                      </alternative>
+                      <alternative condition="No Offer" eid="e17" language="text/x-ruby">
+                        <call id="a31" endpoint="" a:alt_id="13">
+                          <parameters>
+                            <label>Receive Job Offers</label>
+                            <method/>
+                            <arguments/>
+                          </parameters>
+                        </call>
+                        <escape a:alt_id="-1"/>
+                      </alternative>
+                    </choose>
+                  </alternative>
+                  <alternative condition="No Interview" eid="e18" language="text/x-ruby">
+                    <call id="a32" endpoint="" a:alt_id="13">
+                      <parameters>
+                        <label>Receive Job Offers</label>
+                        <method/>
+                        <arguments/>
+                      </parameters>
+                    </call>
+                    <escape a:alt_id="-1"/>
+                  </alternative>
+                </choose>
+              </alternative>
+            </choose>
+            <escape a:alt_id="-1"/>
+          </otherwise>
+        </choose>
+      </alternative>
+      <alternative condition="No Interview" eid="e19" language="text/x-ruby"/>
+    </choose>
+  </loop>
+</description>

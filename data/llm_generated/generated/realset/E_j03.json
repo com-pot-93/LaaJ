@@ -1,0 +1,166 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Identify Accident or Incident",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Classify Accident Category",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Notify Employer of Incident",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Employer Reporting Obligations",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Insurance Reporting Obligations",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Report to Private Insurer",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Finalize Documentation",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mg1",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "p2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "p2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a15",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a17",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mp2",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g3",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a25",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a27",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mg3",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

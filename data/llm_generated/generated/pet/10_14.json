@@ -1,0 +1,275 @@
+{
+    "tasks": [
+        {
+            "id": "a11",
+            "name": "GO examines bill",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Skip MPOO bill",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "GO examines bill",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Skip MSPO bill",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "GO examines bill",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Skip readings bill",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "MPON or GO examines bill",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Skip equipment bill",
+            "type": "Task"
+        },
+        {
+            "id": "a53",
+            "name": "Confirm invoice with payment advice",
+            "type": "Task"
+        },
+        {
+            "id": "a55",
+            "name": "Reject invoice",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "p1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a11",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a13",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "p1",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g3",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g3",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a15",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a17",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "p1",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g4",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g4",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a19",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a21",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "p1",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g5",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g5",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a23",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a25",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg2",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mg3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mg4",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg5",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mp1",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "g6",
+            "targetRef": "a53"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g6",
+            "targetRef": "a55"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a53",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a55",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "mg6",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

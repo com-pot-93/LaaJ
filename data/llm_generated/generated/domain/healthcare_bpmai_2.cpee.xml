@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Come to the hospital</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Stay the front</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Visit the nurse</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a7" endpoint="" a:alt_id="4">
+    <parameters>
+      <label>Check insurance</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e1">
+    <alternative condition="Branch 1" eid="e2" language="text/x-ruby">
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Check patients state</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="7" eid="e3">
+        <alternative condition="Branch 1" eid="e4" language="text/x-ruby">
+          <call id="a15" endpoint="" a:alt_id="8">
+            <parameters>
+              <label>Send patient home</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Branch 2" eid="e5" language="text/x-ruby">
+          <call id="a19" endpoint="" a:alt_id="10">
+            <parameters>
+              <label>Examine the patient</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="11" eid="e6">
+            <alternative condition="Branch 1" eid="e7" language="text/x-ruby">
+              <call id="a23" endpoint="" a:alt_id="12">
+                <parameters>
+                  <label>Hospitalize</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a25" endpoint="" a:alt_id="13">
+                <parameters>
+                  <label>Book patient for doctor</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="Branch 2" eid="e8" language="text/x-ruby">
+              <call id="a29" endpoint="" a:alt_id="15">
+                <parameters>
+                  <label>Send patient to pharmacy</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a31" endpoint="" a:alt_id="16">
+                <parameters>
+                  <label>Visit pharmacy</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a33" endpoint="" a:alt_id="17">
+                <parameters>
+                  <label>Order medicine</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a35" endpoint="" a:alt_id="18">
+                <parameters>
+                  <label>Pay medicine</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a37" endpoint="" a:alt_id="19">
+                <parameters>
+                  <label>Receive medicine</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="Branch 3" eid="e9" language="text/x-ruby">
+              <call id="a41" endpoint="" a:alt_id="20">
+                <parameters>
+                  <label>Send patient home</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+          </choose>
+        </alternative>
+      </choose>
+    </alternative>
+    <otherwise eid="e10">
+      <call id="a51" endpoint="" a:alt_id="23">
+        <parameters>
+          <label>Check if patient is registered in hospital</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="24" eid="e11">
+        <alternative condition="Branch 1" eid="e12" language="text/x-ruby">
+          <call id="a55" endpoint="" a:alt_id="25">
+            <parameters>
+              <label>Register patient</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Branch 2" eid="e13" language="text/x-ruby"/>
+      </choose>
+      <call id="a61" endpoint="" a:alt_id="27">
+        <parameters>
+          <label>Pay fee</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <loop mode="pre_test" condition="true" a:alt_id="28" eid="e14" language="text/x-ruby">
+        <call id="a65" endpoint="" a:alt_id="29">
+          <parameters>
+            <label>Book patient for doctor</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a67" endpoint="" a:alt_id="30">
+          <parameters>
+            <label>Examine the patient</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <choose label="{x}" mode="exclusive" a:alt_id="31" eid="e15">
+          <alternative condition="Branch 1" eid="e16" language="text/x-ruby">
+            <call id="a71" endpoint="" a:alt_id="32">
+              <parameters>
+                <label>Hospitalize</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+          </alternative>
+          <alternative condition="Branch 2" eid="e17" language="text/x-ruby">
+            <call id="a75" endpoint="" a:alt_id="34">
+              <parameters>
+                <label>Send patient to pharmacy</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <call id="a77" endpoint="" a:alt_id="35">
+              <parameters>
+                <label>Visit pharmacy</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <call id="a79" endpoint="" a:alt_id="36">
+              <parameters>
+                <label>Order medicine</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <call id="a81" endpoint="" a:alt_id="37">
+              <parameters>
+                <label>Pay medicine</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+            <call id="a83" endpoint="" a:alt_id="38">
+              <parameters>
+                <label>Receive medicine</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+          </alternative>
+          <alternative condition="Branch 3" eid="e18" language="text/x-ruby">
+            <call id="a87" endpoint="" a:alt_id="39">
+              <parameters>
+                <label>Send patient home</label>
+                <method/>
+                <arguments/>
+              </parameters>
+            </call>
+          </alternative>
+        </choose>
+      </loop>
+    </otherwise>
+  </choose>
+</description>

@@ -1,0 +1,254 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Develop basic design",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Order necessary Lego brick sets",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Sort Lego bricks according to size",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Put big bricks in suitable container",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Put medium bricks in suitable container",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Put small bricks in suitable container",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Build subcomponents",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Continue building subcomponents",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Reorder Lego bricks",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Test subcomponents",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Redesign subcomponent",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Assemble to machine",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "p1",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a14",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a16",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mp1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg2",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a4",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g3",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "g3",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a6",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a7",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg3",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a9",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "g4",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g4",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a11",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a12",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "esc1",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "mg4",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Receive Customer Data</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Enter Data into CRM</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Compare and Validate Data</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <loop mode="pre_test" condition="Errors Found" a:alt_id="4" eid="e1" language="text/x-ruby">
+    <call id="a9" endpoint="" a:alt_id="5">
+      <parameters>
+        <label>Correct Errors</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <call id="a6" endpoint="" a:alt_id="3">
+      <parameters>
+        <label>Compare and Validate Data</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+  </loop>
+  <choose label="{x}" mode="exclusive" a:alt_id="7" eid="e2">
+    <alternative condition="Customer Exists" eid="e3" language="text/x-ruby">
+      <call id="a17" endpoint="" a:alt_id="8">
+        <parameters>
+          <label>Use Existing Object</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="New Customer" eid="e4" language="text/x-ruby">
+      <call id="a19" endpoint="" a:alt_id="9">
+        <parameters>
+          <label>Create New Customer Object</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <call id="a25" endpoint="" a:alt_id="11">
+    <parameters>
+      <label>Prepare Contract Documents</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a27" endpoint="" a:alt_id="12">
+    <parameters>
+      <label>Automated CIS Check</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <loop mode="pre_test" condition="Negative" a:alt_id="13" eid="e5" language="text/x-ruby">
+    <call id="a31" endpoint="" a:alt_id="14">
+      <parameters>
+        <label>Analyze and Resolve Issues</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <call id="a26" endpoint="" a:alt_id="11">
+      <parameters>
+        <label>Prepare Contract Documents</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+    <call id="a28" endpoint="" a:alt_id="12">
+      <parameters>
+        <label>Automated CIS Check</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+  </loop>
+  <call id="a35" endpoint="" a:alt_id="15">
+    <parameters>
+      <label>Send Confirmation to Customer</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a37" endpoint="" a:alt_id="16">
+    <parameters>
+      <label>Send Request to Grid Operator</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a39" endpoint="" a:alt_id="17">
+    <parameters>
+      <label>Receive Grid Operator Response</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="18" eid="e6">
+    <alternative condition="Supplier Concurrence" eid="e7" language="text/x-ruby">
+      <call id="a43" endpoint="" a:alt_id="19">
+        <parameters>
+          <label>Resolve Conflict</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Withdraw" eid="e8" language="text/x-ruby">
+      <call id="a47" endpoint="" a:alt_id="21">
+        <parameters>
+          <label>Create CIS Contract</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <call id="a49" endpoint="" a:alt_id="22">
+        <parameters>
+          <label>Wait for Customer or 7 Days</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="23" eid="e9">
+        <alternative condition="Withdraw" eid="e10" language="text/x-ruby"/>
+        <alternative condition="Confirm or Timeout" eid="e11" language="text/x-ruby">
+          <parallel wait="-1" cancel="last" a:alt_id="25" eid="e12">
+            <parallel_branch eid="e13">
+              <call id="a57" endpoint="" a:alt_id="26">
+                <parameters>
+                  <label>Receive Meter Data</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <call id="a61" endpoint="" a:alt_id="28">
+                <parameters>
+                  <label>Import Meter Data</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </parallel_branch>
+            <parallel_branch eid="e14">
+              <call id="a59" endpoint="" a:alt_id="27">
+                <parameters>
+                  <label>Grid Operator Final Billing</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </parallel_branch>
+          </parallel>
+        </alternative>
+      </choose>
+    </alternative>
+  </choose>
+</description>

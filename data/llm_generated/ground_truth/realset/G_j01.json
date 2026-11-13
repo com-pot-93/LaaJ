@@ -1,0 +1,371 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Find out wanted resources",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Check repo for already available resources",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Collect urgently needed resources",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Build tools",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Collect the remained resources",
+            "type": "Task"
+        },
+        {
+            "id": "a26",
+            "name": "Wait for random natural event for some time",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Reset bot",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Continue farming",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Start farming",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Notify player",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Read message",
+            "type": "Task"
+        },
+        {
+            "id": "a22",
+            "name": "Give bot a sleeping break",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Brag to friends",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "Help with materials",
+            "type": "Task"
+        },
+        {
+            "id": "a24",
+            "name": "Update list of resources",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        },
+        {
+            "id": "esc1",
+            "name": "escape",
+            "type": "IntermediateEscalationEventThrowing"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "i8",
+            "type": "Inclusive"
+        },
+        {
+            "id": "mi8",
+            "type": "Inclusive"
+        },
+        {
+            "id": "mg7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "p1",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a6",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a3",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "mp1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a9",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg2",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a4",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "p3",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg4",
+            "targetRef": "a26"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a26",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g5",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a13",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g5",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a12",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a11",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg5",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "g6",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "a15",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a2",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg6",
+            "targetRef": "g7"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g7",
+            "targetRef": "a22"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "g7",
+            "targetRef": "i8"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "i8",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "i8",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a19",
+            "targetRef": "mi8"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "a20",
+            "targetRef": "mi8"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "mi8",
+            "targetRef": "esc1"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a22",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "esc1",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "mg7",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "p3",
+            "targetRef": "a24"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "mg4",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "a24",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "mp3",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

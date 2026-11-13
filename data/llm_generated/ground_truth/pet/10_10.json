@@ -1,0 +1,183 @@
+{
+    "tasks": [
+        {
+            "id": "a2",
+            "name": "Fault detector reports a failure to the MPO",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "MPO has a suspicion of  own fault",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "MPO  examines the failure",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "MPO rejects the failure of the fault detector",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "MPO confirms the failure of the fault detector",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "MPO informes the GO",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "MPO informes the MSP",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "MPO fixes the fault at the measuring device",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "MPO shares the results of the repairs",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "MPO informs the GO about the resolution of the interference",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "MPO informs the MSP about the resolution of the interference",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "g1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a3",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "mg1",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a5",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g2",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a9",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a16",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a10",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a11",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a12",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a7",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a13",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg2",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

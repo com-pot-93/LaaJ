@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Package product</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Ship product</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="3" eid="e1">
+    <alternative condition="Deliver to door" eid="e2" language="text/x-ruby">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Deliver to door</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="6" eid="e3">
+        <alternative condition="Print receipt" eid="e4" language="text/x-ruby">
+          <call id="a13" endpoint="" a:alt_id="7">
+            <parameters>
+              <label>Print pick-up receipt</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a17" endpoint="" a:alt_id="9">
+            <parameters>
+              <label>Post pick-up receipt</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a19" endpoint="" a:alt_id="10">
+            <parameters>
+              <label>Reroute to the closest station</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Skip receipt" eid="e5" language="text/x-ruby"/>
+      </choose>
+    </alternative>
+    <alternative condition="Deliver to station" eid="e6" language="text/x-ruby">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Deliver to station</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+  <choose label="{x}" mode="exclusive" a:alt_id="12" eid="e7">
+    <alternative condition="Return" eid="e8" language="text/x-ruby">
+      <call id="a29" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Receive the product back</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="No return" eid="e9" language="text/x-ruby"/>
+  </choose>
+</description>

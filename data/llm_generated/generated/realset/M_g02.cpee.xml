@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Develop basic design</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Order Lego brick sets</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Sort parts into containers</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="4" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Build subcomponent</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <loop mode="pre_test" condition="Parts missing" a:alt_id="6" eid="e3" language="text/x-ruby">
+        <call id="a13" endpoint="" a:alt_id="7">
+          <parameters>
+            <label>Reorder individual parts</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a10" endpoint="" a:alt_id="5">
+          <parameters>
+            <label>Build subcomponent</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </loop>
+      <call id="a17" endpoint="" a:alt_id="8">
+        <parameters>
+          <label>Test subcomponent</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <loop mode="pre_test" condition="Test failed" a:alt_id="9" eid="e4" language="text/x-ruby">
+        <call id="a21" endpoint="" a:alt_id="10">
+          <parameters>
+            <label>Redesign and rebuild</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+        <call id="a18" endpoint="" a:alt_id="8">
+          <parameters>
+            <label>Test subcomponent</label>
+            <method/>
+            <arguments/>
+          </parameters>
+        </call>
+      </loop>
+    </parallel_branch>
+    <parallel_branch eid="e5"/>
+  </parallel>
+  <call id="a29" endpoint="" a:alt_id="12">
+    <parameters>
+      <label>Assemble subcomponents</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

@@ -1,0 +1,158 @@
+{
+    "tasks": [
+        {
+            "id": "a3",
+            "name": "Examine failure",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Reject failure",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Inform GO",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "Inform MSP",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Fix fault at device",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Share results with detector",
+            "type": "Task"
+        },
+        {
+            "id": "a31",
+            "name": "Inform GO of resolution",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Inform MSP of resolution",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a3",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "g1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p2",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p2",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "p2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a19",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a17",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a25",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mp2",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a31",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a9",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a33",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,96 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Search Police Report",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Compile Claim Documentation",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Calculate Initial Claim Estimate",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Retrieve Action Plan Checklist",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Create Action Plan",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "Negotiate Settlement",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Inform Claimant of Outcome",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a11",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a13",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

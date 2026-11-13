@@ -1,0 +1,206 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "task",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "check if car is still registered",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "notify car owner",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "check if car has been brought to mechanic",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "task",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "fine car owner",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "receive car problems",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "offer payment to car owner",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "transfer payment to mechanic",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "receive confirmation of successful repair",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "receive time for next service",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a6",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g2",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a14",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a10",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g3",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a12",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg3",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a15",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a8",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a16",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

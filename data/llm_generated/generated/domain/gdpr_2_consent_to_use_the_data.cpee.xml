@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <parallel wait="-1" cancel="last" a:alt_id="1" eid="e1">
+    <parallel_branch eid="e2">
+      <call id="a3" endpoint="" a:alt_id="2">
+        <parameters>
+          <label>Add "profiling about logic involved, significance and envisaged consequences of processing"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e3">
+      <call id="a5" endpoint="" a:alt_id="3">
+        <parameters>
+          <label>Check if it is possible to determine the period for which personal data will be stored</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="17" eid="e4">
+        <alternative condition="Yes" eid="e5" language="text/x-ruby">
+          <call id="a35" endpoint="" a:alt_id="18">
+            <parameters>
+              <label>Retrieve the criteria used to determine the period</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No" eid="e6" language="text/x-ruby">
+          <call id="a37" endpoint="" a:alt_id="19">
+            <parameters>
+              <label>Retrieve the period</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e7">
+      <call id="a7" endpoint="" a:alt_id="4">
+        <parameters>
+          <label>Add "existence of the right to rectify of personal data"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e8">
+      <call id="a9" endpoint="" a:alt_id="5">
+        <parameters>
+          <label>Add "existence of the right to access personal data"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e9">
+      <call id="a11" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Add "existence of the right to erase personal data"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e10">
+      <call id="a13" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Add "existence of the right to data portability"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e11">
+      <call id="a15" endpoint="" a:alt_id="8">
+        <parameters>
+          <label>Add "existence of the right to withdraw"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e12">
+      <call id="a17" endpoint="" a:alt_id="9">
+        <parameters>
+          <label>Add "existence of the right to lodge a complaint to a supervisory authority"</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e13">
+      <call id="a19" endpoint="" a:alt_id="10">
+        <parameters>
+          <label>Check if data has been obtained from Data Subject</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="21" eid="e14">
+        <alternative condition="Yes" eid="e15" language="text/x-ruby">
+          <call id="a45" endpoint="" a:alt_id="22">
+            <parameters>
+              <label>Retrieve the source from which personal data are originated</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No" eid="e16" language="text/x-ruby">
+          <call id="a47" endpoint="" a:alt_id="23">
+            <parameters>
+              <label>Initialize empty source</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e17">
+      <call id="a21" endpoint="" a:alt_id="11">
+        <parameters>
+          <label>Check if personal data can be transferred internationally</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="25" eid="e18">
+        <alternative condition="Yes" eid="e19" language="text/x-ruby">
+          <call id="a55" endpoint="" a:alt_id="26">
+            <parameters>
+              <label>Add "personal data will be transferred internationally"</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No" eid="e20" language="text/x-ruby">
+          <call id="a57" endpoint="" a:alt_id="27">
+            <parameters>
+              <label>Initialize empty transfer info</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e21">
+      <call id="a23" endpoint="" a:alt_id="12">
+        <parameters>
+          <label>Check if recipients are present</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="29" eid="e22">
+        <alternative condition="Yes" eid="e23" language="text/x-ruby">
+          <call id="a65" endpoint="" a:alt_id="30">
+            <parameters>
+              <label>Retrieve recipients</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No" eid="e24" language="text/x-ruby">
+          <call id="a67" endpoint="" a:alt_id="31">
+            <parameters>
+              <label>Initialize empty recipients</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e25">
+      <call id="a25" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Check if legitimate interests are presents</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="33" eid="e26">
+        <alternative condition="Yes" eid="e27" language="text/x-ruby">
+          <call id="a75" endpoint="" a:alt_id="34">
+            <parameters>
+              <label>Retrieve legitimate interests</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="No" eid="e28" language="text/x-ruby">
+          <call id="a77" endpoint="" a:alt_id="35">
+            <parameters>
+              <label>Initialize empty interests</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+    </parallel_branch>
+    <parallel_branch eid="e29">
+      <call id="a27" endpoint="" a:alt_id="14">
+        <parameters>
+          <label>Retrieve processing legal basis</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e30">
+      <call id="a29" endpoint="" a:alt_id="15">
+        <parameters>
+          <label>Retrieve processing purposses</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e31">
+      <parallel wait="-1" cancel="last" a:alt_id="16" eid="e32">
+        <parallel_branch eid="e33">
+          <call id="a83" endpoint="" a:alt_id="37">
+            <parameters>
+              <label>Retrieve identity and contact details</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </parallel_branch>
+        <parallel_branch eid="e34">
+          <call id="a85" endpoint="" a:alt_id="38">
+            <parameters>
+              <label>Ask DPO details</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <call id="a87" endpoint="" a:alt_id="39">
+            <parameters>
+              <label>Receive details From DPO</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </parallel_branch>
+      </parallel>
+    </parallel_branch>
+  </parallel>
+  <call id="a123" endpoint="" a:alt_id="42">
+    <parameters>
+      <label>Collect consent information</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a125" endpoint="" a:alt_id="43">
+    <parameters>
+      <label>Ask consent</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="44" eid="e35">
+    <alternative condition="Negation" eid="e36" language="text/x-ruby">
+      <call id="a129" endpoint="" a:alt_id="45">
+        <parameters>
+          <label>Receive negation</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <alternative condition="Consent" eid="e37" language="text/x-ruby">
+      <call id="a131" endpoint="" a:alt_id="46">
+        <parameters>
+          <label>Receive consent</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+  </choose>
+</description>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Send sketches to artist</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Review and request changes</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <loop mode="pre_test" condition="Not satisfied" a:alt_id="3" eid="e1" language="text/x-ruby">
+    <call id="a4" endpoint="" a:alt_id="2">
+      <parameters>
+        <label>Review and request changes</label>
+        <method/>
+        <arguments/>
+      </parameters>
+    </call>
+  </loop>
+  <call id="a9" endpoint="" a:alt_id="4">
+    <parameters>
+      <label>Choose plastic color</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e2">
+    <alternative condition="Not in stock" eid="e7" language="text/x-ruby">
+      <call id="a15" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Order plastic</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <otherwise eid="e3">
+      <call id="a13" endpoint="" a:alt_id="6">
+        <parameters>
+          <label>Check remaining weight</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="8" eid="e4">
+        <alternative condition="Under 100g" eid="e5" language="text/x-ruby">
+          <call id="a19" endpoint="" a:alt_id="9">
+            <parameters>
+              <label>Add to shopping list</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Over 100g" eid="e6" language="text/x-ruby"/>
+      </choose>
+    </otherwise>
+  </choose>
+  <call id="a21" endpoint="" a:alt_id="10">
+    <parameters>
+      <label>Confirm plastic availability</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <parallel wait="-1" cancel="last" a:alt_id="11" eid="e8">
+    <parallel_branch eid="e9">
+      <call id="a29" endpoint="" a:alt_id="12">
+        <parameters>
+          <label>Turn on printer and heat bed</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+    <parallel_branch eid="e10">
+      <call id="a31" endpoint="" a:alt_id="13">
+        <parameters>
+          <label>Generate Gcode from STL</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </parallel_branch>
+  </parallel>
+  <call id="a37" endpoint="" a:alt_id="15">
+    <parameters>
+      <label>Print the model</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+</description>

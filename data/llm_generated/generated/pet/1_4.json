@@ -1,0 +1,216 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Select Underwriters",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Provide Advice",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Prepare SEC Registration",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Check Blue-Sky Compliance",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Await SEC Approval",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Firm up Issue Price",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Arrange Road Show",
+            "type": "Task"
+        },
+        {
+            "id": "a27",
+            "name": "Receive SEC Clearance",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Fix Issue Price",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Buy Stock",
+            "type": "Task"
+        },
+        {
+            "id": "a37",
+            "name": "Offer to Public",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Cancel Offering",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "p2",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp2",
+            "type": "Parallel"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "p1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "p1",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a7",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a9",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mp1",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a15",
+            "targetRef": "p2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "p2",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "p2",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a19",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a21",
+            "targetRef": "mp2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mp2",
+            "targetRef": "a27"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a27",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a29",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a33",
+            "targetRef": "a37"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g3",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a37",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a35",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg3",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

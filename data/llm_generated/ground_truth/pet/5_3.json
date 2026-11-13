@@ -1,0 +1,228 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "employee submits an office supply request",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "register the request",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "immediate supervisor receives request",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "immediate supervisor approves request",
+            "type": "Task"
+        },
+        {
+            "id": "a20",
+            "name": "immediate supervisor returns request to the employee",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "employee reviews the comments",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "request goes to the purchase department",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "the purchase department makes quotations",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "the purchase department selects vendor",
+            "type": "Task"
+        },
+        {
+            "id": "a11",
+            "name": "the purchase department chooses a different vendor",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "the system  generates a purchase order",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "the system sends a purchase order",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "the system waits for the product delivery",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "the system receives the invoice",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "the system sends user notification",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a5",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g1",
+            "targetRef": "a20"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a20",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g1",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a7",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a9",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "g2",
+            "targetRef": "a11"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a11",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "mg2",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a13",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a14",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a15",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "a6",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a16",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg1",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a18",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

@@ -1,0 +1,275 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "back up the database",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "check the database",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "check the CRM system",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "register all defaulting accounts and customers",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "produce new table of defaulting accounts",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "send table to account management",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "send an alert to the supervisor",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "check the CRM system",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "reconcile with the existing account defaulters table",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "send message to the supervisor",
+            "type": "Task"
+        },
+        {
+            "id": "a24",
+            "name": "complete reconciliation",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a2",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a4",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "g2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a6",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "g3",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a8",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "a9",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mg3",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "mg2",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg1",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g4",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a12",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "mg4",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a13",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g5",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a15",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "mg5",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "g6",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "g6",
+            "targetRef": "a24"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "a18",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a24",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "mg6",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

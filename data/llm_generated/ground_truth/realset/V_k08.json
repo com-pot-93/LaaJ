@@ -1,0 +1,272 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Enter login data",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Check if credentials are correct",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "Select product",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "Add it to shopping cart",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Save item",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "Check if every selected item is in the shopping cart",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Confirm order",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "Prepare shipment details",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Prepare payment details",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Enter payment data",
+            "type": "Task"
+        },
+        {
+            "id": "a19",
+            "name": "Send payment data to bank institut",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Enter shipping details",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "Confirm and save order",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p3",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp3",
+            "type": "Parallel"
+        },
+        {
+            "id": "p4",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp4",
+            "type": "Parallel"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a12",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "g1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "g2",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a2",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "a4",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a23",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "mg2",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg2",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "a6",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a7",
+            "targetRef": "p3"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "p3",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "p3",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "a15",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a16",
+            "targetRef": "mp3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "mp3",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "a8",
+            "targetRef": "p4"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "p4",
+            "targetRef": "a19"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "p4",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a19",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "a10",
+            "targetRef": "mp4"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mp4",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g5",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a21",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "mg5",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "mg1",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

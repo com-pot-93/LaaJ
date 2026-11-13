@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<description xmlns="http://cpee.org/ns/description/1.0" xmlns:a="http://cpee.org/ns/annotation/1.0">
+  <call id="a1" endpoint="" a:alt_id="1">
+    <parameters>
+      <label>Determine contact details</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a3" endpoint="" a:alt_id="2">
+    <parameters>
+      <label>Call customer</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a5" endpoint="" a:alt_id="3">
+    <parameters>
+      <label>Determine contact person and budget</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <call id="a7" endpoint="" a:alt_id="4">
+    <parameters>
+      <label>Ask for interest</label>
+      <method/>
+      <arguments/>
+    </parameters>
+  </call>
+  <choose label="{x}" mode="exclusive" a:alt_id="5" eid="e1">
+    <alternative condition="Interested" eid="e2" language="text/x-ruby">
+      <call id="a11" endpoint="" a:alt_id="7">
+        <parameters>
+          <label>Schedule online presentation</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e3">
+        <alternative condition="Standard" eid="e4" language="text/x-ruby">
+          <call id="a27" endpoint="" a:alt_id="11">
+            <parameters>
+              <label>Sales rep presentation</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Technical" eid="e5" language="text/x-ruby">
+          <call id="a29" endpoint="" a:alt_id="12">
+            <parameters>
+              <label>Pre-sales presentation</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+      </choose>
+      <call id="a35" endpoint="" a:alt_id="15">
+        <parameters>
+          <label>Wait 2 weeks for response</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+      <choose label="{x}" mode="exclusive" a:alt_id="16" eid="e6">
+        <alternative condition="No response" eid="e7" language="text/x-ruby">
+          <call id="a39" endpoint="" a:alt_id="17">
+            <parameters>
+              <label>Sales rep calls customer</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+        </alternative>
+        <alternative condition="Response received" eid="e8" language="text/x-ruby"/>
+      </choose>
+      <call id="a41" endpoint="" a:alt_id="18">
+        <parameters>
+          <label>Create quotation</label>
+          <method/>
+          <arguments/>
+        </parameters>
+      </call>
+    </alternative>
+    <otherwise eid="e9">
+      <choose label="{x}" mode="exclusive" a:alt_id="6" eid="e10">
+        <alternative condition="Budget not huge" eid="e21" language="text/x-ruby"/>
+        <otherwise eid="e11">
+          <call id="a15" endpoint="" a:alt_id="8">
+            <parameters>
+              <label>Head of development acquires customer</label>
+              <method/>
+              <arguments/>
+            </parameters>
+          </call>
+          <choose label="{x}" mode="exclusive" a:alt_id="9" eid="e12">
+            <alternative condition="Interested" eid="e13" language="text/x-ruby">
+              <call id="a12" endpoint="" a:alt_id="7">
+                <parameters>
+                  <label>Schedule online presentation</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <choose label="{x}" mode="exclusive" a:alt_id="10" eid="e14">
+                <alternative condition="Standard" eid="e15" language="text/x-ruby">
+                  <call id="a28" endpoint="" a:alt_id="11">
+                    <parameters>
+                      <label>Sales rep presentation</label>
+                      <method/>
+                      <arguments/>
+                    </parameters>
+                  </call>
+                </alternative>
+                <alternative condition="Technical" eid="e16" language="text/x-ruby">
+                  <call id="a30" endpoint="" a:alt_id="12">
+                    <parameters>
+                      <label>Pre-sales presentation</label>
+                      <method/>
+                      <arguments/>
+                    </parameters>
+                  </call>
+                </alternative>
+              </choose>
+              <call id="a36" endpoint="" a:alt_id="15">
+                <parameters>
+                  <label>Wait 2 weeks for response</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+              <choose label="{x}" mode="exclusive" a:alt_id="16" eid="e17">
+                <alternative condition="No response" eid="e18" language="text/x-ruby">
+                  <call id="a40" endpoint="" a:alt_id="17">
+                    <parameters>
+                      <label>Sales rep calls customer</label>
+                      <method/>
+                      <arguments/>
+                    </parameters>
+                  </call>
+                </alternative>
+                <alternative condition="Response received" eid="e19" language="text/x-ruby"/>
+              </choose>
+              <call id="a42" endpoint="" a:alt_id="18">
+                <parameters>
+                  <label>Create quotation</label>
+                  <method/>
+                  <arguments/>
+                </parameters>
+              </call>
+            </alternative>
+            <alternative condition="Not interested" eid="e20" language="text/x-ruby"/>
+          </choose>
+        </otherwise>
+      </choose>
+    </otherwise>
+  </choose>
+</description>

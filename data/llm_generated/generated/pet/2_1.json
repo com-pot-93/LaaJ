@@ -1,0 +1,503 @@
+{
+    "tasks": [
+        {
+            "id": "a1",
+            "name": "Report Service Degradation",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "Enter Problem Report into System T",
+            "type": "Task"
+        },
+        {
+            "id": "a5",
+            "name": "Compare Report to SLA",
+            "type": "Task"
+        },
+        {
+            "id": "a7",
+            "name": "Determine Counter Measures and Priorities",
+            "type": "Task"
+        },
+        {
+            "id": "a9",
+            "name": "Determine Customer Significance",
+            "type": "Task"
+        },
+        {
+            "id": "a13",
+            "name": "Link to Extra Problem Fix Process",
+            "type": "Task"
+        },
+        {
+            "id": "a8",
+            "name": "Determine Counter Measures and Priorities",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "Determine Customer Significance",
+            "type": "Task"
+        },
+        {
+            "id": "a14",
+            "name": "Link to Extra Problem Fix Process",
+            "type": "Task"
+        },
+        {
+            "id": "a23",
+            "name": "Create Detailed Problem Report",
+            "type": "Task"
+        },
+        {
+            "id": "a25",
+            "name": "Send to Service Management",
+            "type": "Task"
+        },
+        {
+            "id": "a29",
+            "name": "Perform Analysis",
+            "type": "Task"
+        },
+        {
+            "id": "a33",
+            "name": "Create Trouble Report",
+            "type": "Task"
+        },
+        {
+            "id": "a31",
+            "name": "Send to Resource Provisioning",
+            "type": "Task"
+        },
+        {
+            "id": "a35",
+            "name": "Check for Problems",
+            "type": "Task"
+        },
+        {
+            "id": "a39",
+            "name": "Create Normal Execution Notification",
+            "type": "Task"
+        },
+        {
+            "id": "a41",
+            "name": "Analyze and Create Trouble Report",
+            "type": "Task"
+        },
+        {
+            "id": "a47",
+            "name": "Send Status Report to SM",
+            "type": "Task"
+        },
+        {
+            "id": "a53",
+            "name": "Prepare Final Status Report",
+            "type": "Task"
+        },
+        {
+            "id": "a57",
+            "name": "Send Performance to Customer Service",
+            "type": "Task"
+        },
+        {
+            "id": "a59",
+            "name": "Perform Corrective Actions",
+            "type": "Task"
+        },
+        {
+            "id": "a63",
+            "name": "Create Problem Resolution Report",
+            "type": "Task"
+        },
+        {
+            "id": "a61",
+            "name": "Create Restoration Request",
+            "type": "Task"
+        },
+        {
+            "id": "a65",
+            "name": "Send Request to Resource Provisioning",
+            "type": "Task"
+        },
+        {
+            "id": "a67",
+            "name": "Track Errors and Undertake Actions",
+            "type": "Task"
+        },
+        {
+            "id": "a69",
+            "name": "Create Trouble-shooting Report",
+            "type": "Task"
+        },
+        {
+            "id": "a71",
+            "name": "Send Report to SM",
+            "type": "Task"
+        },
+        {
+            "id": "a64",
+            "name": "Create Problem Resolution Report",
+            "type": "Task"
+        },
+        {
+            "id": "a81",
+            "name": "Create Customer Report",
+            "type": "Task"
+        },
+        {
+            "id": "a85",
+            "name": "Send Report to Customer",
+            "type": "Task"
+        },
+        {
+            "id": "a83",
+            "name": "Report SLA Rebate to Billing",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "g1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg1",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "p7",
+            "type": "Parallel"
+        },
+        {
+            "id": "mp7",
+            "type": "Parallel"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a1",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a3",
+            "targetRef": "a5"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a5",
+            "targetRef": "a7"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a7",
+            "targetRef": "a9"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "a9",
+            "targetRef": "g1"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g1",
+            "targetRef": "a13"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "a13",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "g1",
+            "targetRef": "mg1"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "mg1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "mg2",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "a8",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "a10",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g3",
+            "targetRef": "a14"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "a14",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "mg3",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg2",
+            "targetRef": "a23"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a23",
+            "targetRef": "a25"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "a25",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "g4",
+            "targetRef": "a29"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "a29",
+            "targetRef": "a33"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "g4",
+            "targetRef": "a31"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "a31",
+            "targetRef": "a35"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "a35",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "g5",
+            "targetRef": "a39"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "g5",
+            "targetRef": "a41"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a39",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a41",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "mg5",
+            "targetRef": "a47"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a33",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "a47",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "mg4",
+            "targetRef": "a53"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "a53",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "g6",
+            "targetRef": "a57"
+        },
+        {
+            "id": "f37",
+            "sourceRef": "g6",
+            "targetRef": "a59"
+        },
+        {
+            "id": "f38",
+            "sourceRef": "a59",
+            "targetRef": "a63"
+        },
+        {
+            "id": "f39",
+            "sourceRef": "g6",
+            "targetRef": "a61"
+        },
+        {
+            "id": "f40",
+            "sourceRef": "a61",
+            "targetRef": "a65"
+        },
+        {
+            "id": "f41",
+            "sourceRef": "a65",
+            "targetRef": "a67"
+        },
+        {
+            "id": "f42",
+            "sourceRef": "a67",
+            "targetRef": "a69"
+        },
+        {
+            "id": "f43",
+            "sourceRef": "a69",
+            "targetRef": "a71"
+        },
+        {
+            "id": "f44",
+            "sourceRef": "a71",
+            "targetRef": "a64"
+        },
+        {
+            "id": "f45",
+            "sourceRef": "a57",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f46",
+            "sourceRef": "a63",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f47",
+            "sourceRef": "a64",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f48",
+            "sourceRef": "mg6",
+            "targetRef": "p7"
+        },
+        {
+            "id": "f49",
+            "sourceRef": "p7",
+            "targetRef": "a81"
+        },
+        {
+            "id": "f50",
+            "sourceRef": "a81",
+            "targetRef": "a85"
+        },
+        {
+            "id": "f51",
+            "sourceRef": "p7",
+            "targetRef": "a83"
+        },
+        {
+            "id": "f52",
+            "sourceRef": "a85",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f53",
+            "sourceRef": "a83",
+            "targetRef": "mp7"
+        },
+        {
+            "id": "f54",
+            "sourceRef": "mp7",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}

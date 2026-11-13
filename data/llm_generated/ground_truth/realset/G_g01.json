@@ -1,0 +1,328 @@
+{
+    "tasks": [
+        {
+            "id": "a8",
+            "name": "send invitations for friends",
+            "type": "Task"
+        },
+        {
+            "id": "a17",
+            "name": "to send question\n which games do you want to play?",
+            "type": "Task"
+        },
+        {
+            "id": "a18",
+            "name": "recive list of games",
+            "type": "Task"
+        },
+        {
+            "id": "a16",
+            "name": "Choose games",
+            "type": "Task"
+        },
+        {
+            "id": "a10",
+            "name": "appoint date  of LAN party  requiest\nto send",
+            "type": "Task"
+        },
+        {
+            "id": "a12",
+            "name": "Date change",
+            "type": "Task"
+        },
+        {
+            "id": "a0",
+            "name": "guest games do you want ?",
+            "type": "Task"
+        },
+        {
+            "id": "a6",
+            "name": "change guest games",
+            "type": "Task"
+        },
+        {
+            "id": "a21",
+            "name": "download them",
+            "type": "Task"
+        },
+        {
+            "id": "a1",
+            "name": "send to Fragen how much Bier want to trink?",
+            "type": "Task"
+        },
+        {
+            "id": "a2",
+            "name": "to recieve estimation number of all bier require",
+            "type": "Task"
+        },
+        {
+            "id": "a3",
+            "name": "go to supermarket",
+            "type": "Task"
+        },
+        {
+            "id": "a4",
+            "name": "buy bier missing",
+            "type": "Task"
+        },
+        {
+            "id": "a15",
+            "name": "prepare to LAN party",
+            "type": "Task"
+        }
+    ],
+    "events": [
+        {
+            "id": "e",
+            "name": "",
+            "type": "EndNoneEvent"
+        },
+        {
+            "id": "s",
+            "name": "",
+            "type": "StartNoneEvent"
+        }
+    ],
+    "gateways": [
+        {
+            "id": "p1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg2",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg3",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg4",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg5",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mp1",
+            "type": "Parallel"
+        },
+        {
+            "id": "g6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg6",
+            "type": "Exclusive"
+        },
+        {
+            "id": "g7",
+            "type": "Exclusive"
+        },
+        {
+            "id": "mg7",
+            "type": "Exclusive"
+        }
+    ],
+    "pools": [],
+    "sequenceFlows": [
+        {
+            "id": "f1",
+            "sourceRef": "s",
+            "targetRef": "a8"
+        },
+        {
+            "id": "f2",
+            "sourceRef": "a8",
+            "targetRef": "a17"
+        },
+        {
+            "id": "f3",
+            "sourceRef": "a17",
+            "targetRef": "a18"
+        },
+        {
+            "id": "f4",
+            "sourceRef": "a18",
+            "targetRef": "a16"
+        },
+        {
+            "id": "f5",
+            "sourceRef": "a16",
+            "targetRef": "p1"
+        },
+        {
+            "id": "f6",
+            "sourceRef": "p1",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f7",
+            "sourceRef": "g2",
+            "targetRef": "mg2"
+        },
+        {
+            "id": "f8",
+            "sourceRef": "mg2",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f9",
+            "sourceRef": "a10",
+            "targetRef": "g3"
+        },
+        {
+            "id": "f10",
+            "sourceRef": "g3",
+            "targetRef": "mg3"
+        },
+        {
+            "id": "f11",
+            "sourceRef": "mg3",
+            "targetRef": "a12"
+        },
+        {
+            "id": "f12",
+            "sourceRef": "a12",
+            "targetRef": "a10"
+        },
+        {
+            "id": "f13",
+            "sourceRef": "mg3",
+            "targetRef": "g2"
+        },
+        {
+            "id": "f14",
+            "sourceRef": "p1",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f15",
+            "sourceRef": "g4",
+            "targetRef": "mg4"
+        },
+        {
+            "id": "f16",
+            "sourceRef": "mg4",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f17",
+            "sourceRef": "a0",
+            "targetRef": "g5"
+        },
+        {
+            "id": "f18",
+            "sourceRef": "g5",
+            "targetRef": "mg5"
+        },
+        {
+            "id": "f19",
+            "sourceRef": "mg5",
+            "targetRef": "a6"
+        },
+        {
+            "id": "f20",
+            "sourceRef": "a6",
+            "targetRef": "a0"
+        },
+        {
+            "id": "f21",
+            "sourceRef": "mg5",
+            "targetRef": "g4"
+        },
+        {
+            "id": "f22",
+            "sourceRef": "mg2",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f23",
+            "sourceRef": "mg4",
+            "targetRef": "mp1"
+        },
+        {
+            "id": "f24",
+            "sourceRef": "mp1",
+            "targetRef": "g6"
+        },
+        {
+            "id": "f25",
+            "sourceRef": "g6",
+            "targetRef": "a21"
+        },
+        {
+            "id": "f26",
+            "sourceRef": "g6",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f27",
+            "sourceRef": "a21",
+            "targetRef": "mg6"
+        },
+        {
+            "id": "f28",
+            "sourceRef": "mg6",
+            "targetRef": "a1"
+        },
+        {
+            "id": "f29",
+            "sourceRef": "a1",
+            "targetRef": "a2"
+        },
+        {
+            "id": "f30",
+            "sourceRef": "a2",
+            "targetRef": "g7"
+        },
+        {
+            "id": "f31",
+            "sourceRef": "g7",
+            "targetRef": "a3"
+        },
+        {
+            "id": "f32",
+            "sourceRef": "a3",
+            "targetRef": "a4"
+        },
+        {
+            "id": "f33",
+            "sourceRef": "g7",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f34",
+            "sourceRef": "a4",
+            "targetRef": "mg7"
+        },
+        {
+            "id": "f35",
+            "sourceRef": "mg7",
+            "targetRef": "a15"
+        },
+        {
+            "id": "f36",
+            "sourceRef": "a15",
+            "targetRef": "e"
+        }
+    ],
+    "messageFlows": []
+}
