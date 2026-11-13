@@ -144,7 +144,7 @@ if __name__ == "__main__":
     df, results, grid, draws = prepared_draws()
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    parameters = az.summary(results)
+    parameters = az.summary(results, ci_prob=INTERVAL_PROB, ci_kind="eti")
     print(parameters)
     parameters.to_csv(os.path.join(OUTPUT_DIR, NAME + "_parameters.csv"))
 
