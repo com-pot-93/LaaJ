@@ -15,34 +15,6 @@ This page shows the two prompts the LLM judge uses in the automatic evaluation:
 
 ## M2M: Model-to-Model
 
-**Goal:** Rate how similar two process models are overall, and name what makes them different.
-
-### Scores at a glance
-
-| Score | Range | Meaning |
-|---|---|---|
-| `similarity` | `0` – `1` | `0` = completely different · `1` = identical / semantically equivalent |
-
-### Categories for sources of difference
-
-| Category | What it covers |
-|---|---|
-| `ACTIVITY_DIFFERENCES` | Missing, additional, or different tasks and subprocesses |
-| `GATEWAY_DIFFERENCES` | Missing/additional gateways, different gateway types or branching logic |
-| `CONNECTION_DIFFERENCES` | Different connections, task order, or missing/additional sequence flows |
-| `LABEL_DIFFERENCES` | Different names or descriptions of process elements |
-| `EVENT_DIFFERENCES` | Missing or different start, intermediate, or end events |
-| `OTHER_DIFFERENCES` | Any other relevant difference not covered above |
-
-### Expected output
-
-```json
-{
-  "similarity": 0.85,
-  "source_of_difference": ["LABEL_DIFFERENCES", "GATEWAY_DIFFERENCES"]
-}
-```
-
 ### System prompt
 
 ```text
@@ -88,43 +60,6 @@ Return the similarity for Model A: {model_A} and Model B: {model_B}
 ---
 
 ## M2T: Model-to-Text
-
-**Goal:** Rate how well a generated process model matches the textual process description it was generated from, in both directions.
-
-### Scores at a glance
-
-| Score | Direction | Question it answers |
-|---|---|---|
-| `relevance` | description → model | What share of the **description** is represented in the model? |
-| `truthfulness` | model → description | What share of the **model** is backed by the description? |
-
-Both scores range from `0` (not relevant/truthful) to `1` (completely relevant/truthful).
-
-```mermaid
-flowchart LR
-    D["Process description"] -- "relevance: covered?" --> M["Generated model"]
-    M -- "truthfulness: supported?" --> D
-```
-
-### Categories for sources of difference
-
-| Category | What it covers |
-|---|---|
-| `MISSING_INFORMATION` | Activities, events, or requirements from the description that are missing from the model |
-| `ADDED_INFORMATION` | Activities, events, or details in the model that the description does not support |
-| `STRUCTURE_DIFFERENCES` | Incorrect activity ordering, dependencies, or process flow |
-| `GATEWAY_DIFFERENCES` | Missing or wrong decisions, conditions, branching, or parallel execution |
-| `LABEL_DIFFERENCES` | Labels that misrepresent the meaning of the description |
-
-### Expected output
-
-```json
-{
-  "relevance": 0.9,
-  "truthfulness": 0.75,
-  "source_of_difference": ["ADDED_INFORMATION"]
-}
-```
 
 ### System prompt
 
