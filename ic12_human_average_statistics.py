@@ -4,8 +4,10 @@ import glob
 import statistics
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_DIR = os.path.join(BASE, "similarity", "human")
-AVERAGE_FILE = os.path.join(OUTPUT_DIR, "average.csv")
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
+REPORTS_DIR = os.path.join(BASE, "similarity", "human")  # human_statistics.py
+OUTPUT_DIR = os.path.join(BASE, "evaluation", "human")
+AVERAGE_FILE = os.path.join(OUTPUT_DIR, SCRIPT + ".csv")
 NO_EXAMPLES = "_no_examples"
 LLMS = ["anthropic", "gemini", "gpt"]
 # columns of the reports that are averaged over the models
@@ -32,9 +34,7 @@ def parse_name(name):
 
 def human_average_statistics():
     rows = []
-    for report_path in sorted(glob.glob(os.path.join(OUTPUT_DIR, "*.csv"))):
-        if report_path == AVERAGE_FILE:
-            continue
+    for report_path in sorted(glob.glob(os.path.join(REPORTS_DIR, "*.csv"))):
         parsed = parse_name(os.path.splitext(os.path.basename(report_path))[0])
         if parsed is None:  # e.g. a copy of an old average file
             print("Skipped {} (not a <representation>_<llm>[_no_examples].csv report)".format(report_path))
@@ -48,6 +48,7 @@ def human_average_statistics():
             row[column] = average(report, column)
         rows.append(row)
 
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     with open(AVERAGE_FILE, "w", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=COLUMNS)
         writer.writeheader()

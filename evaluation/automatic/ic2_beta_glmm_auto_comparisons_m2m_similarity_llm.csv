@@ -1,0 +1,13 @@
+representation,a,b,mean,median,sd,eti_low,eti_high,p_greater
+bpmn,anthropic,gemini,-0.0142,-0.014,0.0091,-0.0327,0.0032,0.0557
+bpmn,anthropic,gpt,-0.0469,-0.0465,0.0099,-0.0678,-0.0284,0.0
+bpmn,gemini,gpt,-0.0327,-0.0324,0.0089,-0.0514,-0.0164,0.0001
+cpee,anthropic,gemini,-0.0256,-0.0253,0.0087,-0.0434,-0.0093,0.0008
+cpee,anthropic,gpt,-0.0556,-0.0551,0.0101,-0.0768,-0.0372,0.0
+cpee,gemini,gpt,-0.0299,-0.0295,0.0083,-0.0475,-0.0148,0.0
+mermaid_js,anthropic,gemini,-0.0173,-0.0171,0.0089,-0.0351,-0.0003,0.023
+mermaid_js,anthropic,gpt,-0.0586,-0.0579,0.0105,-0.0808,-0.0396,0.0
+mermaid_js,gemini,gpt,-0.0413,-0.0409,0.0091,-0.0604,-0.0246,0.0
+simple_json,anthropic,gemini,-0.0061,-0.006,0.0088,-0.0238,0.0112,0.2405
+simple_json,anthropic,gpt,-0.0422,-0.0419,0.0094,-0.0618,-0.0249,0.0
+simple_json,gemini,gpt,-0.0362,-0.0358,0.0091,-0.0555,-0.0194,0.0

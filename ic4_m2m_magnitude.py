@@ -6,6 +6,7 @@ from scipy import stats
 
 from ic3_deterministic_reliability_m2m import ALL, LLMS, OUTPUT_DIR, REPRESENTATIONS, SIM_TYPES, SIMILARITY_FILE, llm_similarity, p_value
 
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
 ALPHA = 0.05
 METRICS = ["llm"] + SIM_TYPES
 
@@ -49,7 +50,8 @@ if __name__ == "__main__":
     result = pd.DataFrame(results)
     print(result.to_string(index=False))
 
-    name = "agreement_{}".format(ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    name = "{}_{}".format(SCRIPT, ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     df.round(4).to_csv(os.path.join(OUTPUT_DIR, name + ".csv"))
     result.to_csv(os.path.join(OUTPUT_DIR, name + "_test.csv"), index=False)
     print("Saved {} and {}".format(os.path.join(OUTPUT_DIR, name + ".csv"), os.path.join(OUTPUT_DIR, name + "_test.csv")))

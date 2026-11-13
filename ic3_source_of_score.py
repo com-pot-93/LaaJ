@@ -5,7 +5,7 @@ from ic3_source_of_difference import count
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 HUMAN_DIR = os.path.join(BASE, "generation", "human")
-OUTPUT_FILE = os.path.join(BASE, "similarity", "human", "source_of_difference.json")
+OUTPUT_FILE = os.path.join(BASE, "evaluation", "human", os.path.splitext(os.path.basename(__file__))[0] + ".json")
 REPRESENTATIONS = ["bpmn", "mermaid_js", "simple_json"]
 LLMS = ["anthropic", "gemini", "gpt"]
 EXAMPLES = ["examples", "no_examples"]  # few-shot with examples / system prompt only (file suffix _no_examples)

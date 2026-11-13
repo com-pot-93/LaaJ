@@ -6,8 +6,10 @@ import numpy as np
 import pandas as pd
 import bambi as bmb
 
-from ic2_beta_glmm_auto_predictions import (INTERVAL_PROB, LLMS, REPORTS, REPRESENTATIONS, STATISTICS_DIR, load_data,
+from ic2_beta_glmm_auto_predictions import (INTERVAL_PROB, LLMS, OUTPUT_DIR, REPORTS, REPRESENTATIONS, load_data,
                                             posterior_predictions, squeeze)
+
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
 
 
 def difference_row(values_a, values_b):
@@ -73,14 +75,15 @@ if __name__ == "__main__":
     if squeezed:  # back to the original scale of the values: inverse of squeeze
         draws = (draws * n - 0.5) / (n - 1)
 
-    name = "beta_glmm_{}_{}".format(args.type, args.measure)
+    name = "{}_{}_{}".format(SCRIPT, args.type, args.measure)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     tables = {
         "representation": comparison_table(grid, draws, "llm", "representation", LLMS, REPRESENTATIONS),
         "llm": comparison_table(grid, draws, "representation", "llm", REPRESENTATIONS, LLMS),
     }
     for compared, table in tables.items():
         print(table.to_string(index=False))
-        path = os.path.join(STATISTICS_DIR, "{}_comparisons_{}.csv".format(name, compared))
+        path = os.path.join(OUTPUT_DIR, "{}_{}.csv".format(name, compared))
         table.to_csv(path, index=False)
         print("Saved {}".format(path))
 

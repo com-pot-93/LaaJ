@@ -7,9 +7,11 @@ import pingouin as pg
 from scipy import stats
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-STATISTICS_DIR = os.path.join(BASE, "similarity", "automatic")
-SIMILARITY_FILE = os.path.join(BASE, "similarity", "similarity.csv")
-OUTPUT_DIR = os.path.join(BASE, "similarity")
+SIMILARITY_DIR = os.path.join(BASE, "similarity")
+STATISTICS_DIR = os.path.join(SIMILARITY_DIR, "automatic")
+SIMILARITY_FILE = os.path.join(SIMILARITY_DIR, "similarity.csv")
+OUTPUT_DIR = os.path.join(BASE, "evaluation", "automatic")
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
 REPRESENTATIONS = ["bpmn", "cpee", "mermaid_js", "simple_json"]
 LLMS = ["anthropic", "gemini", "gpt"]
 REPORT = "m2m_{}_{}.csv"
@@ -84,7 +86,8 @@ if __name__ == "__main__":
     table = pd.DataFrame([agreement(llm, similarity[sim_type], sim_type) for sim_type in SIM_TYPES])
     print(table.to_string(index=False))
 
-    name = "correlation_llm_{}.csv".format(ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    name = "{}_{}.csv".format(SCRIPT, ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, name)
     table.to_csv(path, index=False)
     print("Saved {}".format(path))

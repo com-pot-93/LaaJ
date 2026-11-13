@@ -14,7 +14,7 @@ from ic4_m2m_magnitude import ALPHA, METRICS as M2M_METRICS
 from ic5_automatic_dataset import CALCULATED, DATASETS, OVERVIEW_COLUMNS, calculated_metrics, dataset_use_cases
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_DIR = os.path.join(BASE, "similarity", "dataset")
+OUTPUT_DIR = os.path.join(BASE, "evaluation", "automatic", "dataset")
 AVERAGE_FILE = os.path.join(OUTPUT_DIR, "average.csv")
 RELIABILITY_FILE = os.path.join(OUTPUT_DIR, "reliability.csv")
 SOURCE_OF_DIFFERENCE_FILE = os.path.join(OUTPUT_DIR, "source_of_difference.json")

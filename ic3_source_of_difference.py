@@ -6,7 +6,7 @@ from collections import Counter
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 AUTOMATIC_DIR = os.path.join(BASE, "generation", "automatic")
-OUTPUT_FILE = os.path.join(BASE, "similarity", "automatic", "source_of_difference.json")
+OUTPUT_FILE = os.path.join(BASE, "evaluation", "automatic", os.path.splitext(os.path.basename(__file__))[0] + ".json")
 EVALUATION_TYPES = ["m2m", "m2t"]
 SOURCES = "source_of_difference"
 SEPARATOR = " + "

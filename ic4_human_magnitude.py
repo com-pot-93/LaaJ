@@ -4,9 +4,11 @@ import argparse
 import pandas as pd
 from scipy import stats
 
-from ic3_deterministic_reliability_m2m import ALL, OUTPUT_DIR, p_value
-from ic3_human_reliability import EXAMPLES, LLMS, REPRESENTATIONS, scores
+from ic3_deterministic_reliability_m2m import ALL, p_value
+from ic3_human_reliability import EXAMPLES, LLMS, OUTPUT_DIR, REPRESENTATIONS, scores
 from ic4_m2m_magnitude import ALPHA
+
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
 
 
 if __name__ == "__main__":
@@ -45,7 +47,8 @@ if __name__ == "__main__":
     result = pd.DataFrame(results)
     print(result.to_string(index=False))
 
-    name = "agreement_human_{}".format(ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    name = "{}_{}".format(SCRIPT, ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     pd.concat(frames, axis=1).round(4).to_csv(os.path.join(OUTPUT_DIR, name + ".csv"))
     result.to_csv(os.path.join(OUTPUT_DIR, name + "_test.csv"), index=False)
     print("Saved {} and {}".format(os.path.join(OUTPUT_DIR, name + ".csv"), os.path.join(OUTPUT_DIR, name + "_test.csv")))

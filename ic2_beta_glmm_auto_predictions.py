@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 STATISTICS_DIR = os.path.join(BASE, "similarity", "automatic")
+OUTPUT_DIR = os.path.join(BASE, "evaluation", "automatic")
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
 REPRESENTATIONS = ["bpmn", "cpee", "mermaid_js", "simple_json"]
 LLMS = ["anthropic", "gemini", "gpt"]
 # type -> measure -> report name of a representation and llm
@@ -129,10 +131,11 @@ if __name__ == "__main__":
         random_seed=24
     )
 
-    name = "beta_glmm_{}_{}".format(args.type, args.measure)
+    name = "{}_{}_{}".format(SCRIPT, args.type, args.measure)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     parameters = az.summary(results)
     print(parameters)
-    parameters.to_csv(os.path.join(STATISTICS_DIR, name + "_parameters.csv"))
+    parameters.to_csv(os.path.join(OUTPUT_DIR, name + "_parameters.csv"))
 
     # Posterior mean of the intercept
     intercept = results.posterior["Intercept"].mean().item()
@@ -163,7 +166,7 @@ if __name__ == "__main__":
         var_names=["Intercept"]
     )
     plt.tight_layout()
-    plot_path = os.path.join(STATISTICS_DIR, name + "_intercept.svg")
+    plot_path = os.path.join(OUTPUT_DIR, name + "_intercept.svg")
     plt.savefig(plot_path, format="svg")
     plt.close()
     print("Saved {}".format(plot_path))
@@ -173,14 +176,14 @@ if __name__ == "__main__":
         draws = (draws * n - 0.5) / (n - 1)
     predictions = prediction_table(grid, draws)
     print(predictions.to_string(index=False))
-    predictions_path = os.path.join(STATISTICS_DIR, name + "_predictions.csv")
+    predictions_path = os.path.join(OUTPUT_DIR, name + ".csv")
     predictions.to_csv(predictions_path, index=False)
     print("Saved {}".format(predictions_path))
 
     # posterior means only: llms as rows, representations as columns
     means = predictions.pivot(index="llm", columns="representation", values="mean").reindex(index=LLMS, columns=REPRESENTATIONS)
     print(means.to_string())
-    means_path = os.path.join(STATISTICS_DIR, name + "_predictions_mean.csv")
+    means_path = os.path.join(OUTPUT_DIR, name + "_mean.csv")
     means.to_csv(means_path)
     print("Saved {}".format(means_path))
 

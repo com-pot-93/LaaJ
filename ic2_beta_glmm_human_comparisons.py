@@ -4,8 +4,9 @@ from itertools import combinations
 import numpy as np
 import pandas as pd
 
-from ic2_beta_glmm_human_predictions import (EXAMPLES, INTERVAL_PROB, LLMS, NAME, REPRESENTATIONS, STATISTICS_DIR,
-                                             prepared_draws)
+from ic2_beta_glmm_human_predictions import EXAMPLES, INTERVAL_PROB, LLMS, OUTPUT_DIR, REPRESENTATIONS, prepared_draws
+
+NAME = os.path.splitext(os.path.basename(__file__))[0]
 
 FACTORS = {"llm": LLMS, "representation": REPRESENTATIONS, "example": EXAMPLES}
 
@@ -44,7 +45,8 @@ if __name__ == "__main__":
     for compared in FACTORS:
         table = comparison_table(grid, draws, compared)
         print(table.to_string(index=False))
-        path = os.path.join(STATISTICS_DIR, "{}_comparisons_{}.csv".format(NAME, compared))
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        path = os.path.join(OUTPUT_DIR, "{}_{}.csv".format(NAME, compared))
         table.to_csv(path, index=False)
         print("Saved {}".format(path))
 

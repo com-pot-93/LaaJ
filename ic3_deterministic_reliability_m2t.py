@@ -3,9 +3,10 @@ import argparse
 
 import pandas as pd
 
-from ic3_deterministic_reliability_m2m import ALL, LLMS, OUTPUT_DIR, REPRESENTATIONS, STATISTICS_DIR, agreement
+from ic3_deterministic_reliability_m2m import ALL, LLMS, OUTPUT_DIR, REPRESENTATIONS, SIMILARITY_DIR, STATISTICS_DIR, agreement
 
-TEXT_SIMILARITY_FILE = os.path.join(OUTPUT_DIR, "text_similarity.csv")
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
+TEXT_SIMILARITY_FILE = os.path.join(SIMILARITY_DIR, "text_similarity.csv")
 REPORT = "m2t_{}_{}_{}.csv"
 METRICS = ["relevance", "truthfulness"]
 
@@ -40,7 +41,8 @@ if __name__ == "__main__":
                           for metric in METRICS])
     print(table.to_string(index=False))
 
-    name = "correlation_llm_text_{}.csv".format(ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    name = "{}_{}.csv".format(SCRIPT, ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, name)
     table.to_csv(path, index=False)
     print("Saved {}".format(path))

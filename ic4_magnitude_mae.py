@@ -4,15 +4,18 @@ import argparse
 import numpy as np
 import pandas as pd
 
-from ic3_deterministic_reliability_m2m import ALL, LLMS, OUTPUT_DIR, REPRESENTATIONS, SIM_TYPES, SIMILARITY_FILE, llm_similarity
+from ic3_deterministic_reliability_m2m import ALL, BASE, LLMS, REPRESENTATIONS, SIM_TYPES, SIMILARITY_FILE, llm_similarity
 from ic3_deterministic_reliability_m2t import METRICS as TEXT_METRICS, TEXT_SIMILARITY_FILE, llm_metric
 from ic3_human_reliability import EXAMPLES, REPRESENTATIONS as HUMAN_REPRESENTATIONS, scores
 
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
+# m2m, m2t and human rows in one table: neither automatic nor human, so directly in evaluation/
+OUTPUT_DIR = os.path.join(BASE, "evaluation")
 # versions of the grouping: name of the output -> (group names, lower bounds of the 2nd, 3rd, ... group)
 # a group contains its lower bound and not its upper bound, the last group contains 1: [0, 0.4), [0.4, 0.8), [0.8, 1]
 VERSIONS = {
-    "agreement_mae": (["0-0.4", "0.4-0.8", "0.8-1"], [0.4, 0.8]),
-    "agreement_mae_2_groups": (["0-0.8", "0.8-1"], [0.8]),
+    SCRIPT: (["0-0.4", "0.4-0.8", "0.8-1"], [0.4, 0.8]),
+    SCRIPT + "_2_groups": (["0-0.8", "0.8-1"], [0.8]),
 }
 HUMAN_SCALE = 5.0
 
@@ -61,6 +64,7 @@ if __name__ == "__main__":
         print("No human evaluation for {}, human rows left out".format(args.representation))
 
     suffix = ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     for output, (groups, bounds) in VERSIONS.items():
         table = pd.DataFrame([mae_by_group(llm_values, other, evaluation, pair, groups, bounds, scale)
                               for evaluation, pair, llm_values, other, scale in pairs])

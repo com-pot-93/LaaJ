@@ -1,3 +1,0 @@
-examples,n,n_max_zero,spearman,p_one_sided,p_two_sided,H0,spearman_norm,p_one_sided_norm,p_two_sided_norm,H0_norm
-examples,219,0,0.1646,0.993,0.0147,accepted,0.5874,1,1.04e-21,accepted
-no_examples,218,0,0.3829,1,5.05e-09,accepted,0.6703,1,8.38e-30,accepted

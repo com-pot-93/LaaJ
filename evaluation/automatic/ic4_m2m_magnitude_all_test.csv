@@ -1,0 +1,5 @@
+metrics,n,spearman,p_one_sided,p_two_sided,H0
+all,80,-0.5553,4.48e-08,8.97e-08,rejected
+llm*task,80,-0.6585,1.59e-11,3.17e-11,rejected
+llm*element,80,-0.3424,0.000938,0.00188,rejected
+llm*trace,80,-0.6838,1.38e-12,2.75e-12,rejected

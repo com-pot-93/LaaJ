@@ -8,6 +8,8 @@ from ic3_deterministic_reliability_m2m import ALL, LLMS, OUTPUT_DIR, REPRESENTAT
 from ic3_deterministic_reliability_m2t import METRICS, TEXT_SIMILARITY_FILE, llm_metric
 from ic4_m2m_magnitude import ALPHA
 
+SCRIPT = os.path.splitext(os.path.basename(__file__))[0]
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Spearman test of the relation between average and range of the llm and calculated m2t metrics.")
@@ -45,7 +47,8 @@ if __name__ == "__main__":
     result = pd.DataFrame(results)
     print(result.to_string(index=False))
 
-    name = "agreement_text_{}".format(ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    name = "{}_{}".format(SCRIPT, ALL if args.representation == ALL else "{}_{}".format(args.representation, args.llm))
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     pd.concat(frames, axis=1).round(4).to_csv(os.path.join(OUTPUT_DIR, name + ".csv"))
     result.to_csv(os.path.join(OUTPUT_DIR, name + "_test.csv"), index=False)
     print("Saved {} and {}".format(os.path.join(OUTPUT_DIR, name + ".csv"), os.path.join(OUTPUT_DIR, name + "_test.csv")))
