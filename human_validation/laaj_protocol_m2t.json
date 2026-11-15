@@ -1,0 +1,328 @@
+{
+  "type": "m2t",
+  "evaluator": "",
+  "started": "2026-11-14T12:20:12.712Z",
+  "saved": "2026-11-14T12:31:29.158Z",
+  "items": [
+    {
+      "process_model_id": "10_12",
+      "dataset": "pet",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.974,
+        "truthfulness": 0.97
+      },
+      "reference": {
+        "relevance": 1,
+        "truthfulness": 1
+      },
+      "time": "2026-11-14T12:20:30.298Z"
+    },
+    {
+      "process_model_id": "gdpr_4_right_of_portability",
+      "dataset": "domain",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.916,
+        "truthfulness": 0.866
+      },
+      "reference": {
+        "relevance": 0.4,
+        "truthfulness": 0.71
+      },
+      "time": "2026-11-14T12:21:17.300Z"
+    },
+    {
+      "process_model_id": "6_2",
+      "dataset": "pet",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.843,
+        "truthfulness": 0.896
+      },
+      "reference": {
+        "relevance": 0.6,
+        "truthfulness": 0.6
+      },
+      "time": "2026-11-14T12:22:27.449Z"
+    },
+    {
+      "process_model_id": "healthcare_klessascheck_1",
+      "dataset": "domain",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.855,
+        "truthfulness": 0.828
+      },
+      "reference": {
+        "relevance": 0.05,
+        "truthfulness": 0.17
+      },
+      "time": "2026-11-14T12:22:42.338Z"
+    },
+    {
+      "process_model_id": "X_g01",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.891,
+        "truthfulness": 0.866
+      },
+      "reference": {
+        "relevance": 0.8,
+        "truthfulness": 0.91
+      },
+      "time": "2026-11-14T12:23:02.346Z"
+    },
+    {
+      "process_model_id": "E_j04",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.716,
+        "truthfulness": 0.717
+      },
+      "reference": {
+        "relevance": 0.67,
+        "truthfulness": 1
+      },
+      "time": "2026-11-14T12:25:54.860Z"
+    },
+    {
+      "process_model_id": "G_g01",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.909,
+        "truthfulness": 0.826
+      },
+      "reference": {
+        "relevance": 0.7,
+        "truthfulness": 0.82
+      },
+      "time": "2026-11-14T12:26:30.425Z"
+    },
+    {
+      "process_model_id": "R_j02",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.908,
+        "truthfulness": 0.925
+      },
+      "reference": {
+        "relevance": 0.75,
+        "truthfulness": 1
+      },
+      "time": "2026-11-14T12:27:50.134Z"
+    },
+    {
+      "process_model_id": "2_1",
+      "dataset": "pet",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.809,
+        "truthfulness": 0.795
+      },
+      "reference": {
+        "relevance": 0.48,
+        "truthfulness": 0.97
+      },
+      "time": "2026-11-14T12:28:09.202Z"
+    },
+    {
+      "process_model_id": "gdpr_1_data_breach",
+      "dataset": "domain",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.768,
+        "truthfulness": 0.662
+      },
+      "reference": {
+        "relevance": 0.32,
+        "truthfulness": 1
+      },
+      "time": "2026-11-14T12:29:06.298Z"
+    },
+    {
+      "process_model_id": "9_5",
+      "dataset": "pet",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.836,
+        "truthfulness": 0.795
+      },
+      "reference": {
+        "relevance": 0.86,
+        "truthfulness": 0.75
+      },
+      "time": "2026-11-14T12:29:21.600Z"
+    },
+    {
+      "process_model_id": "V_k08",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.858,
+        "truthfulness": 0.775
+      },
+      "reference": {
+        "relevance": 0.63,
+        "truthfulness": 0.88
+      },
+      "time": "2026-11-14T12:29:26.604Z"
+    },
+    {
+      "process_model_id": "3_8",
+      "dataset": "pet",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.874,
+        "truthfulness": 0.772
+      },
+      "reference": {
+        "relevance": 1,
+        "truthfulness": 1
+      },
+      "time": "2026-11-14T12:29:42.078Z"
+    },
+    {
+      "process_model_id": "manufacturing_bpmai_2",
+      "dataset": "domain",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.883,
+        "truthfulness": 0.855
+      },
+      "reference": {
+        "relevance": 0.5,
+        "truthfulness": 0.91
+      },
+      "time": "2026-11-14T12:30:00.329Z"
+    },
+    {
+      "process_model_id": "M_g02",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.791,
+        "truthfulness": 0.72
+      },
+      "reference": {
+        "relevance": 0.5,
+        "truthfulness": 0.9
+      },
+      "time": "2026-11-14T12:30:11.725Z"
+    },
+    {
+      "process_model_id": "R_j01",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.789,
+        "truthfulness": 0.63
+      },
+      "reference": {
+        "relevance": 1,
+        "truthfulness": 0.82
+      },
+      "time": "2026-11-14T12:30:51.511Z"
+    },
+    {
+      "process_model_id": "tourism_bpmai_1",
+      "dataset": "domain",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.789,
+        "truthfulness": 0.656
+      },
+      "reference": {
+        "relevance": 0.2,
+        "truthfulness": 0.7
+      },
+      "time": "2026-11-14T12:31:01.673Z"
+    },
+    {
+      "process_model_id": "G_j01",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.631,
+        "truthfulness": 0.674
+      },
+      "reference": {
+        "relevance": 0.7,
+        "truthfulness": 0.75
+      },
+      "time": "2026-11-14T12:31:08.682Z"
+    },
+    {
+      "process_model_id": "healthcare_bpmai_3",
+      "dataset": "domain",
+      "type": "m2t",
+      "validation": "laaj_better",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.806,
+        "truthfulness": 0.737
+      },
+      "reference": {
+        "relevance": 0.41,
+        "truthfulness": 0.9
+      },
+      "time": "2026-11-14T12:31:14.829Z"
+    },
+    {
+      "process_model_id": "V_k09",
+      "dataset": "realset",
+      "type": "m2t",
+      "validation": "both_correct",
+      "comment": "",
+      "laaj": {
+        "relevance": 0.88,
+        "truthfulness": 0.747
+      },
+      "reference": {
+        "relevance": 0.89,
+        "truthfulness": 0.92
+      },
+      "time": "2026-11-14T12:31:19.045Z"
+    }
+  ]
+}
